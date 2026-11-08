@@ -15,7 +15,8 @@ import java.util.regex.*;
 
 /** Explicit button-triggered translation. No requests while the user types. */
 public final class FreeInputEngine {
-    public interface Listener {void progress(String message);void japanese(String value);void ready(Result value,boolean speak);void error(String message);}
+    public interface Listener {void progress(String message);void japanese(String value);void ready(Result value,boolean speak);void error(String message);void textOnly(String japanese,String message);}
+    public interface DownloadListener {void progress(String message);void done();void failed(String message);}
     public static final class Result {
         public final String korean,japanese,reading,asset;public final File wav;
         Result(String ko,String ja,String reading,String asset,File wav){this.korean=ko;this.japanese=ja;this.reading=reading;this.asset=asset;this.wav=wav;}
@@ -24,6 +25,7 @@ public final class FreeInputEngine {
     private final ExecutorService worker=Executors.newSingleThreadExecutor();private final FreeInputVoice voice;
     private final ExecutorService network=new ThreadPoolExecutor(0,2,10,TimeUnit.SECONDS,new SynchronousQueue<Runnable>(),job->{Thread thread=new Thread(job,"hitokoto-translation");thread.setDaemon(true);return thread;},new ThreadPoolExecutor.AbortPolicy());
     private volatile NetworkCall activeConnection;
+    private volatile Thread downloadThread;
     private volatile int generation;private Future<?> pending;private boolean closed;
     private static final Pattern NOISE=Pattern.compile("[\\s?!？！。.,，·]");
     private static final Pattern COUNTS=Pattern.compile("(한|두|세|네|다섯|여섯|일곱|여덟|아홉|열)(잔|병|개|인분|접시|꼬치|공기|그릇|세트|벌|켤레|봉지|점)(?=주세요|부탁|$)");
@@ -59,6 +61,11 @@ public final class FreeInputEngine {
                 if(japanese.isEmpty()){deliver(id,()->listener.progress("일본어로 번역 중 · 최대 15초"));japanese=translate(input);}
                 cache.edit().putString(key(input),new JSONObject().put("japanese",japanese).put("time",System.currentTimeMillis()).toString()).apply();
                 final String translated=japanese;deliver(id,()->listener.japanese(translated));
+                if(voiceSupported()&&!resourcesReady()){
+                    // The 83MB voice data is never fetched as a side effect of checking a translation or on roaming.
+                    String reason=downloadThread!=null?"음성 자료를 받는 중이에요. 끝나면 소리로 들을 수 있어요.":!speak?"번역했어요. 한글 발음과 소리는 '음성 받기' 후에 나와요.":metered()?"모바일 데이터라 음성 자료는 받지 않았어요. '음성 받기'로 받을 수 있어요.":null;
+                    if(reason!=null){deliver(id,()->listener.textOnly(translated,reason));return;}
+                }
                 if(Thread.currentThread().isInterrupted())return;
                 voice.prepare(message->deliver(id,()->listener.progress(message)));
                 if(Thread.currentThread().isInterrupted())return;
@@ -105,7 +112,7 @@ public final class FreeInputEngine {
         if(Thread.currentThread().isInterrupted())throw new InterruptedIOException();
         HttpURLConnection connection=(HttpURLConnection)new URL(url).openConnection();call.connection=connection;
         try{
-            connection.setConnectTimeout(7000);connection.setReadTimeout(10000);connection.setRequestProperty("User-Agent","TravelHitokoto/0.1.7");
+            connection.setConnectTimeout(7000);connection.setReadTimeout(10000);connection.setRequestProperty("User-Agent","TravelHitokoto/0.1.8");
             int code=connection.getResponseCode();if(code==429)throw new ApiFailure("오늘 번역 서비스의 이용 한도에 도달했어요. 저장된 문장은 계속 쓸 수 있어요.");if(code!=200)throw new ApiFailure("번역 서비스에 연결하지 못했어요. 잠시 후 다시 눌러 주세요.");
             ByteArrayOutputStream body=new ByteArrayOutputStream();try(InputStream in=connection.getInputStream()){byte[] buffer=new byte[4096];for(int n;(n=in.read(buffer))!=-1;){if(Thread.currentThread().isInterrupted())throw new InterruptedIOException();if(body.size()+n>256*1024)throw new IOException("response too large");body.write(buffer,0,n);}}
             JSONObject data=new JSONObject(body.toString("UTF-8"));int status=data.optInt("responseStatus",500);
@@ -123,5 +130,23 @@ public final class FreeInputEngine {
     }
     public void cancel(){generation++;NetworkCall call=activeConnection;if(call!=null)call.abort();if(pending!=null){pending.cancel(true);pending=null;}}
     public void pause(){cancel();if(!closed)worker.submit(voice::close);}
-    public void close(){closed=true;cancel();network.shutdownNow();worker.submit(voice::close);worker.shutdown();}
+    public boolean resourcesReady(){return VoiceResources.ready(context);}
+    public boolean voiceSupported(){List<String> abis=Arrays.asList(Build.SUPPORTED_ABIS);return abis.contains("arm64-v8a")||abis.contains("x86_64");}
+    public boolean metered(){android.net.ConnectivityManager manager=(android.net.ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);return manager==null||manager.isActiveNetworkMetered();}
+    public boolean downloading(){return downloadThread!=null;}
+    /** Pre-trip download. Survives tab changes and backgrounding; a partial file resumes on the next attempt. */
+    public void download(DownloadListener listener){
+        if(downloadThread!=null||closed)return;
+        Thread thread=new Thread(()->{
+            String failure=null;
+            try{VoiceResources.ensure(context,message->main.post(()->{if(!closed)listener.progress(message);}));}
+            catch(InterruptedIOException e){failure="받기를 멈췄어요. 다시 누르면 이어서 받아요.";}
+            catch(Exception e){failure=e instanceof IOException&&e.getMessage()!=null&&e.getMessage().matches("(?s).*[가-힣].*")?e.getMessage():"음성 자료를 받지 못했어요. 인터넷을 확인하고 다시 누르면 이어서 받아요.";}
+            downloadThread=null;final String result=failure;
+            main.post(()->{if(closed)return;if(result==null)listener.done();else listener.failed(result);});
+        },"hitokoto-voice-download");
+        thread.setDaemon(true);downloadThread=thread;thread.start();
+    }
+    public void cancelDownload(){Thread thread=downloadThread;if(thread!=null)thread.interrupt();}
+    public void close(){closed=true;cancelDownload();cancel();network.shutdownNow();worker.submit(voice::close);worker.shutdown();}
 }

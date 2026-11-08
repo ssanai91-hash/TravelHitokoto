@@ -6,8 +6,8 @@
     "map_reported_count": 83,
     "named_places_read": 82,
     "item_count": 125,
-    "question_count": 151,
-    "total_content_count": 276,
+    "question_count": 159,
+    "total_content_count": 284,
     "notes": [
       "공유 지도에는 83개 장소로 표시되었으며 목록 끝까지 읽은 이름 있는 행은 82개였다. 확인하지 못한 장소 1개는 추정하지 않았다.",
       "모든 매장의 실제 메뉴판 전체를 전사한 자료가 아니다. 업종에 맞춘 대표 후보와 확인된 공식 메뉴를 구분했다.",
@@ -2662,18 +2662,18 @@
       "ja": "たこ焼き",
       "kana": "たこやき",
       "reading": "타코야키",
-      "counter": "serving",
-      "unit_ko": "인분",
+      "counter": "piece",
+      "unit_ko": "개",
       "scope": "공식 메뉴 확인",
       "source_ids": [
         "wanaka"
       ],
       "note": "개수는 매장 선택지로 별도 지정",
       "flow": "주문",
-      "example_ko": "타코야키 1인분 주세요",
-      "example_ja": "たこ焼きを一人前ください。",
-      "example_kana": "たこやきをいちにんまえください。",
-      "example_reading": "타코야키오 이치닌마에 쿠다사이",
+      "example_ko": "타코야키 1개 주세요",
+      "example_ja": "たこ焼きを一つください。",
+      "example_kana": "たこやきをひとつください。",
+      "example_reading": "타코야키오 히토츠 쿠다사이",
       "availability_ja": "",
       "related_place_ids": [
         "place-034",
@@ -2687,18 +2687,18 @@
       "ja": "ねぎたこ焼き",
       "kana": "ねぎたこやき",
       "reading": "네기타코야키",
-      "counter": "serving",
-      "unit_ko": "인분",
+      "counter": "piece",
+      "unit_ko": "개",
       "scope": "업종 대표 예시",
       "source_ids": [
         "map"
       ],
       "note": "",
       "flow": "주문",
-      "example_ko": "파 타코야키 1인분 주세요",
-      "example_ja": "ねぎたこ焼きを一人前ください。",
-      "example_kana": "ねぎたこやきをいちにんまえください。",
-      "example_reading": "네기타코야키오 이치닌마에 쿠다사이",
+      "example_ko": "파 타코야키 1개 주세요",
+      "example_ja": "ねぎたこ焼きを一つください。",
+      "example_kana": "ねぎたこやきをひとつください。",
+      "example_reading": "네기타코야키오 히토츠 쿠다사이",
       "availability_ja": "",
       "related_place_ids": [
         "place-034",
@@ -2712,18 +2712,18 @@
       "ja": "ソース味のたこ焼き",
       "kana": "ソースあじのたこやき",
       "reading": "소오스아지노 타코야키",
-      "counter": "serving",
-      "unit_ko": "인분",
+      "counter": "piece",
+      "unit_ko": "개",
       "scope": "공식 맛 확인",
       "source_ids": [
         "wanaka"
       ],
       "note": "",
       "flow": "주문",
-      "example_ko": "소스 맛 1인분 주세요",
-      "example_ja": "ソース味のたこ焼きを一人前ください。",
-      "example_kana": "ソースあじのたこやきをいちにんまえください。",
-      "example_reading": "소오스아지노 타코야키오 이치닌마에 쿠다사이",
+      "example_ko": "소스 맛 1개 주세요",
+      "example_ja": "ソース味のたこ焼きを一つください。",
+      "example_kana": "ソースあじのたこやきをひとつください。",
+      "example_reading": "소오스아지노 타코야키오 히토츠 쿠다사이",
       "availability_ja": "",
       "related_place_ids": [
         "place-034",
@@ -2737,18 +2737,18 @@
       "ja": "塩味のたこ焼き",
       "kana": "しおあじのたこやき",
       "reading": "시오아지노 타코야키",
-      "counter": "serving",
-      "unit_ko": "인분",
+      "counter": "piece",
+      "unit_ko": "개",
       "scope": "공식 맛 확인",
       "source_ids": [
         "wanaka"
       ],
       "note": "",
       "flow": "주문",
-      "example_ko": "소금 맛 1인분 주세요",
-      "example_ja": "塩味のたこ焼きを一人前ください。",
-      "example_kana": "しおあじのたこやきをいちにんまえください。",
-      "example_reading": "시오아지노 타코야키오 이치닌마에 쿠다사이",
+      "example_ko": "소금 맛 1개 주세요",
+      "example_ja": "塩味のたこ焼きを一つください。",
+      "example_kana": "しおあじのたこやきをひとつください。",
+      "example_reading": "시오아지노 타코야키오 히토츠 쿠다사이",
       "availability_ja": "",
       "related_place_ids": [
         "place-034",
@@ -3054,7 +3054,7 @@
       ]
     },
     {
-      "id": "item-089",
+      "id": "item-093",
       "category": "위스키 시음",
       "ko": "야마자키 시음",
       "ja": "山崎",
@@ -3182,7 +3182,7 @@
       ]
     },
     {
-      "id": "item-093",
+      "id": "item-089",
       "category": "위스키 병 구매",
       "ko": "야마자키",
       "ja": "山崎",
@@ -4585,7 +4585,7 @@
       "id": "question-051",
       "category": "카레·돈카츠·규카츠",
       "ko": "돌판에 더 구워 먹으면 되나요?",
-      "ja": "石盤でもう少し焼いて食べればいいですか？",
+      "ja": "石板でもう少し焼いて食べればいいですか？",
       "kana": "せきばんでもうすこしやいてたべればいいですか？",
       "reading": "세키반데 모오 스코시 야이테 타베레바 이이데스카",
       "note": "",
@@ -4667,7 +4667,7 @@
       "ko": "식권을 먼저 사야 하나요?",
       "ja": "先に食券を買いますか？",
       "kana": "さきにしょっけんをかいますか？",
-      "reading": "사키니 쇼켄오 카이마스카",
+      "reading": "사키니 숏켄오 카이마스카",
       "note": "",
       "source": "직접 작성한 여행 회화"
     },
@@ -5588,6 +5588,86 @@
       "ja": "ありがとうございます。",
       "kana": "ありがとうございます。",
       "reading": "아리가토오고자이마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-152",
+      "category": "식당 공통",
+      "ko": "테이블 자리로 부탁해요",
+      "ja": "テーブル席でお願いします。",
+      "kana": "テーブルせきでおねがいします。",
+      "reading": "테에부루세키데 오네가이시마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-153",
+      "category": "식당 공통",
+      "ko": "카운터 자리도 괜찮아요",
+      "ja": "カウンター席でも大丈夫です。",
+      "kana": "カウンターせきでもだいじょうぶです。",
+      "reading": "카운타아세키데모 다이조오부데스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-154",
+      "category": "식당 공통",
+      "ko": "흡연석 있나요?",
+      "ja": "喫煙席はありますか？",
+      "kana": "きつえんせきはありますか？",
+      "reading": "키츠엔세키와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-155",
+      "category": "식당 공통",
+      "ko": "태블릿 주문 방법을 알려 주세요",
+      "ja": "タブレットの使い方を教えてください。",
+      "kana": "タブレットのつかいかたをおしえてください。",
+      "reading": "타부렛토노 츠카이카타오 오시에테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-156",
+      "category": "식당 공통",
+      "ko": "QR코드로 주문하나요?",
+      "ja": "QRコードで注文しますか？",
+      "kana": "キューアールコードでちゅうもんしますか？",
+      "reading": "큐우아아루코오도데 추우몬시마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-157",
+      "category": "식당 공통",
+      "ko": "현금만 되나요?",
+      "ja": "現金のみですか？",
+      "kana": "げんきんのみですか？",
+      "reading": "겐킨노미데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-158",
+      "category": "숙소·이동",
+      "ko": "코인로커는 어디인가요?",
+      "ja": "コインロッカーはどこですか？",
+      "kana": "コインロッカーはどこですか？",
+      "reading": "코인롯카아와 도코데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-159",
+      "category": "대화 도움",
+      "ko": "흡연 구역은 어디인가요?",
+      "ja": "喫煙所はどこですか？",
+      "kana": "きつえんじょはどこですか？",
+      "reading": "키츠엔조와 도코데스카",
       "note": "",
       "source": "직접 작성한 여행 회화"
     }

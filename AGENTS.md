@@ -28,6 +28,13 @@
 - Android INTERNET 권한과 HTTPS만 사용한다. 마이크 권한과 서버·로그인·결제는 추가하지 않는다.
 - app/libs/JNA jar, jniLibs의 VOICEVOX/ONNX/libc++/JNA .so와 third-party 라이선스를 빌드에 포함한다. 패키지·서명·기존 즐겨찾기는 유지한다.
 
+## 0.1.8 핵심 목록·주문서
+
+- 화면 목록은 `app/src/main/assets/core-layout.json`이 결정한다. 분야를 늘려 다시 복잡하게 만들지 않고, 그 밖의 문장은 검색으로 찾게 둔다. 분야당 14개를 넘기지 않는다(TravelTests 검사).
+- 다른 조수사로 파는 원본 행(시음 잔/병)은 일본어가 같아도 합치지 않는다.
+- 83MB 음성 자료를 번역하기나 모바일 데이터 상태에서 자동으로 받지 않는다. 부분 파일은 이어받기용으로 유지한다.
+- 0.1.7 ZIP에 없는 새 음성은 `git add -f`로 저장소에 추적한다.
+
 ## 0.1.7 번역 대기 오류 수정
 
 - SocketTimeoutException은 InterruptedIOException의 하위 타입이다. 시간 초과를 사용자 취소로 간주하여 조용히 무시하지 않는다. 실제 스레드 취소/지난 요청만 무시하고 나머지는 오류 콜백으로 종료한다.

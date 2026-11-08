@@ -26,7 +26,7 @@ run(sys.executable,P/'tools/check_voice_assets.py')
 compiled=out/'resources.zip'
 run(bt/'aapt2','compile','--dir',P/'app/src/main/res','-o',compiled)
 base=out/'base.apk'
-run(bt/'aapt2','link','-o',base,'--manifest',P/'app/src/main/AndroidManifest.xml','-I',android,'--min-sdk-version','26','--target-sdk-version','35','--version-code','8','--version-name','0.1.7','-A',P/'app/src/main/assets','-0','ogg',compiled)
+run(bt/'aapt2','link','-o',base,'--manifest',P/'app/src/main/AndroidManifest.xml','-I',android,'--min-sdk-version','26','--target-sdk-version','35','--version-code','9','--version-name','0.1.8','-A',P/'app/src/main/assets','-0','ogg',compiled)
 jar=out/'classes.jar'
 with zipfile.ZipFile(jar,'w') as z:
     for f in classes.rglob('*.class'):z.write(f,f.relative_to(classes))
@@ -38,7 +38,7 @@ aligned=out/'aligned.apk'; run(bt/'zipalign','-f','-p','4',base,aligned)
 key=P/'signing/travel-test.jks'; key.parent.mkdir(exist_ok=True)
 if not key.exists():
     run('keytool','-genkeypair','-keystore',key,'-storepass','travel-test','-keypass','travel-test','-alias','travel-test','-dname','CN=Travel Hitokoto Local Test','-keyalg','RSA','-keysize','2048','-validity','10000')
-apk=out/'TravelHitokoto-0.1.7.apk'
+apk=out/'TravelHitokoto-0.1.8.apk'
 run(bt/'apksigner','sign','--ks',key,'--ks-pass','pass:travel-test','--key-pass','pass:travel-test','--out',apk,aligned)
 run(bt/'apksigner','verify','--verbose',apk)
 print(apk)

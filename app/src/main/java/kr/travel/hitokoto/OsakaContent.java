@@ -4,8 +4,12 @@ import java.util.*;
 public final class OsakaContent {
     public static final String[] ORDER_GROUPS={"술·음료","이자카야 안주","야키니쿠·와규","장어·정식","오코노미야키","쿠시카츠","카레","돈카츠·규카츠","소바·우동","라멘·츠케멘","스시·오마카세","교자·중식","타코야키","카페","디저트","위스키 시음","위스키 병 구매","몽벨·아웃도어","의류·아울렛","티파니·주얼리","캐릭터·닌텐도","선물·과자"};
     public static final String[] QUESTION_GROUPS={"식당 공통","술·이자카야","야키니쿠·와규","장어·정식","오코노미야키·쿠시카츠","카레·돈카츠·규카츠","소바·우동·라멘","스시·오마카세","교자·타코야키","카페·디저트","위스키·주류·견학","쇼핑 공통","몽벨·아웃도어","의류·아울렛","티파니·주얼리","캐릭터·닌텐도","관광·입장","숙소·이동","대화 도움","공항","도움 요청"};
+    /** Curated on-screen lists: {scene, phrase ids...}. Everything else stays reachable through search. */
+    public static final String[][] ORDER_SCENES={{"술·음료","beer","highball","lemon","sake","water","oolong","cola"},{"안주","this","karaage","edamame","yakitori","sashimi","osaka-item-012"},{"야키니쿠","osaka-item-013","osaka-item-014","osaka-item-015","osaka-item-016","osaka-item-018","osaka-item-017"},{"오코노미·꼬치·타코","osaka-item-026","osaka-item-027","osaka-item-032","osaka-item-033","osaka-item-034","osaka-item-035","takoyaki","osaka-item-074"},{"라멘·소바·우동","osaka-item-055","osaka-item-056","osaka-item-059","osaka-item-048","osaka-item-049","osaka-item-052","osaka-item-053"},{"돈카츠·덮밥·카레","osaka-item-043","osaka-item-045","rice","osaka-item-020","osaka-item-022","osaka-item-041","osaka-item-040","gyoza","osaka-item-072"},{"스시","osaka-item-061","osaka-item-062","osaka-item-063","osaka-item-064","osaka-item-066"},{"위스키","osaka-item-093","osaka-item-090","osaka-item-091","osaka-item-092","osaka-item-089","osaka-item-094","osaka-item-095","osaka-item-096","osaka-item-097","osaka-item-098"},{"카페·간식·선물","osaka-item-078","osaka-item-079","osaka-item-083","osaka-item-122","osaka-item-125"},{"쇼핑","osaka-item-099","osaka-item-102","osaka-item-103","osaka-item-106","osaka-item-109","osaka-item-116"}};
+    public static final String[][] QUESTION_SCENES={{"식당 입장·주문","iz-0","iz-2","osaka-question-003","osaka-question-152","osaka-question-153","iz-3","osaka-question-154","iz-4","iz-5","iz-6","osaka-question-155","osaka-question-156","osaka-question-059"},{"식사 중 요청","iz-8","iz-11","osaka-question-011","iz-13","iz-10","iz-15","iz-16","osaka-question-017","osaka-question-048","osaka-question-035","osaka-question-055","osaka-question-056","osaka-question-028","osaka-question-029"},{"계산","iz-19","iz-20","osaka-question-021","osaka-question-157","iz-21","osaka-question-014"},{"위스키","ya-0","ya-1","ya-2","ya-5","ya-6","ya-7","ya-8","ya-9","osaka-question-082","osaka-question-084","osaka-question-087","osaka-question-088"},{"쇼핑","sh-0","osaka-question-097","sh-2","sh-3","sh-1","sh-4","osaka-question-111","sh-6","sh-5","sh-7","sh-8","sh-10"},{"이동·숙소","ho-0","ho-1","ho-2","ho-3","osaka-question-158","tr-0","tr-3","tr-4","tr-5","tr-7","tr-9","tr-12","ai-0"},{"대화·긴급","co-0","co-1","co-5","co-7","co-9","osaka-question-159","co-10","he-0","he-3","he-2","he-6"}};
     private static String norm(String value){return value.replaceAll("[\\s。？！?!（）()・·]", "");}
-    private static Phrase same(List<Phrase> all,String ja,boolean order){for(Phrase p:all)if(p.order==order&&norm(p.ja).equals(norm(ja)))return p;return null;}
+    /** Merge duplicates, but never two source rows sold in different units (tasting glass vs bottle). */
+    private static Phrase same(List<Phrase> all,String ja,boolean order,String counter){for(Phrase p:all)if(p.order==order&&norm(p.ja).equals(norm(ja))&&(counter==null||!p.id.startsWith("osaka-")||counter.equals(p.counter)))return p;return null;}
     private static String legacyGroup(Phrase p){
         if(p.order){if(p.drink)return "술·음료";if(p.id.equals("rice"))return "돈카츠·규카츠";if(p.id.equals("this"))return "이자카야 안주";if(p.id.equals("takoyaki"))return "타코야키";if(p.id.equals("gyoza"))return "교자·중식";return "이자카야 안주";}
         switch(p.category){case "이자카야":return "식당 공통";case "교통":case "숙소":return "숙소·이동";case "야마자키":return "위스키·주류·견학";case "쇼핑":return "쇼핑 공통";case "기본 표현":return "대화 도움";default:return p.category;}
@@ -13,15 +17,19 @@ public final class OsakaContent {
     public static void extend(List<Phrase> all){
         for(Phrase p:all){p.category=legacyGroup(p);p.groups.add(p.category);}
         for(String[] r:ITEMS){
-            Phrase p=same(all,r[3],true);
+            Phrase p=same(all,r[3],true,r[6]);
             if(p==null){p=new Phrase(r[0],r[1],r[2],r[3],r[4],r[5],"",true,r[6].equals("cup"));all.add(p);}
             p.category=r[1];p.groups.clear();p.groups.add(r[1]);p.ko=r[2];p.kana=r[4];p.reading=r[5];p.counter=r[6];p.unitLabel=p.id.equals("rice")?"공기":r[7];p.retail=r[8].equals("true");p.detail=r[9];p.related=r[10];
         }
         for(String[] r:QUESTIONS){
-            Phrase p=same(all,r[3],false);
+            Phrase p=same(all,r[3],false,null);
             if(p==null){p=new Phrase(r[0],r[1],r[2],r[3],r[4],r[5],"",false,false);all.add(p);}
             p.groups.add(r[1]);if(p.kana.isEmpty())p.kana=r[4];
         }
+        place(all,ORDER_SCENES);place(all,QUESTION_SCENES);
+    }
+    private static void place(List<Phrase> all,String[][] scenes){
+        for(String[] scene:scenes)for(int i=1;i<scene.length;i++)for(Phrase p:all)if(p.id.equals(scene[i])){p.scene=scene[0];p.sceneOrder=i;break;}
     }
     private static final String[][] ITEMS={
         {"osaka-item-001","술·음료","생맥주","生ビール","なまビール","나마비이루","cup","잔","false","공식 메뉴 확인","야와라기 타로지로우 사케노오쿠다"},
@@ -96,10 +104,10 @@ public final class OsakaContent {
         {"osaka-item-070","교자·중식","감자샐러드","ポテトサラダ","ポテトサラダ","포테토사라다","dish","접시","false","공식 메뉴 확인 · 공식 메뉴는 自家製ポテトサラダ","Gyoza Hohei"},
         {"osaka-item-071","교자·중식","슈마이","焼売","しゅうまい","슈우마이","serving","인분","false","업종 대표 예시","론탄 미나미모리마치본점 Gyoza Hohei"},
         {"osaka-item-072","교자·중식","볶음밥","炒飯","チャーハン","차아한","dish","접시","false","업종 대표 예시","론탄 미나미모리마치본점 Gyoza Hohei"},
-        {"osaka-item-073","타코야키","타코야키","たこ焼き","たこやき","타코야키","serving","인분","false","공식 메뉴 확인 · 개수는 매장 선택지로 별도 지정","타코야키도라쿠 와나카 센니치마에점 하나다코"},
-        {"osaka-item-074","타코야키","파 타코야키","ねぎたこ焼き","ねぎたこやき","네기타코야키","serving","인분","false","업종 대표 예시","타코야키도라쿠 와나카 센니치마에점 하나다코"},
-        {"osaka-item-075","타코야키","소스 맛","ソース味のたこ焼き","ソースあじのたこやき","소오스아지노 타코야키","serving","인분","false","공식 맛 확인","타코야키도라쿠 와나카 센니치마에점 하나다코"},
-        {"osaka-item-076","타코야키","소금 맛","塩味のたこ焼き","しおあじのたこやき","시오아지노 타코야키","serving","인분","false","공식 맛 확인","타코야키도라쿠 와나카 센니치마에점 하나다코"},
+        {"osaka-item-073","타코야키","타코야키","たこ焼き","たこやき","타코야키","piece","개","false","공식 메뉴 확인 · 개수는 매장 선택지로 별도 지정","타코야키도라쿠 와나카 센니치마에점 하나다코"},
+        {"osaka-item-074","타코야키","파 타코야키","ねぎたこ焼き","ねぎたこやき","네기타코야키","piece","개","false","업종 대표 예시","타코야키도라쿠 와나카 센니치마에점 하나다코"},
+        {"osaka-item-075","타코야키","소스 맛","ソース味のたこ焼き","ソースあじのたこやき","소오스아지노 타코야키","piece","개","false","공식 맛 확인","타코야키도라쿠 와나카 센니치마에점 하나다코"},
+        {"osaka-item-076","타코야키","소금 맛","塩味のたこ焼き","しおあじのたこやき","시오아지노 타코야키","piece","개","false","공식 맛 확인","타코야키도라쿠 와나카 센니치마에점 하나다코"},
         {"osaka-item-077","카페","핸드드립 커피","ハンドドリップコーヒー","ハンドドリップコーヒー","한도도릿푸코오히이","cup","잔","false","목록 메모 기반 후보 · 릴로 커피 로스터즈의 목록 메모","릴로 커피 로스터즈 The Che Coffee 桃谷店 焙煎珈琲"},
         {"osaka-item-078","카페","아이스커피","アイスコーヒー","アイスコーヒー","아이스코오히이","cup","잔","false","업종 대표 예시","릴로 커피 로스터즈 The Che Coffee 桃谷店 焙煎珈琲"},
         {"osaka-item-079","카페","따뜻한 커피","ホットコーヒー","ホットコーヒー","홋토코오히이","cup","잔","false","업종 대표 예시","릴로 커피 로스터즈 The Che Coffee 桃谷店 焙煎珈琲"},
@@ -112,11 +120,11 @@ public final class OsakaContent {
         {"osaka-item-086","디저트","밀푀유","ミルフィーユ","ミルフィーユ","미루휘이유","piece","개","false","공식 상품군 확인 · 브륄레 등 당일 맛은 현장 확인","grenier 우메다 점"},
         {"osaka-item-087","디저트","슈크림","シュークリーム","シュークリーム","슈우쿠리이무","piece","개","false","목록 메모 기반 후보 · MooKEN의 목록 메모","grenier 우메다 점 파블로(PABLO) 신사이바시 본점 MooKEN"},
         {"osaka-item-088","디저트","소프트아이스크림","ソフトクリーム","ソフトクリーム","소후토쿠리이무","piece","개","false","업종 대표 예시","grenier 우메다 점 파블로(PABLO) 신사이바시 본점 MooKEN"},
-        {"osaka-item-089","위스키 시음","야마자키 시음","山崎","やまざき","야마자키","cup","잔","false","공식 브랜드군 확인 · 라운지 당일 메뉴·품절 확인","산토리〈천연수 맥주 공장〉교토 울트라마켓 위스키 KINGRAM LIQUOR namba 캐빈리쿼 리커 마운틴 우메다 리커 마운틴 다타미야마지 킹그램 리커 니시텐마점 산토리 야마자키 증류소 사사키상점"},
+        {"osaka-item-093","위스키 시음","야마자키 시음","山崎","やまざき","야마자키","cup","잔","false","공식 브랜드군 확인 · 라운지 당일 메뉴·품절 확인","산토리〈천연수 맥주 공장〉교토 울트라마켓 위스키 KINGRAM LIQUOR namba 캐빈리쿼 리커 마운틴 우메다 리커 마운틴 다타미야마지 킹그램 리커 니시텐마점 산토리 야마자키 증류소 사사키상점"},
         {"osaka-item-090","위스키 시음","위스키 시음 세트","ウイスキーの飲み比べセット","ウイスキーののみくらべセット","우이스키이노 노미쿠라베셋토","set","세트","false","업종 대표 예시 · 세트 판매 여부 확인","산토리〈천연수 맥주 공장〉교토 울트라마켓 위스키 KINGRAM LIQUOR namba 캐빈리쿼 리커 마운틴 우메다 리커 마운틴 다타미야마지 킹그램 리커 니시텐마점 산토리 야마자키 증류소 사사키상점"},
         {"osaka-item-091","위스키 시음","스트레이트 위스키","ストレートのウイスキー","ストレートのウイスキー","스토레에토노 우이스키이","cup","잔","false","업종 대표 예시","산토리〈천연수 맥주 공장〉교토 울트라마켓 위스키 KINGRAM LIQUOR namba 캐빈리쿼 리커 마운틴 우메다 리커 마운틴 다타미야마지 킹그램 리커 니시텐마점 산토리 야마자키 증류소 사사키상점"},
         {"osaka-item-092","위스키 시음","온더록스 위스키","ロックのウイスキー","ロックのウイスキー","롯쿠노 우이스키이","cup","잔","false","업종 대표 예시","산토리〈천연수 맥주 공장〉교토 울트라마켓 위스키 KINGRAM LIQUOR namba 캐빈리쿼 리커 마운틴 우메다 리커 마운틴 다타미야마지 킹그램 리커 니시텐마점 산토리 야마자키 증류소 사사키상점"},
-        {"osaka-item-093","위스키 병 구매","야마자키","山崎","やまざき","야마자키","bottle","병","true","재고 질문용 후보 · 취급·재고 미확인","산토리〈천연수 맥주 공장〉교토 울트라마켓 위스키 KINGRAM LIQUOR namba 캐빈리쿼 리커 마운틴 우메다 리커 마운틴 다타미야마지 킹그램 리커 니시텐마점 산토리 야마자키 증류소 사사키상점"},
+        {"osaka-item-089","위스키 병 구매","야마자키","山崎","やまざき","야마자키","bottle","병","true","재고 질문용 후보 · 취급·재고 미확인","산토리〈천연수 맥주 공장〉교토 울트라마켓 위스키 KINGRAM LIQUOR namba 캐빈리쿼 리커 마운틴 우메다 리커 마운틴 다타미야마지 킹그램 리커 니시텐마점 산토리 야마자키 증류소 사사키상점"},
         {"osaka-item-094","위스키 병 구매","야마자키 12년","山崎12年","やまざきじゅうにねん","야마자키주우니넨","bottle","병","true","재고 질문용 후보 · 취급·재고 미확인","산토리〈천연수 맥주 공장〉교토 울트라마켓 위스키 KINGRAM LIQUOR namba 캐빈리쿼 리커 마운틴 우메다 리커 마운틴 다타미야마지 킹그램 리커 니시텐마점 산토리 야마자키 증류소 사사키상점"},
         {"osaka-item-095","위스키 병 구매","하쿠슈","白州","はくしゅう","하쿠슈우","bottle","병","true","재고 질문용 후보 · 취급·재고 미확인","산토리〈천연수 맥주 공장〉교토 울트라마켓 위스키 KINGRAM LIQUOR namba 캐빈리쿼 리커 마운틴 우메다 리커 마운틴 다타미야마지 킹그램 리커 니시텐마점 산토리 야마자키 증류소 사사키상점"},
         {"osaka-item-096","위스키 병 구매","하쿠슈 12년","白州12年","はくしゅうじゅうにねん","하쿠슈우주우니넨","bottle","병","true","재고 질문용 후보 · 취급·재고 미확인","산토리〈천연수 맥주 공장〉교토 울트라마켓 위스키 KINGRAM LIQUOR namba 캐빈리쿼 리커 마운틴 우메다 리커 마운틴 다타미야마지 킹그램 리커 니시텐마점 산토리 야마자키 증류소 사사키상점"},
@@ -201,7 +209,7 @@ public final class OsakaContent {
         {"osaka-question-048","카레·돈카츠·규카츠","덜 맵게 해 주세요","辛さを控えめにしてください。","からさをひかえめにしてください。","카라사오 히카에메니 시테쿠다사이"},
         {"osaka-question-049","카레·돈카츠·규카츠","두 종류의 카레를 같이 먹을 수 있나요?","2種類のカレーをあいがけにできますか？","にしゅるいのカレーをあいがけにできますか？","니슈루이노 카레에오 아이가케니 데키마스카"},
         {"osaka-question-050","카레·돈카츠·규카츠","등심과 안심 중 어느 쪽이 부드러운가요?","ロースとヒレはどちらが柔らかいですか？","ロースとヒレはどちらがやわらかいですか？","로오스토 히레와 도치라가 야와라카이데스카"},
-        {"osaka-question-051","카레·돈카츠·규카츠","돌판에 더 구워 먹으면 되나요?","石盤でもう少し焼いて食べればいいですか？","せきばんでもうすこしやいてたべればいいですか？","세키반데 모오 스코시 야이테 타베레바 이이데스카"},
+        {"osaka-question-051","카레·돈카츠·규카츠","돌판에 더 구워 먹으면 되나요?","石板でもう少し焼いて食べればいいですか？","せきばんでもうすこしやいてたべればいいですか？","세키반데 모오 스코시 야이테 타베레바 이이데스카"},
         {"osaka-question-052","카레·돈카츠·규카츠","소스는 따로 주세요","ソースは別にしてください。","ソースはべつにしてください。","소오스와 베츠니 시테쿠다사이"},
         {"osaka-question-053","소바·우동·라멘","따뜻한 것과 차가운 것 중 고를 수 있나요?","温かいものと冷たいものを選べますか？","あたたかいものとつめたいものをえらべますか？","아타타카이 모노토 츠메타이 모노오 에라베마스카"},
         {"osaka-question-054","소바·우동·라멘","면을 적게 해 주세요","麺を少なめにしてください。","めんをすくなめにしてください。","멘오 스쿠나메니 시테쿠다사이"},
@@ -209,7 +217,7 @@ public final class OsakaContent {
         {"osaka-question-056","소바·우동·라멘","추가 면을 주문할 수 있나요?","替え玉はありますか？","かえだまはありますか？","카에다마와 아리마스카"},
         {"osaka-question-057","소바·우동·라멘","츠케멘 국물을 묽게 하는 육수를 주세요","スープ割りをお願いします。","スープわりをおねがいします。","스우푸와리오 오네가이시마스"},
         {"osaka-question-058","소바·우동·라멘","달걀 하나 추가해 주세요","味玉を一つ追加してください。","あじたまをひとつついかしてください。","아지타마오 히토츠 츠이카시테쿠다사이"},
-        {"osaka-question-059","소바·우동·라멘","식권을 먼저 사야 하나요?","先に食券を買いますか？","さきにしょっけんをかいますか？","사키니 쇼켄오 카이마스카"},
+        {"osaka-question-059","소바·우동·라멘","식권을 먼저 사야 하나요?","先に食券を買いますか？","さきにしょっけんをかいますか？","사키니 숏켄오 카이마스카"},
         {"osaka-question-060","소바·우동·라멘","이 국물은 무엇으로 만들었나요?","このスープは何のだしですか？","このスープはなんのだしですか？","코노 스우푸와 난노 다시데스카"},
         {"osaka-question-061","스시·오마카세","오마카세는 한 사람에 얼마인가요?","おまかせは一人いくらですか？","おまかせはひとりいくらですか？","오마카세와 히토리 이쿠라데스카"},
         {"osaka-question-062","스시·오마카세","와사비는 빼 주세요","わさび抜きでお願いします。","わさびぬきでおねがいします。","와사비누키데 오네가이시마스"},
@@ -301,6 +309,14 @@ public final class OsakaContent {
         {"osaka-question-148","대화 도움","천천히 말씀해 주세요","ゆっくり話してください。","ゆっくりはなしてください。","윳쿠리 하나시테쿠다사이"},
         {"osaka-question-149","대화 도움","여기에 적어 주세요","ここに書いてください。","ここにかいてください。","코코니 카이테쿠다사이"},
         {"osaka-question-150","대화 도움","화장실은 어디인가요?","トイレはどこですか？","トイレはどこですか？","토이레와 도코데스카"},
-        {"osaka-question-151","대화 도움","감사합니다","ありがとうございます。","ありがとうございます。","아리가토오고자이마스"}
+        {"osaka-question-151","대화 도움","감사합니다","ありがとうございます。","ありがとうございます。","아리가토오고자이마스"},
+        {"osaka-question-152","식당 공통","테이블 자리로 부탁해요","テーブル席でお願いします。","テーブルせきでおねがいします。","테에부루세키데 오네가이시마스"},
+        {"osaka-question-153","식당 공통","카운터 자리도 괜찮아요","カウンター席でも大丈夫です。","カウンターせきでもだいじょうぶです。","카운타아세키데모 다이조오부데스"},
+        {"osaka-question-154","식당 공통","흡연석 있나요?","喫煙席はありますか？","きつえんせきはありますか？","키츠엔세키와 아리마스카"},
+        {"osaka-question-155","식당 공통","태블릿 주문 방법을 알려 주세요","タブレットの使い方を教えてください。","タブレットのつかいかたをおしえてください。","타부렛토노 츠카이카타오 오시에테쿠다사이"},
+        {"osaka-question-156","식당 공통","QR코드로 주문하나요?","QRコードで注文しますか？","キューアールコードでちゅうもんしますか？","큐우아아루코오도데 추우몬시마스카"},
+        {"osaka-question-157","식당 공통","현금만 되나요?","現金のみですか？","げんきんのみですか？","겐킨노미데스카"},
+        {"osaka-question-158","숙소·이동","코인로커는 어디인가요?","コインロッカーはどこですか？","コインロッカーはどこですか？","코인롯카아와 도코데스카"},
+        {"osaka-question-159","대화 도움","흡연 구역은 어디인가요?","喫煙所はどこですか？","きつえんじょはどこですか？","키츠엔조와 도코데스카"}
     };
 }

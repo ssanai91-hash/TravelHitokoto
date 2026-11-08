@@ -1,10 +1,10 @@
 > **GitHub 보관 안내**
-> 최신 앱은 **0.1.7 / versionCode 8**입니다. APK와 모든 파일이 들어 있는 원본 소스 ZIP은 [Releases](https://github.com/ssanai91-hash/TravelHitokoto/releases)에 있습니다.
+> 소스는 **0.1.8 / versionCode 9**입니다. 배포된 APK는 아직 0.1.7이며 0.1.8은 아래 방법으로 빌드해야 합니다. 0.1.7 APK와 모든 파일이 들어 있는 원본 소스 ZIP은 [Releases](https://github.com/ssanai91-hash/TravelHitokoto/releases)에 있습니다.
 > 코드는 이 저장소에서 바로 열람할 수 있습니다. 음성 1,559개·네이티브 라이브러리·그림·폰트·기존 테스트 서명 키는 전체 소스 ZIP에 보존했습니다.
 
 ## 내려받기와 빌드
 
-가장 간단한 방법은 릴리스의 `TravelHitokoto-0.1.7-source.zip`을 풀어 기존 `build_apk.py`로 빌드하는 것입니다. 이 ZIP은 리소스가 이미 모두 포함되어 있습니다.
+0.1.8은 저장소를 복제하고 아래 복원 명령으로 0.1.7 리소스를 받은 뒤 `build_apk.py`로 빌드합니다. 0.1.8에서 새로 생긴 음성 58개는 저장소에 들어 있습니다.
 
 Git으로 복제한 경우에는 먼저 한 번만 바이너리 리소스를 복원합니다. 로그인된 GitHub CLI가 있으면 다음 명령이 원본 소스 ZIP을 내려받고 복원합니다.
 
@@ -24,19 +24,26 @@ python3 tools/restore_resources.py /path/to/TravelHitokoto-0.1.7-source.zip
 
 ---
 
-# 여행 한마디 · Android 0.1.7
+# 여행 한마디 · Android 0.1.8
 
 오사카·교토·야마자키 여행용 한국어→일본어 말하기 앱. 원래 승인한 베이지·그린 시안을 바탕으로 한 네이티브 Android 앱이다.
 
 ## 사용
 
-Android 8.0 이상에서 TravelHitokoto-0.1.7.apk를 기존 앱 위에 설치한다. 주문 → 품목 → 수량 1~10 → 일본어로 말하기. 질문·상품 재고·가격·즐겨찾기도 같은 방식으로 재생한다.
+Android 8.0 이상에서 TravelHitokoto-0.1.8.apk를 기존 앱 위에 설치한다. 주문 → 품목 → 수량 1~10 → 일본어로 말하기. 질문·상품 재고·가격·즐겨찾기도 같은 방식으로 재생한다.
 
 **남성 음성 한 가지로 고정한다. 음성 선택·톤 조절·변조는 없다.** 기존 주문·질문은 앱에 포함된 음성을 인터넷 없이 재생하며 휴대폰의 TTS 설정을 사용하지 않는다. 음성 크레딧: VOICEVOX:玄野武宏 (CV:ガロ). 사용 조건은 NOTICE-VOICE.txt를 참조한다.
 
 천천히 듣기는 같은 남성 음성을 속도만 0.8배로 재생한다. 재생 중 말하기 버튼을 다시 누르면 멈춘다. 미디어 음량을 사용하며 다른 앱으로 이동하면 재생을 멈춘다.
 
 즐겨찾기는 문장과 수량을 함께 기억한다. 기존 버전의 즐겨찾기·마지막 선택은 보존된다. 톱니바퀴는 앱 정보만 표시한다. 한글 발음은 참고용이다.
+
+## 0.1.8 여행 준비
+
+- 화면 목록을 핵심 문장으로 줄였다. 주문 10분야 69개, 질문 7분야 81개. 나머지는 삭제하지 않고 검색으로 찾는다. 목록은 `app/src/main/assets/core-layout.json`에서 고친다.
+- 주문 탭의 담기·주문서: 여러 품목을 담아 이어서 재생하고 한 화면에 크게 보여준다. 인터넷이 필요 없다.
+- 입력하기 탭: 음성 받기(이어받기·모바일 데이터 확인), 천천히 듣기, 크게 보여주기, 즐겨찾기 저장을 추가했다. 번역하기만으로는 83MB를 받지 않는다.
+- 음료 수량 기본값 3, 돈까스·타코야끼·라면 같은 한국식 표기 검색, 야마자키 시음 복구, 타코야키 개수 단위, 코인로커·태블릿 주문·흡연석 등 8문장 추가.
 
 ## 0.1.7 번역 대기
 
@@ -66,7 +73,7 @@ JDK 17+, Android SDK 35와 Build Tools 35.0.0을 설치하고 ANDROID_SDK_ROOT�
 python3 build_apk.py
 ```
 
-결과: build/TravelHitokoto-0.1.7.apk. Gradle 없이 javac/aapt2/d8/zipalign/apksigner로 빌드한다. Android Studio 프로젝트도 포함했다. 기존 signing/travel-test.jks를 유지해야 업데이트 설치가 가능하다. 개인용 테스트 서명이며 alias/password는 travel-test다.
+결과: build/TravelHitokoto-0.1.8.apk. Gradle 없이 javac/aapt2/d8/zipalign/apksigner로 빌드한다. Android Studio 프로젝트도 포함했다. 기존 signing/travel-test.jks를 유지해야 업데이트 설치가 가능하다. 개인용 테스트 서명이며 alias/password는 travel-test다.
 
 콘텐츠 원본은 app/src/main/assets/osaka-content.json이며 기본 빌드가 import_osaka_content.py를 실행한다. 문장을 변경하면 tools/ExportVoice.java로 발화를 추출하고 tools/generate_male_voice.py로 해당 음성을 함께 생성한다. VOICEVOX CORE/VVM 0.17.1, 4.vvm, style 11, Open JTalk 사전과 ffmpeg가 생성 시 필요하다. 생성한 음성과 재생 문장 목록 voice-corpus.json은 소스 ZIP에 포함돼 있다. 앱 빌드 자체에 합성 엔진은 필요 없다.
 

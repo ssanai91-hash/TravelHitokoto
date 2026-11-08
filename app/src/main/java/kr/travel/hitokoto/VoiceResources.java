@@ -12,7 +12,17 @@ import java.util.zip.GZIPInputStream;
 public final class VoiceResources {
     private static final String MODEL="https://github.com/VOICEVOX/voicevox_vvm/releases/download/0.17.1/4.vvm";
     private static final String DICT="https://github.com/r9y9/open_jtalk/releases/download/v1.11.1/open_jtalk_dic_utf_8-1.11.tar.gz";
+    private static final java.util.concurrent.locks.ReentrantLock LOCK=new java.util.concurrent.locks.ReentrantLock();
+    /** True when no download is needed; cheap enough for the UI thread. */
+    static boolean ready(Context context){
+        File root=new File(context.getNoBackupFilesDir(),"free-input-voice-0171");
+        return new File(root,"4.vvm").length()==59304904&&new File(root,"dictionary.ready").isFile()&&new File(root,"open_jtalk_dic_utf_8-1.11/sys.dic").isFile();
+    }
     static File ensure(Context context,Consumer<String> progress)throws Exception {
+        try{LOCK.lockInterruptibly();}catch(InterruptedException e){Thread.currentThread().interrupt();throw new InterruptedIOException("중단했어요.");}
+        try{return prepare(context,progress);}finally{LOCK.unlock();}
+    }
+    private static File prepare(Context context,Consumer<String> progress)throws Exception {
         File root=new File(context.getNoBackupFilesDir(),"free-input-voice-0171");if(!root.isDirectory()&&!root.mkdirs())throw new IOException("음성 자료를 저장할 공간을 확인해 주세요.");
         File model=new File(root,"4.vvm");
         if(model.length()!=59304904)download(MODEL,model,59304904,"716d2900f6b93ba22119af0e236c32fdbf6fea81c519b5d4830afcb2db349522","남성 음성",progress);
@@ -27,21 +37,25 @@ public final class VoiceResources {
     private static void download(String address,File target,long expected,String sha,String label,Consumer<String> progress)throws Exception {
         cancelled();HttpURLConnection connection=null;File part=new File(target+".part");
         try{
+            long offset=part.isFile()?part.length():0;if(offset>=expected){part.delete();offset=0;}
             URL url=new URL(address);
             for(int redirects=0;redirects<8;redirects++){
                 if(!url.getProtocol().equals("https"))throw new IOException("안전한 음성 다운로드 주소를 확인하지 못했어요.");
-                connection=(HttpURLConnection)url.openConnection();connection.setConnectTimeout(20000);connection.setReadTimeout(30000);connection.setInstanceFollowRedirects(false);connection.setRequestProperty("User-Agent","TravelHitokoto/0.1.7");int code=connection.getResponseCode();
+                connection=(HttpURLConnection)url.openConnection();connection.setConnectTimeout(20000);connection.setReadTimeout(30000);connection.setInstanceFollowRedirects(false);connection.setRequestProperty("User-Agent","TravelHitokoto/0.1.8");connection.setRequestProperty("Accept-Encoding","identity");if(offset>0)connection.setRequestProperty("Range","bytes="+offset+"-");int code=connection.getResponseCode();
                 if(code>=300&&code<400){String location=connection.getHeaderField("Location");connection.disconnect();url=new URL(url,location);continue;}
-                if(code!=200)throw new IOException("음성 자료 다운로드에 실패했어요. 인터넷 연결을 확인해 주세요 ("+code+").");break;
+                if(code==416)part.delete();if(code!=200&&code!=206)throw new IOException("음성 자료 다운로드에 실패했어요. 인터넷 연결을 확인해 주세요 ("+code+").");break;
             }
-            if(connection==null||connection.getResponseCode()!=200)throw new IOException("음성 자료 주소에 연결하지 못했어요.");
-            MessageDigest digest=MessageDigest.getInstance("SHA-256");long bytes=0,last=0;
-            progress.accept(label+" 받는 중 · 0%");
-            try(InputStream in=connection.getInputStream();OutputStream out=new FileOutputStream(part)){byte[] buffer=new byte[65536];for(int n;(n=in.read(buffer))!=-1;){cancelled();bytes+=n;if(bytes>expected)throw new IOException("음성 자료 크기가 올바르지 않아요.");out.write(buffer,0,n);digest.update(buffer,0,n);long now=System.currentTimeMillis();if(now-last>500){last=now;progress.accept(label+" 받는 중 · "+bytes*100/expected+"%");}}}
+            int status=connection==null?0:connection.getResponseCode();if(status!=200&&status!=206)throw new IOException("음성 자료 주소에 연결하지 못했어요.");
+            if(status==206&&!String.valueOf(connection.getHeaderField("Content-Range")).startsWith("bytes "+offset+"-")){part.delete();throw new IOException("음성 자료를 이어받지 못했어요. 다시 눌러 주세요.");}
+            if(status==200)offset=0;
+            MessageDigest digest=MessageDigest.getInstance("SHA-256");long bytes=offset,last=0;
+            if(offset>0)try(InputStream old=new FileInputStream(part)){byte[] buffer=new byte[65536];for(int n;(n=old.read(buffer))!=-1;){cancelled();digest.update(buffer,0,n);}}
+            progress.accept(label+" 받는 중 · "+bytes*100/expected+"%");
+            try(InputStream in=connection.getInputStream();OutputStream out=new FileOutputStream(part,offset>0)){byte[] buffer=new byte[65536];for(int n;(n=in.read(buffer))!=-1;){cancelled();bytes+=n;if(bytes>expected){out.close();part.delete();throw new IOException("음성 자료 크기가 올바르지 않아요.");}out.write(buffer,0,n);digest.update(buffer,0,n);long now=System.currentTimeMillis();if(now-last>500){last=now;progress.accept(label+" 받는 중 · "+bytes*100/expected+"%");}}}
             StringBuilder hash=new StringBuilder();for(byte b:digest.digest())hash.append(String.format(Locale.ROOT,"%02x",b&255));
-            if(bytes!=expected||!sha.equals(hash.toString()))throw new IOException("음성 자료 확인에 실패했어요. 다시 눌러 주세요.");
+            if(bytes!=expected||!sha.equals(hash.toString())){part.delete();throw new IOException("음성 자료 확인에 실패했어요. 다시 눌러 주세요.");}
             if(target.exists()&&!target.delete())throw new IOException("음성 자료를 갱신하지 못했어요.");if(!part.renameTo(target))throw new IOException("음성 자료를 저장하지 못했어요.");
-        }finally{if(connection!=null)connection.disconnect();part.delete();}
+        }finally{if(connection!=null)connection.disconnect();}
     }
     private static void readFully(InputStream in,byte[] data,int count)throws IOException {int at=0;while(at<count){int n=in.read(data,at,count-at);if(n<0)throw new EOFException();at+=n;}}
     private static void skip(InputStream in,long count)throws IOException {byte[] buffer=new byte[8192];while(count>0){int n=in.read(buffer,0,(int)Math.min(count,buffer.length));if(n<0)throw new EOFException();count-=n;}}

@@ -26,12 +26,12 @@ def create(text):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--runtime',type=Path,required=True);p.add_argument('--model',type=Path,required=True);p.add_argument('--corpus',type=Path,required=True);p.add_argument('--workers',type=int,default=4);a=p.parse_args()
     root=Path(__file__).resolve().parents[1];output.mkdir(parents=True,exist_ok=True)
-    texts=[base64.b64decode(s).decode('utf-8') for s in a.corpus.read_text().splitlines() if s]
+    texts=[base64.b64decode(s).decode('utf-8') for s in a.corpus.read_text(encoding='ascii').splitlines() if s]
     start=time.time();manifest=[]
     with concurrent.futures.ProcessPoolExecutor(max_workers=a.workers,initializer=initialize,initargs=(str(a.runtime),str(a.model))) as pool:
         for i,key in enumerate(pool.map(create,texts),1):
             manifest.append({'sha256':key,'text':texts[i-1]})
             if i%25==0 or i==len(texts): print(f'{i}/{len(texts)} clips; {time.time()-start:.1f}s',flush=True)
-    (root/'voice-corpus.json').write_text(json.dumps({'voice':'VOICEVOX:玄野武宏','style':11,'core_version':'0.17.1','clips':manifest},ensure_ascii=False,indent=2)+'\n')
+    (root/'voice-corpus.json').write_text(json.dumps({'voice':'VOICEVOX:玄野武宏','style':11,'core_version':'0.17.1','clips':manifest},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(f'Finished: {len(texts)} clips, {sum(f.stat().st_size for f in output.glob("*.ogg"))/1048576:.1f} MiB',flush=True)
 if __name__=='__main__':main()

@@ -1,0 +1,242 @@
+{
+ "_comment": "화면에 바로 보이는 핵심 목록. 여기 없는 문장은 삭제된 것이 아니라 검색으로 찾는다. id는 Catalog.ALL의 Phrase.id.",
+ "order": [
+  {
+   "name": "술·음료",
+   "ids": [
+    "beer",
+    "highball",
+    "lemon",
+    "sake",
+    "water",
+    "oolong",
+    "cola"
+   ]
+  },
+  {
+   "name": "안주",
+   "ids": [
+    "this",
+    "karaage",
+    "edamame",
+    "yakitori",
+    "sashimi",
+    "osaka-item-012"
+   ]
+  },
+  {
+   "name": "야키니쿠",
+   "ids": [
+    "osaka-item-013",
+    "osaka-item-014",
+    "osaka-item-015",
+    "osaka-item-016",
+    "osaka-item-018",
+    "osaka-item-017"
+   ]
+  },
+  {
+   "name": "오코노미·꼬치·타코",
+   "ids": [
+    "osaka-item-026",
+    "osaka-item-027",
+    "osaka-item-032",
+    "osaka-item-033",
+    "osaka-item-034",
+    "osaka-item-035",
+    "takoyaki",
+    "osaka-item-074"
+   ]
+  },
+  {
+   "name": "라멘·소바·우동",
+   "ids": [
+    "osaka-item-055",
+    "osaka-item-056",
+    "osaka-item-059",
+    "osaka-item-048",
+    "osaka-item-049",
+    "osaka-item-052",
+    "osaka-item-053"
+   ]
+  },
+  {
+   "name": "돈카츠·덮밥·카레",
+   "ids": [
+    "osaka-item-043",
+    "osaka-item-045",
+    "rice",
+    "osaka-item-020",
+    "osaka-item-022",
+    "osaka-item-041",
+    "osaka-item-040",
+    "gyoza",
+    "osaka-item-072"
+   ]
+  },
+  {
+   "name": "스시",
+   "ids": [
+    "osaka-item-061",
+    "osaka-item-062",
+    "osaka-item-063",
+    "osaka-item-064",
+    "osaka-item-066"
+   ]
+  },
+  {
+   "name": "위스키",
+   "ids": [
+    "osaka-item-093",
+    "osaka-item-090",
+    "osaka-item-091",
+    "osaka-item-092",
+    "osaka-item-089",
+    "osaka-item-094",
+    "osaka-item-095",
+    "osaka-item-096",
+    "osaka-item-097",
+    "osaka-item-098"
+   ]
+  },
+  {
+   "name": "카페·간식·선물",
+   "ids": [
+    "osaka-item-078",
+    "osaka-item-079",
+    "osaka-item-083",
+    "osaka-item-122",
+    "osaka-item-125"
+   ]
+  },
+  {
+   "name": "쇼핑",
+   "ids": [
+    "osaka-item-099",
+    "osaka-item-102",
+    "osaka-item-103",
+    "osaka-item-106",
+    "osaka-item-109",
+    "osaka-item-116"
+   ]
+  }
+ ],
+ "question": [
+  {
+   "name": "식당 입장·주문",
+   "ids": [
+    "iz-0",
+    "iz-2",
+    "osaka-question-003",
+    "osaka-question-152",
+    "osaka-question-153",
+    "iz-3",
+    "osaka-question-154",
+    "iz-4",
+    "iz-5",
+    "iz-6",
+    "osaka-question-155",
+    "osaka-question-156",
+    "osaka-question-059"
+   ]
+  },
+  {
+   "name": "식사 중 요청",
+   "ids": [
+    "iz-8",
+    "iz-11",
+    "osaka-question-011",
+    "iz-13",
+    "iz-10",
+    "iz-15",
+    "iz-16",
+    "osaka-question-017",
+    "osaka-question-048",
+    "osaka-question-035",
+    "osaka-question-055",
+    "osaka-question-056",
+    "osaka-question-028",
+    "osaka-question-029"
+   ]
+  },
+  {
+   "name": "계산",
+   "ids": [
+    "iz-19",
+    "iz-20",
+    "osaka-question-021",
+    "osaka-question-157",
+    "iz-21",
+    "osaka-question-014"
+   ]
+  },
+  {
+   "name": "위스키",
+   "ids": [
+    "ya-0",
+    "ya-1",
+    "ya-2",
+    "ya-5",
+    "ya-6",
+    "ya-7",
+    "ya-8",
+    "ya-9",
+    "osaka-question-082",
+    "osaka-question-084",
+    "osaka-question-087",
+    "osaka-question-088"
+   ]
+  },
+  {
+   "name": "쇼핑",
+   "ids": [
+    "sh-0",
+    "osaka-question-097",
+    "sh-2",
+    "sh-3",
+    "sh-1",
+    "sh-4",
+    "osaka-question-111",
+    "sh-6",
+    "sh-5",
+    "sh-7",
+    "sh-8",
+    "sh-10"
+   ]
+  },
+  {
+   "name": "이동·숙소",
+   "ids": [
+    "ho-0",
+    "ho-1",
+    "ho-2",
+    "ho-3",
+    "osaka-question-158",
+    "tr-0",
+    "tr-3",
+    "tr-4",
+    "tr-5",
+    "tr-7",
+    "tr-9",
+    "tr-12",
+    "ai-0"
+   ]
+  },
+  {
+   "name": "대화·긴급",
+   "ids": [
+    "co-0",
+    "co-1",
+    "co-5",
+    "co-7",
+    "co-9",
+    "osaka-question-159",
+    "co-10",
+    "he-0",
+    "he-3",
+    "he-2",
+    "he-6"
+   ]
+  }
+ ]
+}

@@ -4,7 +4,7 @@ No API token is stored. Optional download uses the user's authenticated gh CLI.
 """
 import hashlib,json,pathlib,shutil,subprocess,sys,zipfile
 root=pathlib.Path(__file__).resolve().parents[1]
-manifest=json.loads((root/'resource-manifest.json').read_text())
+manifest=json.loads((root/'resource-manifest.json').read_text(encoding='utf-8'))
 archive=pathlib.Path(sys.argv[1]).expanduser().resolve() if len(sys.argv)>1 else root/'.release-cache'/manifest['archive_name']
 if not archive.is_file():
     if len(sys.argv)>1:raise SystemExit('Archive not found: '+str(archive))
