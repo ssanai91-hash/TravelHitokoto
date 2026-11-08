@@ -1,0 +1,17 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'kr.travel.hitokoto'
+    compileSdk 35
+    defaultConfig { applicationId 'kr.travel.hitokoto'; minSdk 26; targetSdk 35; versionCode 8; versionName '0.1.7' }
+    signingConfigs {
+        localTest { storeFile rootProject.file('signing/travel-test.jks'); storePassword 'travel-test'; keyAlias 'travel-test'; keyPassword 'travel-test' }
+    }
+    buildTypes { debug { signingConfig signingConfigs.localTest } }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_11; targetCompatibility JavaVersion.VERSION_11 }
+}
+
+// Ogg clips must remain uncompressed for AssetFileDescriptor/MediaPlayer.
+android.androidResources.noCompress += ['ogg']
+
+dependencies { implementation files('libs/jna-5.18.1.jar') }
+android.packaging.jniLibs.useLegacyPackaging = true

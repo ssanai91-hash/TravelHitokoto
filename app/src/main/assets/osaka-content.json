@@ -1,0 +1,5752 @@
+{
+  "metadata": {
+    "title": "오사카·교토 여행 주문·질문·상품 후보",
+    "created_kst": "2026-11-07",
+    "status": "0.1.2 앱 기본 콘텐츠",
+    "map_reported_count": 83,
+    "named_places_read": 82,
+    "item_count": 125,
+    "question_count": 151,
+    "total_content_count": 276,
+    "notes": [
+      "공유 지도에는 83개 장소로 표시되었으며 목록 끝까지 읽은 이름 있는 행은 82개였다. 확인하지 못한 장소 1개는 추정하지 않았다.",
+      "모든 매장의 실제 메뉴판 전체를 전사한 자료가 아니다. 업종에 맞춘 대표 후보와 확인된 공식 메뉴를 구분했다.",
+      "공식 메뉴·상품 확인은 브랜드 공개 자료 기준이다. 지점별 판매·가격·당일 재고를 보장하지 않는다.",
+      "질문 문장은 여행용으로 직접 작성했다. 한글 발음은 참고용이며 음성에는 일본어 또는 가나를 사용한다.",
+      "새 목록에는 기존 앱 문장과 일부 중복이 있다. 반영 시 일본어·의미 기준으로 합치되 기존 즐겨찾기 ID는 유지한다.",
+      "시음과 병 구매를 구분한다. 상품은 재고 확인 → 옵션·수량 → 구매 요청 흐름으로 사용한다.",
+      "related_place_ids는 콘텐츠 참고 연계이며 지점별 판매·재고 확인을 의미하지 않는다."
+    ]
+  },
+  "sources": {
+    "map": {
+      "title": "사용자 공유 목록: 오사카 여행",
+      "url": "https://www.google.com/maps/placelists/list/C-OV7Nouet-FsvvJwpwW14qjs4tdEQ",
+      "type": "공유 목록"
+    },
+    "mizuno": {
+      "title": "美津の 공식 메뉴",
+      "url": "https://www.mizuno-osaka.com/menu.html",
+      "type": "공식 메뉴"
+    },
+    "wanaka": {
+      "title": "わなか 공식 사이트·맛 설명",
+      "url": "https://www.takoyaki-wanaka.com/",
+      "type": "공식 메뉴"
+    },
+    "motomura": {
+      "title": "牛かつもと村 공식 사이트",
+      "url": "https://www.gyukatsu-motomura.com/?stt_lang=ja",
+      "type": "공식 메뉴"
+    },
+    "hohei": {
+      "title": "餃子歩兵 공식 메뉴",
+      "url": "https://gyozahohei.com/menu/",
+      "type": "공식 메뉴"
+    },
+    "pablo": {
+      "title": "PABLO 공식 상품 목록",
+      "url": "https://www.pablo3.com/product",
+      "type": "공식 상품"
+    },
+    "pablo-premium": {
+      "title": "PABLO 프리미엄 치즈타르트",
+      "url": "https://www.pablo3.com/product/premiumcheese",
+      "type": "공식 상품"
+    },
+    "grenier": {
+      "title": "grenier 공식 안내·밀푀유",
+      "url": "https://grenier.shopselect.net/blog/2023/04/25/150107",
+      "type": "공식 상품"
+    },
+    "montbell-rain": {
+      "title": "몽벨 공식 레인 재킷",
+      "url": "https://webshop.montbell.jp/goods/disp_fo.php?product_id=1128686",
+      "type": "공식 상품군"
+    },
+    "montbell-pack": {
+      "title": "몽벨 공식 30~45L 배낭",
+      "url": "https://webshop.montbell.jp/goods/list.php?category=262000",
+      "type": "공식 상품군"
+    },
+    "tiffany": {
+      "title": "티파니 일본 공식 상품군",
+      "url": "https://www.tiffany.co.jp/",
+      "type": "공식 상품군"
+    },
+    "yamazaki": {
+      "title": "야마자키 공식 입장·숍 안내",
+      "url": "https://www.suntory.co.jp/factory/yamazaki/news/detail/post.html",
+      "type": "공식 이용 안내"
+    },
+    "yamazaki-lounge": {
+      "title": "야마자키 공식 테이스팅 라운지 안내",
+      "url": "https://www.suntory.co.jp/factory/yamazaki/news/detail/post_17.html",
+      "type": "공식 이용 안내"
+    },
+    "nintendo": {
+      "title": "닌텐도 뮤지엄 공식 숍 안내",
+      "url": "https://museum.nintendo.com/shop/index.html",
+      "type": "공식 이용 안내"
+    }
+  },
+  "places": [
+    {
+      "id": "place-001",
+      "name": "야와라기",
+      "map_category": "이자카야",
+      "content_category": "술·이자카야",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-002",
+      "name": "야키니쿠 타헤이",
+      "map_category": "야키니쿠 전문식당",
+      "content_category": "야키니쿠·와규",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-003",
+      "name": "우나지로",
+      "map_category": "민물장어 요리 전문식당",
+      "content_category": "장어·정식",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-004",
+      "name": "이치후지 식당",
+      "map_category": "일식당 및 일정식집",
+      "content_category": "장어·정식",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-005",
+      "name": "쥬테이",
+      "map_category": "일본식 서양 음식점",
+      "content_category": "장어·정식",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-006",
+      "name": "히게카츠",
+      "map_category": "일식 꼬치 및 튀김 전문점",
+      "content_category": "쿠시카츠",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-007",
+      "name": "오코노미야키 오모니",
+      "map_category": "오코노미야끼 전문식당",
+      "content_category": "오코노미야키",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-008",
+      "name": "오코노미야키 키지 우메다스카이빌딩점",
+      "map_category": "오코노미야끼 전문식당",
+      "content_category": "오코노미야키",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-009",
+      "name": "후쿠타로 오코노미야끼",
+      "map_category": "오코노미야끼 전문식당",
+      "content_category": "오코노미야키",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-010",
+      "name": "하시모토야",
+      "map_category": "일본식 카레 전문식당",
+      "content_category": "카레",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-011",
+      "name": "돈카츠 뉴베이브 본점",
+      "map_category": "돈까스 전문식당",
+      "content_category": "돈카츠·규카츠",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-012",
+      "name": "Nakamura",
+      "map_category": "돈까스 전문식당",
+      "content_category": "돈카츠·규카츠",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-013",
+      "name": "Sobakiri Arabompu",
+      "map_category": "소바 전문점",
+      "content_category": "소바·우동",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-014",
+      "name": "소바 타카마",
+      "map_category": "소바 전문점",
+      "content_category": "소바·우동",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-015",
+      "name": "우동야 키스케",
+      "map_category": "우동 전문점",
+      "content_category": "소바·우동",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-016",
+      "name": "우동보우",
+      "map_category": "우동 전문점",
+      "content_category": "소바·우동",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-017",
+      "name": "우동 큐타로",
+      "map_category": "우동 전문점",
+      "content_category": "소바·우동",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-018",
+      "name": "라멘 인생 제트",
+      "map_category": "일본라면 전문식당",
+      "content_category": "라멘·츠케멘",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-019",
+      "name": "모에요 멘스케",
+      "map_category": "일본라면 전문식당",
+      "content_category": "라멘·츠케멘",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-020",
+      "name": "타로지로우",
+      "map_category": "일본 음식점",
+      "content_category": "술·이자카야",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-021",
+      "name": "Kushikatsu Nishiki",
+      "map_category": "이자카야",
+      "content_category": "쿠시카츠",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-022",
+      "name": "린쿠 프리미엄 아울렛",
+      "map_category": "아웃렛몰",
+      "content_category": "의류·아울렛",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-023",
+      "name": "Tiffany & Co. Umeda Hankyu Store, 1st Floor",
+      "map_category": "귀금속 상점",
+      "content_category": "티파니·주얼리",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-024",
+      "name": "Tiffany & Co. Osaka Umeda Store",
+      "map_category": "귀금속 상점",
+      "content_category": "티파니·주얼리",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-025",
+      "name": "Tiffany & Co. Osaka Takashimaya Store, 1st Floor",
+      "map_category": "귀금속 상점",
+      "content_category": "티파니·주얼리",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-026",
+      "name": "Tiffany & Co. Shinsaibashi Parco Store",
+      "map_category": "귀금속 상점",
+      "content_category": "티파니·주얼리",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-027",
+      "name": "モンベル 大丸心斎橋店",
+      "map_category": "야외스포츠용품점",
+      "content_category": "몽벨·아웃도어",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-028",
+      "name": "mont-bell LUCUA Osaka Store",
+      "map_category": "야외스포츠용품점",
+      "content_category": "몽벨·아웃도어",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-029",
+      "name": "MontBell @ Namba City",
+      "map_category": "야외스포츠용품점",
+      "content_category": "몽벨·아웃도어",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-030",
+      "name": "산토리〈천연수 맥주 공장〉교토",
+      "map_category": "양조장",
+      "content_category": "위스키·주류·견학",
+      "list_note": "산토리 공장",
+      "source": "map"
+    },
+    {
+      "id": "place-031",
+      "name": "울트라마켓 위스키",
+      "map_category": "주류 판매점",
+      "content_category": "위스키·주류·견학",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-032",
+      "name": "릴로 커피 로스터즈",
+      "map_category": "커피숍/커피 전문점",
+      "content_category": "카페",
+      "list_note": "핸드드립 커피",
+      "source": "map"
+    },
+    {
+      "id": "place-033",
+      "name": "야키니쿠 타카라",
+      "map_category": "야키니쿠 전문식당",
+      "content_category": "야키니쿠·와규",
+      "list_note": "야키니쿠",
+      "source": "map"
+    },
+    {
+      "id": "place-034",
+      "name": "타코야키도라쿠 와나카 센니치마에점",
+      "map_category": "다코야키 전문점",
+      "content_category": "타코야키",
+      "list_note": "타코야키",
+      "source": "map"
+    },
+    {
+      "id": "place-035",
+      "name": "grenier 우메다 점",
+      "map_category": "패스트리 판매점",
+      "content_category": "디저트",
+      "list_note": "크림브륄레 패스트리 파이",
+      "source": "map"
+    },
+    {
+      "id": "place-036",
+      "name": "파블로(PABLO) 신사이바시 본점",
+      "map_category": "디저트 전문 레스토랑",
+      "content_category": "디저트",
+      "list_note": "타르트",
+      "source": "map"
+    },
+    {
+      "id": "place-037",
+      "name": "MooKEN",
+      "map_category": "디저트 전문 레스토랑",
+      "content_category": "디저트",
+      "list_note": "슈크림",
+      "source": "map"
+    },
+    {
+      "id": "place-038",
+      "name": "규카츠 토미타",
+      "map_category": "일본 스테이크 전문점",
+      "content_category": "돈카츠·규카츠",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-039",
+      "name": "고쿠류 오사카",
+      "map_category": "일본 음식점",
+      "content_category": "스시·오마카세",
+      "list_note": "오마카세",
+      "source": "map"
+    },
+    {
+      "id": "place-040",
+      "name": "겟토",
+      "map_category": "이자카야",
+      "content_category": "장어·정식",
+      "list_note": "계란말이정식",
+      "source": "map"
+    },
+    {
+      "id": "place-041",
+      "name": "무기토 멘스케",
+      "map_category": "일본라면 전문식당",
+      "content_category": "라멘·츠케멘",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-042",
+      "name": "하나다코",
+      "map_category": "다코야키 전문점",
+      "content_category": "타코야키",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-043",
+      "name": "스시 본본 오사카 난바",
+      "map_category": "스시/초밥집",
+      "content_category": "스시·오마카세",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-044",
+      "name": "카도야 쇼쿠도",
+      "map_category": "일본라면 전문식당",
+      "content_category": "라멘·츠케멘",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-045",
+      "name": "론탄 미나미모리마치본점",
+      "map_category": "중국 음식점",
+      "content_category": "교자·중식",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-046",
+      "name": "와규 이다텐",
+      "map_category": "고기 요리 전문점",
+      "content_category": "야키니쿠·와규",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-047",
+      "name": "KINGRAM LIQUOR namba",
+      "map_category": "주류 판매점",
+      "content_category": "위스키·주류·견학",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-048",
+      "name": "캐빈리쿼",
+      "map_category": "주류 판매점",
+      "content_category": "위스키·주류·견학",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-049",
+      "name": "리커 마운틴 우메다",
+      "map_category": "주류 판매점",
+      "content_category": "위스키·주류·견학",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-050",
+      "name": "리커 마운틴 다타미야마지",
+      "map_category": "주류 판매점",
+      "content_category": "위스키·주류·견학",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-051",
+      "name": "킹그램 리커 니시텐마점",
+      "map_category": "중고품 판매점",
+      "content_category": "위스키·주류·견학",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-052",
+      "name": "꼼데가르송",
+      "map_category": "의류점",
+      "content_category": "의류·아울렛",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-053",
+      "name": "Comme des Garçons Osaka",
+      "map_category": "의류점",
+      "content_category": "의류·아울렛",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-054",
+      "name": "키디랜드 파르코 신사이바시",
+      "map_category": "잡화점",
+      "content_category": "캐릭터·닌텐도",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-055",
+      "name": "키디랜드 오사카 우메다점",
+      "map_category": "취미용품점",
+      "content_category": "캐릭터·닌텐도",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-056",
+      "name": "텐류지",
+      "map_category": "불교사찰",
+      "content_category": "관광·입장",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-057",
+      "name": "하루코마 지점",
+      "map_category": "스시/초밥집",
+      "content_category": "스시·오마카세",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-058",
+      "name": "Gyoza Hohei",
+      "map_category": "중국 음식점",
+      "content_category": "교자·중식",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-059",
+      "name": "아라시야마 요시무라",
+      "map_category": "소바 전문점",
+      "content_category": "소바·우동",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-060",
+      "name": "Gion",
+      "map_category": "지역",
+      "content_category": "관광·입장",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-061",
+      "name": "기요미즈데라",
+      "map_category": "불교사찰",
+      "content_category": "관광·입장",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-062",
+      "name": "아라시야마 치쿠린",
+      "map_category": "명승지",
+      "content_category": "관광·입장",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-063",
+      "name": "산토리 야마자키 증류소",
+      "map_category": "증류소",
+      "content_category": "위스키·주류·견학",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-064",
+      "name": "사케노오쿠다",
+      "map_category": "이자카야",
+      "content_category": "술·이자카야",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-065",
+      "name": "하루코마 본점",
+      "map_category": "스시/초밥집",
+      "content_category": "스시·오마카세",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-066",
+      "name": "쿠시카츠 다루마 신세카이 총본점",
+      "map_category": "일식 꼬치 및 튀김 전문점",
+      "content_category": "쿠시카츠",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-067",
+      "name": "덴진바시스지 상점가",
+      "map_category": "상업 지구",
+      "content_category": "의류·아울렛",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-068",
+      "name": "한큐 우메다 본점",
+      "map_category": "백화점",
+      "content_category": "의류·아울렛",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-069",
+      "name": "오사카 성",
+      "map_category": "성곽",
+      "content_category": "관광·입장",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-070",
+      "name": "오코노미야키 오카루",
+      "map_category": "오코노미야끼 전문식당",
+      "content_category": "오코노미야키",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-071",
+      "name": "오코노미야키 미즈노",
+      "map_category": "오코노미야끼 전문식당",
+      "content_category": "오코노미야키",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-072",
+      "name": "글리코사인",
+      "map_category": "전시",
+      "content_category": "관광·입장",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-073",
+      "name": "도톤보리",
+      "map_category": "상업·관광 지역",
+      "content_category": "관광·입장",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-074",
+      "name": "신사이바시스지",
+      "map_category": "상업 지구",
+      "content_category": "의류·아울렛",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-075",
+      "name": "아파 호텔 난바에키히가시",
+      "map_category": "3성급 호텔",
+      "content_category": "숙소",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-076",
+      "name": "규카츠 모토무라 난바점",
+      "map_category": "돈까스 전문식당",
+      "content_category": "돈카츠·규카츠",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-077",
+      "name": "The Che Coffee 桃谷店 焙煎珈琲",
+      "map_category": "카페",
+      "content_category": "카페",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-078",
+      "name": "사사키상점",
+      "map_category": "주류 판매점",
+      "content_category": "위스키·주류·견학",
+      "list_note": "야마자키 관련 메모",
+      "source": "map"
+    },
+    {
+      "id": "place-079",
+      "name": "쿠시노보 오사카 호젠지 본점",
+      "map_category": "일식 꼬치 및 튀김 전문점",
+      "content_category": "쿠시카츠",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-080",
+      "name": "쓰텐카쿠 전망대",
+      "map_category": "전망대",
+      "content_category": "관광·입장",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-081",
+      "name": "신세카이",
+      "map_category": "관광 명소",
+      "content_category": "관광·입장",
+      "list_note": "",
+      "source": "map"
+    },
+    {
+      "id": "place-082",
+      "name": "닌텐도 뮤지엄",
+      "map_category": "박물관",
+      "content_category": "캐릭터·닌텐도",
+      "list_note": "",
+      "source": "map"
+    }
+  ],
+  "items": [
+    {
+      "id": "item-001",
+      "category": "술·이자카야",
+      "ko": "생맥주",
+      "ja": "生ビール",
+      "kana": "なまビール",
+      "reading": "나마비이루",
+      "counter": "cup",
+      "unit_ko": "잔",
+      "scope": "공식 메뉴 확인",
+      "source_ids": [
+        "mizuno"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "생맥주 1잔 주세요",
+      "example_ja": "生ビールを一杯ください。",
+      "example_kana": "なまビールをいっぱいください。",
+      "example_reading": "나마비이루오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-001",
+        "place-020",
+        "place-064"
+      ]
+    },
+    {
+      "id": "item-002",
+      "category": "술·이자카야",
+      "ko": "하이볼",
+      "ja": "ハイボール",
+      "kana": "ハイボール",
+      "reading": "하이보오루",
+      "counter": "cup",
+      "unit_ko": "잔",
+      "scope": "공식 메뉴 확인",
+      "source_ids": [
+        "mizuno"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "하이볼 1잔 주세요",
+      "example_ja": "ハイボールを一杯ください。",
+      "example_kana": "ハイボールをいっぱいください。",
+      "example_reading": "하이보오루오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-001",
+        "place-020",
+        "place-064"
+      ]
+    },
+    {
+      "id": "item-003",
+      "category": "술·이자카야",
+      "ko": "무알코올 맥주",
+      "ja": "ノンアルコールビール",
+      "kana": "ノンアルコールビール",
+      "reading": "논아루코오루비이루",
+      "counter": "cup",
+      "unit_ko": "잔",
+      "scope": "공식 메뉴 확인",
+      "source_ids": [
+        "mizuno"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "무알코올 맥주 1잔 주세요",
+      "example_ja": "ノンアルコールビールを一杯ください。",
+      "example_kana": "ノンアルコールビールをいっぱいください。",
+      "example_reading": "논아루코오루비이루오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-001",
+        "place-020",
+        "place-064"
+      ]
+    },
+    {
+      "id": "item-004",
+      "category": "술·이자카야",
+      "ko": "일본주",
+      "ja": "日本酒",
+      "kana": "にほんしゅ",
+      "reading": "니혼슈",
+      "counter": "cup",
+      "unit_ko": "잔",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "일본주 1잔 주세요",
+      "example_ja": "日本酒を一杯ください。",
+      "example_kana": "にほんしゅをいっぱいください。",
+      "example_reading": "니혼슈오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-001",
+        "place-020",
+        "place-064"
+      ]
+    },
+    {
+      "id": "item-005",
+      "category": "술·이자카야",
+      "ko": "매실주",
+      "ja": "梅酒",
+      "kana": "うめしゅ",
+      "reading": "우메슈",
+      "counter": "cup",
+      "unit_ko": "잔",
+      "scope": "공식 메뉴 확인",
+      "source_ids": [
+        "mizuno"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "매실주 1잔 주세요",
+      "example_ja": "梅酒を一杯ください。",
+      "example_kana": "うめしゅをいっぱいください。",
+      "example_reading": "우메슈오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-001",
+        "place-020",
+        "place-064"
+      ]
+    },
+    {
+      "id": "item-006",
+      "category": "술·이자카야",
+      "ko": "레몬사와",
+      "ja": "レモンサワー",
+      "kana": "レモンサワー",
+      "reading": "레몬사와아",
+      "counter": "cup",
+      "unit_ko": "잔",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "레몬사와 1잔 주세요",
+      "example_ja": "レモンサワーを一杯ください。",
+      "example_kana": "レモンサワーをいっぱいください。",
+      "example_reading": "레몬사와아오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-001",
+        "place-020",
+        "place-064"
+      ]
+    },
+    {
+      "id": "item-007",
+      "category": "술·이자카야",
+      "ko": "물",
+      "ja": "お水",
+      "kana": "おみず",
+      "reading": "오미즈",
+      "counter": "cup",
+      "unit_ko": "잔",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "물 1잔 주세요",
+      "example_ja": "お水を一杯ください。",
+      "example_kana": "おみずをいっぱいください。",
+      "example_reading": "오미즈오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-001",
+        "place-020",
+        "place-064"
+      ]
+    },
+    {
+      "id": "item-008",
+      "category": "술·이자카야",
+      "ko": "우롱차",
+      "ja": "ウーロン茶",
+      "kana": "ウーロンちゃ",
+      "reading": "우우론차",
+      "counter": "cup",
+      "unit_ko": "잔",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "우롱차 1잔 주세요",
+      "example_ja": "ウーロン茶を一杯ください。",
+      "example_kana": "ウーロンちゃをいっぱいください。",
+      "example_reading": "우우론차오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-001",
+        "place-020",
+        "place-064"
+      ]
+    },
+    {
+      "id": "item-009",
+      "category": "술·이자카야",
+      "ko": "에다마메",
+      "ja": "枝豆",
+      "kana": "えだまめ",
+      "reading": "에다마메",
+      "counter": "dish",
+      "unit_ko": "접시",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "에다마메 1접시 주세요",
+      "example_ja": "枝豆を一皿ください。",
+      "example_kana": "えだまめをひとさらください。",
+      "example_reading": "에다마메오 히토사라 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-001",
+        "place-020",
+        "place-064"
+      ]
+    },
+    {
+      "id": "item-010",
+      "category": "술·이자카야",
+      "ko": "닭튀김",
+      "ja": "唐揚げ",
+      "kana": "からあげ",
+      "reading": "카라아게",
+      "counter": "dish",
+      "unit_ko": "접시",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "닭튀김 1접시 주세요",
+      "example_ja": "唐揚げを一皿ください。",
+      "example_kana": "からあげをひとさらください。",
+      "example_reading": "카라아게오 히토사라 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-001",
+        "place-020",
+        "place-064"
+      ]
+    },
+    {
+      "id": "item-011",
+      "category": "술·이자카야",
+      "ko": "야키토리 모둠",
+      "ja": "焼き鳥の盛り合わせ",
+      "kana": "やきとりのもりあわせ",
+      "reading": "야키토리노 모리아와세",
+      "counter": "dish",
+      "unit_ko": "접시",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "야키토리 모둠 1접시 주세요",
+      "example_ja": "焼き鳥の盛り合わせを一皿ください。",
+      "example_kana": "やきとりのもりあわせをひとさらください。",
+      "example_reading": "야키토리노 모리아와세오 히토사라 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-001",
+        "place-020",
+        "place-064"
+      ]
+    },
+    {
+      "id": "item-012",
+      "category": "술·이자카야",
+      "ko": "계란말이",
+      "ja": "だし巻き卵",
+      "kana": "だしまきたまご",
+      "reading": "다시마키타마고",
+      "counter": "dish",
+      "unit_ko": "접시",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "계란말이 1접시 주세요",
+      "example_ja": "だし巻き卵を一皿ください。",
+      "example_kana": "だしまきたまごをひとさらください。",
+      "example_reading": "다시마키타마고오 히토사라 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-001",
+        "place-020",
+        "place-064"
+      ]
+    },
+    {
+      "id": "item-013",
+      "category": "야키니쿠·와규",
+      "ko": "갈비",
+      "ja": "カルビ",
+      "kana": "カルビ",
+      "reading": "카루비",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "갈비 1인분 주세요",
+      "example_ja": "カルビを一人前ください。",
+      "example_kana": "カルビをいちにんまえください。",
+      "example_reading": "카루비오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-002",
+        "place-033",
+        "place-046"
+      ]
+    },
+    {
+      "id": "item-014",
+      "category": "야키니쿠·와규",
+      "ko": "등심",
+      "ja": "ロース",
+      "kana": "ロース",
+      "reading": "로오스",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "등심 1인분 주세요",
+      "example_ja": "ロースを一人前ください。",
+      "example_kana": "ロースをいちにんまえください。",
+      "example_reading": "로오스오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-002",
+        "place-033",
+        "place-046"
+      ]
+    },
+    {
+      "id": "item-015",
+      "category": "야키니쿠·와규",
+      "ko": "안창살 계열 하라미",
+      "ja": "ハラミ",
+      "kana": "ハラミ",
+      "reading": "하라미",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "한국 정육 분류와 정확히 같다고 단정하지 않음",
+      "flow": "주문",
+      "example_ko": "안창살 계열 하라미 1인분 주세요",
+      "example_ja": "ハラミを一人前ください。",
+      "example_kana": "ハラミをいちにんまえください。",
+      "example_reading": "하라미오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-002",
+        "place-033",
+        "place-046"
+      ]
+    },
+    {
+      "id": "item-016",
+      "category": "야키니쿠·와규",
+      "ko": "소 혀 소금구이",
+      "ja": "タン塩",
+      "kana": "タンしお",
+      "reading": "탄시오",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "소 혀 소금구이 1인분 주세요",
+      "example_ja": "タン塩を一人前ください。",
+      "example_kana": "タンしおをいちにんまえください。",
+      "example_reading": "탄시오오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-002",
+        "place-033",
+        "place-046"
+      ]
+    },
+    {
+      "id": "item-017",
+      "category": "야키니쿠·와규",
+      "ko": "고기 모둠",
+      "ja": "お肉の盛り合わせ",
+      "kana": "おにくのもりあわせ",
+      "reading": "오니쿠노 모리아와세",
+      "counter": "dish",
+      "unit_ko": "접시",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "고기 모둠 1접시 주세요",
+      "example_ja": "お肉の盛り合わせを一皿ください。",
+      "example_kana": "おにくのもりあわせをひとさらください。",
+      "example_reading": "오니쿠노 모리아와세오 히토사라 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-002",
+        "place-033",
+        "place-046"
+      ]
+    },
+    {
+      "id": "item-018",
+      "category": "야키니쿠·와규",
+      "ko": "곱창·내장 호르몬",
+      "ja": "ホルモン",
+      "kana": "ホルモン",
+      "reading": "호루몬",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "곱창·내장 호르몬 1인분 주세요",
+      "example_ja": "ホルモンを一人前ください。",
+      "example_kana": "ホルモンをいちにんまえください。",
+      "example_reading": "호루몬오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-002",
+        "place-033",
+        "place-046"
+      ]
+    },
+    {
+      "id": "item-019",
+      "category": "야키니쿠·와규",
+      "ko": "와규 스테이크",
+      "ja": "和牛ステーキ",
+      "kana": "わぎゅうステーキ",
+      "reading": "와규우스테에키",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "와규 스테이크 1인분 주세요",
+      "example_ja": "和牛ステーキを一人前ください。",
+      "example_kana": "わぎゅうステーキをいちにんまえください。",
+      "example_reading": "와규우스테에키오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-002",
+        "place-033",
+        "place-046"
+      ]
+    },
+    {
+      "id": "item-020",
+      "category": "장어·정식",
+      "ko": "장어 덮밥 우나동",
+      "ja": "うな丼",
+      "kana": "うなどん",
+      "reading": "우나동",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "장어 덮밥 우나동 1개 주세요",
+      "example_ja": "うな丼を一つください。",
+      "example_kana": "うなどんをひとつください。",
+      "example_reading": "우나동오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-003",
+        "place-004",
+        "place-005",
+        "place-040"
+      ]
+    },
+    {
+      "id": "item-021",
+      "category": "장어·정식",
+      "ko": "장어 찬합 우나주",
+      "ja": "うな重",
+      "kana": "うなじゅう",
+      "reading": "우나주우",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "장어 찬합 우나주 1개 주세요",
+      "example_ja": "うな重を一つください。",
+      "example_kana": "うなじゅうをひとつください。",
+      "example_reading": "우나주우오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-003",
+        "place-004",
+        "place-005",
+        "place-040"
+      ]
+    },
+    {
+      "id": "item-022",
+      "category": "장어·정식",
+      "ko": "히츠마부시",
+      "ja": "ひつまぶし",
+      "kana": "ひつまぶし",
+      "reading": "히츠마부시",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "히츠마부시 1개 주세요",
+      "example_ja": "ひつまぶしを一つください。",
+      "example_kana": "ひつまぶしをひとつください。",
+      "example_reading": "히츠마부시오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-003",
+        "place-004",
+        "place-005",
+        "place-040"
+      ]
+    },
+    {
+      "id": "item-023",
+      "category": "장어·정식",
+      "ko": "계란말이 정식",
+      "ja": "だし巻き定食",
+      "kana": "だしまきていしょく",
+      "reading": "다시마키테에쇼쿠",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "목록 메모 기반 후보",
+      "source_ids": [
+        "map"
+      ],
+      "note": "겟토의 목록 메모. 현행 메뉴명은 현장 확인",
+      "flow": "주문",
+      "example_ko": "계란말이 정식 1개 주세요",
+      "example_ja": "だし巻き定食を一つください。",
+      "example_kana": "だしまきていしょくをひとつください。",
+      "example_reading": "다시마키테에쇼쿠오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-003",
+        "place-004",
+        "place-005",
+        "place-040"
+      ]
+    },
+    {
+      "id": "item-024",
+      "category": "장어·정식",
+      "ko": "함박스테이크 정식",
+      "ja": "ハンバーグ定食",
+      "kana": "ハンバーグていしょく",
+      "reading": "한바아구테에쇼쿠",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "함박스테이크 정식 1개 주세요",
+      "example_ja": "ハンバーグ定食を一つください。",
+      "example_kana": "ハンバーグていしょくをひとつください。",
+      "example_reading": "한바아구테에쇼쿠오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-003",
+        "place-004",
+        "place-005",
+        "place-040"
+      ]
+    },
+    {
+      "id": "item-025",
+      "category": "장어·정식",
+      "ko": "오므라이스",
+      "ja": "オムライス",
+      "kana": "オムライス",
+      "reading": "오무라이스",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "오므라이스 1개 주세요",
+      "example_ja": "オムライスを一つください。",
+      "example_kana": "オムライスをひとつください。",
+      "example_reading": "오무라이스오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-003",
+        "place-004",
+        "place-005",
+        "place-040"
+      ]
+    },
+    {
+      "id": "item-026",
+      "category": "오코노미야키",
+      "ko": "돼지고기 오코노미야키",
+      "ja": "豚玉",
+      "kana": "ぶたたま",
+      "reading": "부타타마",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "돼지고기 오코노미야키 1개 주세요",
+      "example_ja": "豚玉を一つください。",
+      "example_kana": "ぶたたまをひとつください。",
+      "example_reading": "부타타마오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-007",
+        "place-008",
+        "place-009",
+        "place-070",
+        "place-071"
+      ]
+    },
+    {
+      "id": "item-027",
+      "category": "오코노미야키",
+      "ko": "믹스 오코노미야키",
+      "ja": "ミックス焼き",
+      "kana": "ミックスやき",
+      "reading": "믹쿠스야키",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "믹스 오코노미야키 1개 주세요",
+      "example_ja": "ミックス焼きを一つください。",
+      "example_kana": "ミックスやきをひとつください。",
+      "example_reading": "믹쿠스야키오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-007",
+        "place-008",
+        "place-009",
+        "place-070",
+        "place-071"
+      ]
+    },
+    {
+      "id": "item-028",
+      "category": "오코노미야키",
+      "ko": "미즈노야키",
+      "ja": "美津の焼",
+      "kana": "みずのやき",
+      "reading": "미즈노야키",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "공식 메뉴 확인",
+      "source_ids": [
+        "mizuno"
+      ],
+      "note": "미즈노 전용 메뉴명",
+      "flow": "주문",
+      "example_ko": "미즈노야키 1개 주세요",
+      "example_ja": "美津の焼を一つください。",
+      "example_kana": "みずのやきをひとつください。",
+      "example_reading": "미즈노야키오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-071"
+      ]
+    },
+    {
+      "id": "item-029",
+      "category": "오코노미야키",
+      "ko": "야마이모야키",
+      "ja": "山芋焼",
+      "kana": "やまいもやき",
+      "reading": "야마이모야키",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "공식 메뉴 확인",
+      "source_ids": [
+        "mizuno"
+      ],
+      "note": "미즈노 전용 메뉴명",
+      "flow": "주문",
+      "example_ko": "야마이모야키 1개 주세요",
+      "example_ja": "山芋焼を一つください。",
+      "example_kana": "やまいもやきをひとつください。",
+      "example_reading": "야마이모야키오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-071"
+      ]
+    },
+    {
+      "id": "item-030",
+      "category": "오코노미야키",
+      "ko": "모던야키",
+      "ja": "モダン焼き",
+      "kana": "モダンやき",
+      "reading": "모단야키",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "공식 메뉴 확인",
+      "source_ids": [
+        "mizuno"
+      ],
+      "note": "공식 표기는 洋食モダン焼. 여기서는 일반 주문명",
+      "flow": "주문",
+      "example_ko": "모던야키 1개 주세요",
+      "example_ja": "モダン焼きを一つください。",
+      "example_kana": "モダンやきをひとつください。",
+      "example_reading": "모단야키오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-071"
+      ]
+    },
+    {
+      "id": "item-031",
+      "category": "오코노미야키",
+      "ko": "네기야키",
+      "ja": "ねぎ焼き",
+      "kana": "ねぎやき",
+      "reading": "네기야키",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "네기야키 1개 주세요",
+      "example_ja": "ねぎ焼きを一つください。",
+      "example_kana": "ねぎやきをひとつください。",
+      "example_reading": "네기야키오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-007",
+        "place-008",
+        "place-009",
+        "place-070",
+        "place-071"
+      ]
+    },
+    {
+      "id": "item-032",
+      "category": "오코노미야키",
+      "ko": "야키소바",
+      "ja": "焼きそば",
+      "kana": "やきそば",
+      "reading": "야키소바",
+      "counter": "dish",
+      "unit_ko": "접시",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "야키소바 1접시 주세요",
+      "example_ja": "焼きそばを一皿ください。",
+      "example_kana": "やきそばをひとさらください。",
+      "example_reading": "야키소바오 히토사라 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-007",
+        "place-008",
+        "place-009",
+        "place-070",
+        "place-071"
+      ]
+    },
+    {
+      "id": "item-033",
+      "category": "쿠시카츠",
+      "ko": "쿠시카츠 모둠",
+      "ja": "串カツの盛り合わせ",
+      "kana": "くしカツのもりあわせ",
+      "reading": "쿠시카츠노 모리아와세",
+      "counter": "dish",
+      "unit_ko": "접시",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "쿠시카츠 모둠 1접시 주세요",
+      "example_ja": "串カツの盛り合わせを一皿ください。",
+      "example_kana": "くしカツのもりあわせをひとさらください。",
+      "example_reading": "쿠시카츠노 모리아와세오 히토사라 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-006",
+        "place-021",
+        "place-066",
+        "place-079"
+      ]
+    },
+    {
+      "id": "item-034",
+      "category": "쿠시카츠",
+      "ko": "소고기 꼬치튀김",
+      "ja": "牛串",
+      "kana": "ぎゅうくし",
+      "reading": "규우쿠시",
+      "counter": "stick",
+      "unit_ko": "꼬치",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "소고기 꼬치튀김 1꼬치 주세요",
+      "example_ja": "牛串を一本ください。",
+      "example_kana": "ぎゅうくしをいっぽんください。",
+      "example_reading": "규우쿠시오 잇폰 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-006",
+        "place-021",
+        "place-066",
+        "place-079"
+      ]
+    },
+    {
+      "id": "item-035",
+      "category": "쿠시카츠",
+      "ko": "돼지고기 꼬치튀김",
+      "ja": "豚串",
+      "kana": "ぶたくし",
+      "reading": "부타쿠시",
+      "counter": "stick",
+      "unit_ko": "꼬치",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "돼지고기 꼬치튀김 1꼬치 주세요",
+      "example_ja": "豚串を一本ください。",
+      "example_kana": "ぶたくしをいっぽんください。",
+      "example_reading": "부타쿠시오 잇폰 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-006",
+        "place-021",
+        "place-066",
+        "place-079"
+      ]
+    },
+    {
+      "id": "item-036",
+      "category": "쿠시카츠",
+      "ko": "새우 꼬치튀김",
+      "ja": "海老串",
+      "kana": "えびくし",
+      "reading": "에비쿠시",
+      "counter": "stick",
+      "unit_ko": "꼬치",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "새우 꼬치튀김 1꼬치 주세요",
+      "example_ja": "海老串を一本ください。",
+      "example_kana": "えびくしをいっぽんください。",
+      "example_reading": "에비쿠시오 잇폰 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-006",
+        "place-021",
+        "place-066",
+        "place-079"
+      ]
+    },
+    {
+      "id": "item-037",
+      "category": "쿠시카츠",
+      "ko": "연근 꼬치튀김",
+      "ja": "れんこんの串カツ",
+      "kana": "れんこんのくしカツ",
+      "reading": "렌콘노 쿠시카츠",
+      "counter": "stick",
+      "unit_ko": "꼬치",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "연근 꼬치튀김 1꼬치 주세요",
+      "example_ja": "れんこんの串カツを一本ください。",
+      "example_kana": "れんこんのくしカツをいっぽんください。",
+      "example_reading": "렌콘노 쿠시카츠오 잇폰 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-006",
+        "place-021",
+        "place-066",
+        "place-079"
+      ]
+    },
+    {
+      "id": "item-038",
+      "category": "쿠시카츠",
+      "ko": "치즈 꼬치튀김",
+      "ja": "チーズの串カツ",
+      "kana": "チーズのくしカツ",
+      "reading": "치이즈노 쿠시카츠",
+      "counter": "stick",
+      "unit_ko": "꼬치",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "치즈 꼬치튀김 1꼬치 주세요",
+      "example_ja": "チーズの串カツを一本ください。",
+      "example_kana": "チーズのくしカツをいっぽんください。",
+      "example_reading": "치이즈노 쿠시카츠오 잇폰 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-006",
+        "place-021",
+        "place-066",
+        "place-079"
+      ]
+    },
+    {
+      "id": "item-039",
+      "category": "카레",
+      "ko": "치킨카레",
+      "ja": "チキンカレー",
+      "kana": "チキンカレー",
+      "reading": "치킨카레에",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "치킨카레 1개 주세요",
+      "example_ja": "チキンカレーを一つください。",
+      "example_kana": "チキンカレーをひとつください。",
+      "example_reading": "치킨카레에오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-010"
+      ]
+    },
+    {
+      "id": "item-040",
+      "category": "카레",
+      "ko": "소고기카레",
+      "ja": "ビーフカレー",
+      "kana": "ビーフカレー",
+      "reading": "비이후카레에",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "소고기카레 1개 주세요",
+      "example_ja": "ビーフカレーを一つください。",
+      "example_kana": "ビーフカレーをひとつください。",
+      "example_reading": "비이후카레에오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-010"
+      ]
+    },
+    {
+      "id": "item-041",
+      "category": "카레",
+      "ko": "돈카츠카레",
+      "ja": "カツカレー",
+      "kana": "カツカレー",
+      "reading": "카츠카레에",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "돈카츠카레 1개 주세요",
+      "example_ja": "カツカレーを一つください。",
+      "example_kana": "カツカレーをひとつください。",
+      "example_reading": "카츠카레에오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-010"
+      ]
+    },
+    {
+      "id": "item-042",
+      "category": "카레",
+      "ko": "2종 카레",
+      "ja": "あいがけカレー",
+      "kana": "あいがけカレー",
+      "reading": "아이가케카레에",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "2종 카레 1개 주세요",
+      "example_ja": "あいがけカレーを一つください。",
+      "example_kana": "あいがけカレーをひとつください。",
+      "example_reading": "아이가케카레에오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-010"
+      ]
+    },
+    {
+      "id": "item-043",
+      "category": "돈카츠·규카츠",
+      "ko": "등심 돈카츠 정식",
+      "ja": "ロースかつ定食",
+      "kana": "ロースかつていしょく",
+      "reading": "로오스카츠테에쇼쿠",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "등심 돈카츠 정식 1개 주세요",
+      "example_ja": "ロースかつ定食を一つください。",
+      "example_kana": "ロースかつていしょくをひとつください。",
+      "example_reading": "로오스카츠테에쇼쿠오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-011",
+        "place-012",
+        "place-038",
+        "place-076"
+      ]
+    },
+    {
+      "id": "item-044",
+      "category": "돈카츠·규카츠",
+      "ko": "안심 돈카츠 정식",
+      "ja": "ヒレかつ定食",
+      "kana": "ヒレかつていしょく",
+      "reading": "히레카츠테에쇼쿠",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "안심 돈카츠 정식 1개 주세요",
+      "example_ja": "ヒレかつ定食を一つください。",
+      "example_kana": "ヒレかつていしょくをひとつください。",
+      "example_reading": "히레카츠테에쇼쿠오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-011",
+        "place-012",
+        "place-038",
+        "place-076"
+      ]
+    },
+    {
+      "id": "item-045",
+      "category": "돈카츠·규카츠",
+      "ko": "규카츠 정식",
+      "ja": "牛かつ定食",
+      "kana": "ぎゅうかつていしょく",
+      "reading": "규우카츠테에쇼쿠",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "공식 메뉴군 확인",
+      "source_ids": [
+        "motomura"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "규카츠 정식 1개 주세요",
+      "example_ja": "牛かつ定食を一つください。",
+      "example_kana": "ぎゅうかつていしょくをひとつください。",
+      "example_reading": "규우카츠테에쇼쿠오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-011",
+        "place-012",
+        "place-038",
+        "place-076"
+      ]
+    },
+    {
+      "id": "item-046",
+      "category": "돈카츠·규카츠",
+      "ko": "공깃밥",
+      "ja": "ご飯",
+      "kana": "ごはん",
+      "reading": "고한",
+      "counter": "bowl",
+      "unit_ko": "그릇",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "공깃밥 1그릇 주세요",
+      "example_ja": "ご飯を一杯ください。",
+      "example_kana": "ごはんをいっぱいください。",
+      "example_reading": "고한오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-011",
+        "place-012",
+        "place-038",
+        "place-076"
+      ]
+    },
+    {
+      "id": "item-047",
+      "category": "돈카츠·규카츠",
+      "ko": "미소국",
+      "ja": "お味噌汁",
+      "kana": "おみそしる",
+      "reading": "오미소시루",
+      "counter": "bowl",
+      "unit_ko": "그릇",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "미소국 1그릇 주세요",
+      "example_ja": "お味噌汁を一杯ください。",
+      "example_kana": "おみそしるをいっぱいください。",
+      "example_reading": "오미소시루오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-011",
+        "place-012",
+        "place-038",
+        "place-076"
+      ]
+    },
+    {
+      "id": "item-048",
+      "category": "소바·우동",
+      "ko": "자루소바",
+      "ja": "ざるそば",
+      "kana": "ざるそば",
+      "reading": "자루소바",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "자루소바 1인분 주세요",
+      "example_ja": "ざるそばを一人前ください。",
+      "example_kana": "ざるそばをいちにんまえください。",
+      "example_reading": "자루소바오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-013",
+        "place-014",
+        "place-015",
+        "place-016",
+        "place-017",
+        "place-059"
+      ]
+    },
+    {
+      "id": "item-049",
+      "category": "소바·우동",
+      "ko": "튀김소바",
+      "ja": "天ぷらそば",
+      "kana": "てんぷらそば",
+      "reading": "텐푸라소바",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "튀김소바 1인분 주세요",
+      "example_ja": "天ぷらそばを一人前ください。",
+      "example_kana": "てんぷらそばをいちにんまえください。",
+      "example_reading": "텐푸라소바오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-013",
+        "place-014",
+        "place-015",
+        "place-016",
+        "place-017",
+        "place-059"
+      ]
+    },
+    {
+      "id": "item-050",
+      "category": "소바·우동",
+      "ko": "오리고기소바",
+      "ja": "鴨そば",
+      "kana": "かもそば",
+      "reading": "카모소바",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "오리고기소바 1인분 주세요",
+      "example_ja": "鴨そばを一人前ください。",
+      "example_kana": "かもそばをいちにんまえください。",
+      "example_reading": "카모소바오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-013",
+        "place-014",
+        "place-015",
+        "place-016",
+        "place-017",
+        "place-059"
+      ]
+    },
+    {
+      "id": "item-051",
+      "category": "소바·우동",
+      "ko": "따뜻한 기본 우동",
+      "ja": "かけうどん",
+      "kana": "かけうどん",
+      "reading": "카케우동",
+      "counter": "bowl",
+      "unit_ko": "그릇",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "따뜻한 기본 우동 1그릇 주세요",
+      "example_ja": "かけうどんを一杯ください。",
+      "example_kana": "かけうどんをいっぱいください。",
+      "example_reading": "카케우동오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-013",
+        "place-014",
+        "place-015",
+        "place-016",
+        "place-017",
+        "place-059"
+      ]
+    },
+    {
+      "id": "item-052",
+      "category": "소바·우동",
+      "ko": "유부우동",
+      "ja": "きつねうどん",
+      "kana": "きつねうどん",
+      "reading": "키츠네우동",
+      "counter": "bowl",
+      "unit_ko": "그릇",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "유부우동 1그릇 주세요",
+      "example_ja": "きつねうどんを一杯ください。",
+      "example_kana": "きつねうどんをいっぱいください。",
+      "example_reading": "키츠네우동오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-013",
+        "place-014",
+        "place-015",
+        "place-016",
+        "place-017",
+        "place-059"
+      ]
+    },
+    {
+      "id": "item-053",
+      "category": "소바·우동",
+      "ko": "붓카케우동",
+      "ja": "ぶっかけうどん",
+      "kana": "ぶっかけうどん",
+      "reading": "붓카케우동",
+      "counter": "bowl",
+      "unit_ko": "그릇",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "붓카케우동 1그릇 주세요",
+      "example_ja": "ぶっかけうどんを一杯ください。",
+      "example_kana": "ぶっかけうどんをいっぱいください。",
+      "example_reading": "붓카케우동오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-013",
+        "place-014",
+        "place-015",
+        "place-016",
+        "place-017",
+        "place-059"
+      ]
+    },
+    {
+      "id": "item-054",
+      "category": "소바·우동",
+      "ko": "카레우동",
+      "ja": "カレーうどん",
+      "kana": "カレーうどん",
+      "reading": "카레에우동",
+      "counter": "bowl",
+      "unit_ko": "그릇",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "카레우동 1그릇 주세요",
+      "example_ja": "カレーうどんを一杯ください。",
+      "example_kana": "カレーうどんをいっぱいください。",
+      "example_reading": "카레에우동오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-013",
+        "place-014",
+        "place-015",
+        "place-016",
+        "place-017",
+        "place-059"
+      ]
+    },
+    {
+      "id": "item-055",
+      "category": "라멘·츠케멘",
+      "ko": "간장라멘",
+      "ja": "醤油ラーメン",
+      "kana": "しょうゆラーメン",
+      "reading": "쇼오유라아멘",
+      "counter": "bowl",
+      "unit_ko": "그릇",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "간장라멘 1그릇 주세요",
+      "example_ja": "醤油ラーメンを一杯ください。",
+      "example_kana": "しょうゆラーメンをいっぱいください。",
+      "example_reading": "쇼오유라아멘오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-018",
+        "place-019",
+        "place-041",
+        "place-044"
+      ]
+    },
+    {
+      "id": "item-056",
+      "category": "라멘·츠케멘",
+      "ko": "소금라멘",
+      "ja": "塩ラーメン",
+      "kana": "しおラーメン",
+      "reading": "시오라아멘",
+      "counter": "bowl",
+      "unit_ko": "그릇",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "소금라멘 1그릇 주세요",
+      "example_ja": "塩ラーメンを一杯ください。",
+      "example_kana": "しおラーメンをいっぱいください。",
+      "example_reading": "시오라아멘오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-018",
+        "place-019",
+        "place-041",
+        "place-044"
+      ]
+    },
+    {
+      "id": "item-057",
+      "category": "라멘·츠케멘",
+      "ko": "닭백탕라멘",
+      "ja": "鶏白湯ラーメン",
+      "kana": "とりぱいたんラーメン",
+      "reading": "토리파이탄라아멘",
+      "counter": "bowl",
+      "unit_ko": "그릇",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "닭백탕라멘 1그릇 주세요",
+      "example_ja": "鶏白湯ラーメンを一杯ください。",
+      "example_kana": "とりぱいたんラーメンをいっぱいください。",
+      "example_reading": "토리파이탄라아멘오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-018",
+        "place-019",
+        "place-041",
+        "place-044"
+      ]
+    },
+    {
+      "id": "item-058",
+      "category": "라멘·츠케멘",
+      "ko": "오리육수라멘",
+      "ja": "鴨だしラーメン",
+      "kana": "かもだしラーメン",
+      "reading": "카모다시라아멘",
+      "counter": "bowl",
+      "unit_ko": "그릇",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "오리육수라멘 1그릇 주세요",
+      "example_ja": "鴨だしラーメンを一杯ください。",
+      "example_kana": "かもだしラーメンをいっぱいください。",
+      "example_reading": "카모다시라아멘오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-018",
+        "place-019",
+        "place-041",
+        "place-044"
+      ]
+    },
+    {
+      "id": "item-059",
+      "category": "라멘·츠케멘",
+      "ko": "츠케멘",
+      "ja": "つけ麺",
+      "kana": "つけめん",
+      "reading": "츠케멘",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "츠케멘 1인분 주세요",
+      "example_ja": "つけ麺を一人前ください。",
+      "example_kana": "つけめんをいちにんまえください。",
+      "example_reading": "츠케멘오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-018",
+        "place-019",
+        "place-041",
+        "place-044"
+      ]
+    },
+    {
+      "id": "item-060",
+      "category": "라멘·츠케멘",
+      "ko": "맛달걀 추가",
+      "ja": "味玉",
+      "kana": "あじたま",
+      "reading": "아지타마",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "맛달걀 하나 추가해 주세요",
+      "example_ja": "味玉を一つ追加してください。",
+      "example_kana": "あじたまをひとつついかしてください。",
+      "example_reading": "아지타마오 히토츠 츠이카시테쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-018",
+        "place-019",
+        "place-041",
+        "place-044"
+      ]
+    },
+    {
+      "id": "item-061",
+      "category": "스시·오마카세",
+      "ko": "모둠 초밥",
+      "ja": "にぎりの盛り合わせ",
+      "kana": "にぎりのもりあわせ",
+      "reading": "니기리노 모리아와세",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "모둠 초밥 1인분 주세요",
+      "example_ja": "にぎりの盛り合わせを一人前ください。",
+      "example_kana": "にぎりのもりあわせをいちにんまえください。",
+      "example_reading": "니기리노 모리아와세오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-039",
+        "place-043",
+        "place-057",
+        "place-065"
+      ]
+    },
+    {
+      "id": "item-062",
+      "category": "스시·오마카세",
+      "ko": "참치 초밥",
+      "ja": "まぐろのにぎり",
+      "kana": "まぐろのにぎり",
+      "reading": "마구로노 니기리",
+      "counter": "sushi_piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "참치 초밥 2개 주세요",
+      "example_ja": "まぐろのにぎりを2貫ください。",
+      "example_kana": "まぐろのにぎりをにかんください。",
+      "example_reading": "마구로노 니기리오 니칸 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-039",
+        "place-043",
+        "place-057",
+        "place-065"
+      ]
+    },
+    {
+      "id": "item-063",
+      "category": "스시·오마카세",
+      "ko": "연어 초밥",
+      "ja": "サーモンのにぎり",
+      "kana": "サーモンのにぎり",
+      "reading": "사아몬노 니기리",
+      "counter": "sushi_piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "연어 초밥 2개 주세요",
+      "example_ja": "サーモンのにぎりを2貫ください。",
+      "example_kana": "サーモンのにぎりをにかんください。",
+      "example_reading": "사아몬노 니기리오 니칸 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-039",
+        "place-043",
+        "place-057",
+        "place-065"
+      ]
+    },
+    {
+      "id": "item-064",
+      "category": "스시·오마카세",
+      "ko": "오마카세 코스",
+      "ja": "おまかせコース",
+      "kana": "おまかせコース",
+      "reading": "오마카세코오스",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "오마카세 코스 1인분 주세요",
+      "example_ja": "おまかせコースを一人前ください。",
+      "example_kana": "おまかせコースをいちにんまえください。",
+      "example_reading": "오마카세코오스오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-039",
+        "place-043",
+        "place-057",
+        "place-065"
+      ]
+    },
+    {
+      "id": "item-065",
+      "category": "스시·오마카세",
+      "ko": "모둠 회",
+      "ja": "お刺身の盛り合わせ",
+      "kana": "おさしみのもりあわせ",
+      "reading": "오사시미노 모리아와세",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "모둠 회 1인분 주세요",
+      "example_ja": "お刺身の盛り合わせを一人前ください。",
+      "example_kana": "おさしみのもりあわせをいちにんまえください。",
+      "example_reading": "오사시미노 모리아와세오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-039",
+        "place-043",
+        "place-057",
+        "place-065"
+      ]
+    },
+    {
+      "id": "item-066",
+      "category": "스시·오마카세",
+      "ko": "달걀찜",
+      "ja": "茶碗蒸し",
+      "kana": "ちゃわんむし",
+      "reading": "차완무시",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "달걀찜 1개 주세요",
+      "example_ja": "茶碗蒸しを一つください。",
+      "example_kana": "ちゃわんむしをひとつください。",
+      "example_reading": "차완무시오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-039",
+        "place-043",
+        "place-057",
+        "place-065"
+      ]
+    },
+    {
+      "id": "item-067",
+      "category": "교자·중식",
+      "ko": "부추·마늘 교자",
+      "ja": "ぎょうざ（にら・にんにく）",
+      "kana": "にらとにんにくのぎょうざ",
+      "reading": "니라토 닌니쿠노 교오자",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "공식 메뉴 확인",
+      "source_ids": [
+        "hohei"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "부추·마늘 교자 1인분 주세요",
+      "example_ja": "ぎょうざ（にら・にんにく）を一人前ください。",
+      "example_kana": "にらとにんにくのぎょうざをいちにんまえください。",
+      "example_reading": "니라토 닌니쿠노 교오자오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-058"
+      ]
+    },
+    {
+      "id": "item-068",
+      "category": "교자·중식",
+      "ko": "생강 교자",
+      "ja": "生姜ぎょうざ",
+      "kana": "しょうがぎょうざ",
+      "reading": "쇼오가교오자",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "공식 메뉴 확인",
+      "source_ids": [
+        "hohei"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "생강 교자 1인분 주세요",
+      "example_ja": "生姜ぎょうざを一人前ください。",
+      "example_kana": "しょうがぎょうざをいちにんまえください。",
+      "example_reading": "쇼오가교오자오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-058"
+      ]
+    },
+    {
+      "id": "item-069",
+      "category": "교자·중식",
+      "ko": "고기미소 숙주",
+      "ja": "肉味噌もやし",
+      "kana": "にくみそもやし",
+      "reading": "니쿠미소모야시",
+      "counter": "dish",
+      "unit_ko": "접시",
+      "scope": "공식 메뉴 확인",
+      "source_ids": [
+        "hohei"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "고기미소 숙주 1접시 주세요",
+      "example_ja": "肉味噌もやしを一皿ください。",
+      "example_kana": "にくみそもやしをひとさらください。",
+      "example_reading": "니쿠미소모야시오 히토사라 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-058"
+      ]
+    },
+    {
+      "id": "item-070",
+      "category": "교자·중식",
+      "ko": "감자샐러드",
+      "ja": "ポテトサラダ",
+      "kana": "ポテトサラダ",
+      "reading": "포테토사라다",
+      "counter": "dish",
+      "unit_ko": "접시",
+      "scope": "공식 메뉴 확인",
+      "source_ids": [
+        "hohei"
+      ],
+      "note": "공식 메뉴는 自家製ポテトサラダ",
+      "flow": "주문",
+      "example_ko": "감자샐러드 1접시 주세요",
+      "example_ja": "ポテトサラダを一皿ください。",
+      "example_kana": "ポテトサラダをひとさらください。",
+      "example_reading": "포테토사라다오 히토사라 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-058"
+      ]
+    },
+    {
+      "id": "item-071",
+      "category": "교자·중식",
+      "ko": "슈마이",
+      "ja": "焼売",
+      "kana": "しゅうまい",
+      "reading": "슈우마이",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "슈마이 1인분 주세요",
+      "example_ja": "焼売を一人前ください。",
+      "example_kana": "しゅうまいをいちにんまえください。",
+      "example_reading": "슈우마이오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-045",
+        "place-058"
+      ]
+    },
+    {
+      "id": "item-072",
+      "category": "교자·중식",
+      "ko": "볶음밥",
+      "ja": "炒飯",
+      "kana": "チャーハン",
+      "reading": "차아한",
+      "counter": "dish",
+      "unit_ko": "접시",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "볶음밥 1접시 주세요",
+      "example_ja": "炒飯を一皿ください。",
+      "example_kana": "チャーハンをひとさらください。",
+      "example_reading": "차아한오 히토사라 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-045",
+        "place-058"
+      ]
+    },
+    {
+      "id": "item-073",
+      "category": "타코야키",
+      "ko": "타코야키",
+      "ja": "たこ焼き",
+      "kana": "たこやき",
+      "reading": "타코야키",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "공식 메뉴 확인",
+      "source_ids": [
+        "wanaka"
+      ],
+      "note": "개수는 매장 선택지로 별도 지정",
+      "flow": "주문",
+      "example_ko": "타코야키 1인분 주세요",
+      "example_ja": "たこ焼きを一人前ください。",
+      "example_kana": "たこやきをいちにんまえください。",
+      "example_reading": "타코야키오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-034",
+        "place-042"
+      ]
+    },
+    {
+      "id": "item-074",
+      "category": "타코야키",
+      "ko": "파 타코야키",
+      "ja": "ねぎたこ焼き",
+      "kana": "ねぎたこやき",
+      "reading": "네기타코야키",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "파 타코야키 1인분 주세요",
+      "example_ja": "ねぎたこ焼きを一人前ください。",
+      "example_kana": "ねぎたこやきをいちにんまえください。",
+      "example_reading": "네기타코야키오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-034",
+        "place-042"
+      ]
+    },
+    {
+      "id": "item-075",
+      "category": "타코야키",
+      "ko": "소스 맛",
+      "ja": "ソース味のたこ焼き",
+      "kana": "ソースあじのたこやき",
+      "reading": "소오스아지노 타코야키",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "공식 맛 확인",
+      "source_ids": [
+        "wanaka"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "소스 맛 1인분 주세요",
+      "example_ja": "ソース味のたこ焼きを一人前ください。",
+      "example_kana": "ソースあじのたこやきをいちにんまえください。",
+      "example_reading": "소오스아지노 타코야키오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-034",
+        "place-042"
+      ]
+    },
+    {
+      "id": "item-076",
+      "category": "타코야키",
+      "ko": "소금 맛",
+      "ja": "塩味のたこ焼き",
+      "kana": "しおあじのたこやき",
+      "reading": "시오아지노 타코야키",
+      "counter": "serving",
+      "unit_ko": "인분",
+      "scope": "공식 맛 확인",
+      "source_ids": [
+        "wanaka"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "소금 맛 1인분 주세요",
+      "example_ja": "塩味のたこ焼きを一人前ください。",
+      "example_kana": "しおあじのたこやきをいちにんまえください。",
+      "example_reading": "시오아지노 타코야키오 이치닌마에 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-034",
+        "place-042"
+      ]
+    },
+    {
+      "id": "item-077",
+      "category": "카페",
+      "ko": "핸드드립 커피",
+      "ja": "ハンドドリップコーヒー",
+      "kana": "ハンドドリップコーヒー",
+      "reading": "한도도릿푸코오히이",
+      "counter": "cup",
+      "unit_ko": "잔",
+      "scope": "목록 메모 기반 후보",
+      "source_ids": [
+        "map"
+      ],
+      "note": "릴로 커피 로스터즈의 목록 메모",
+      "flow": "주문",
+      "example_ko": "핸드드립 커피 1잔 주세요",
+      "example_ja": "ハンドドリップコーヒーを一杯ください。",
+      "example_kana": "ハンドドリップコーヒーをいっぱいください。",
+      "example_reading": "한도도릿푸코오히이오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-032",
+        "place-077"
+      ]
+    },
+    {
+      "id": "item-078",
+      "category": "카페",
+      "ko": "아이스커피",
+      "ja": "アイスコーヒー",
+      "kana": "アイスコーヒー",
+      "reading": "아이스코오히이",
+      "counter": "cup",
+      "unit_ko": "잔",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "아이스커피 1잔 주세요",
+      "example_ja": "アイスコーヒーを一杯ください。",
+      "example_kana": "アイスコーヒーをいっぱいください。",
+      "example_reading": "아이스코오히이오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-032",
+        "place-077"
+      ]
+    },
+    {
+      "id": "item-079",
+      "category": "카페",
+      "ko": "따뜻한 커피",
+      "ja": "ホットコーヒー",
+      "kana": "ホットコーヒー",
+      "reading": "홋토코오히이",
+      "counter": "cup",
+      "unit_ko": "잔",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "따뜻한 커피 1잔 주세요",
+      "example_ja": "ホットコーヒーを一杯ください。",
+      "example_kana": "ホットコーヒーをいっぱいください。",
+      "example_reading": "홋토코오히이오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-032",
+        "place-077"
+      ]
+    },
+    {
+      "id": "item-080",
+      "category": "카페",
+      "ko": "카페라테",
+      "ja": "カフェラテ",
+      "kana": "カフェラテ",
+      "reading": "카훼라테",
+      "counter": "cup",
+      "unit_ko": "잔",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "카페라테 1잔 주세요",
+      "example_ja": "カフェラテを一杯ください。",
+      "example_kana": "カフェラテをいっぱいください。",
+      "example_reading": "카훼라테오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-032",
+        "place-077"
+      ]
+    },
+    {
+      "id": "item-081",
+      "category": "카페",
+      "ko": "원두",
+      "ja": "コーヒー豆",
+      "kana": "コーヒーまめ",
+      "reading": "코오히이마메",
+      "counter": "bag",
+      "unit_ko": "봉지",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "원두 1봉지 주세요",
+      "example_ja": "コーヒー豆を一袋ください。",
+      "example_kana": "コーヒーまめをひとふくろください。",
+      "example_reading": "코오히이마메오 히토후쿠로 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-032",
+        "place-077"
+      ]
+    },
+    {
+      "id": "item-082",
+      "category": "카페",
+      "ko": "드립백",
+      "ja": "ドリップバッグ",
+      "kana": "ドリップバッグ",
+      "reading": "도릿푸밧구",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "드립백 1개 주세요",
+      "example_ja": "ドリップバッグを一つください。",
+      "example_kana": "ドリップバッグをひとつください。",
+      "example_reading": "도릿푸밧구오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-032",
+        "place-077"
+      ]
+    },
+    {
+      "id": "item-083",
+      "category": "디저트",
+      "ko": "치즈타르트",
+      "ja": "チーズタルト",
+      "kana": "チーズタルト",
+      "reading": "치이즈타루토",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "공식 상품 확인",
+      "source_ids": [
+        "pablo"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "치즈타르트 1개 주세요",
+      "example_ja": "チーズタルトを一つください。",
+      "example_kana": "チーズタルトをひとつください。",
+      "example_reading": "치이즈타루토오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-036"
+      ]
+    },
+    {
+      "id": "item-084",
+      "category": "디저트",
+      "ko": "작은 치즈타르트",
+      "ja": "小さいサイズのチーズタルト",
+      "kana": "ちいさいサイズのチーズタルト",
+      "reading": "치이사이사이즈노 치이즈타루토",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "공식 상품 확인",
+      "source_ids": [
+        "pablo"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "작은 치즈타르트 1개 주세요",
+      "example_ja": "小さいサイズのチーズタルトを一つください。",
+      "example_kana": "ちいさいサイズのチーズタルトをひとつください。",
+      "example_reading": "치이사이사이즈노 치이즈타루토오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-036"
+      ]
+    },
+    {
+      "id": "item-085",
+      "category": "디저트",
+      "ko": "프리미엄 치즈타르트",
+      "ja": "パブロプレミアムチーズタルト",
+      "kana": "パブロプレミアムチーズタルト",
+      "reading": "파부로푸레미아무치이즈타루토",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "공식 상품 확인",
+      "source_ids": [
+        "pablo-premium"
+      ],
+      "note": "원형 전체 제품. 조각 판매를 가정하지 않음",
+      "flow": "주문",
+      "example_ko": "프리미엄 치즈타르트 1개 주세요",
+      "example_ja": "パブロプレミアムチーズタルトを一つください。",
+      "example_kana": "パブロプレミアムチーズタルトをひとつください。",
+      "example_reading": "파부로푸레미아무치이즈타루토오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-036"
+      ]
+    },
+    {
+      "id": "item-086",
+      "category": "디저트",
+      "ko": "밀푀유",
+      "ja": "ミルフィーユ",
+      "kana": "ミルフィーユ",
+      "reading": "미루휘이유",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "공식 상품군 확인",
+      "source_ids": [
+        "grenier"
+      ],
+      "note": "브륄레 등 당일 맛은 현장 확인",
+      "flow": "주문",
+      "example_ko": "밀푀유 1개 주세요",
+      "example_ja": "ミルフィーユを一つください。",
+      "example_kana": "ミルフィーユをひとつください。",
+      "example_reading": "미루휘이유오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-035"
+      ]
+    },
+    {
+      "id": "item-087",
+      "category": "디저트",
+      "ko": "슈크림",
+      "ja": "シュークリーム",
+      "kana": "シュークリーム",
+      "reading": "슈우쿠리이무",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "목록 메모 기반 후보",
+      "source_ids": [
+        "map"
+      ],
+      "note": "MooKEN의 목록 메모",
+      "flow": "주문",
+      "example_ko": "슈크림 1개 주세요",
+      "example_ja": "シュークリームを一つください。",
+      "example_kana": "シュークリームをひとつください。",
+      "example_reading": "슈우쿠리이무오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-035",
+        "place-036",
+        "place-037"
+      ]
+    },
+    {
+      "id": "item-088",
+      "category": "디저트",
+      "ko": "소프트아이스크림",
+      "ja": "ソフトクリーム",
+      "kana": "ソフトクリーム",
+      "reading": "소후토쿠리이무",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "소프트아이스크림 1개 주세요",
+      "example_ja": "ソフトクリームを一つください。",
+      "example_kana": "ソフトクリームをひとつください。",
+      "example_reading": "소후토쿠리이무오 히토츠 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-035",
+        "place-036",
+        "place-037"
+      ]
+    },
+    {
+      "id": "item-089",
+      "category": "위스키 시음",
+      "ko": "야마자키 시음",
+      "ja": "山崎",
+      "kana": "やまざき",
+      "reading": "야마자키",
+      "counter": "cup",
+      "unit_ko": "잔",
+      "scope": "공식 브랜드군 확인",
+      "source_ids": [
+        "yamazaki-lounge"
+      ],
+      "note": "라운지 당일 메뉴·품절 확인",
+      "flow": "주문",
+      "example_ko": "야마자키 시음 1잔 주세요",
+      "example_ja": "山崎を一杯ください。",
+      "example_kana": "やまざきをいっぱいください。",
+      "example_reading": "야마자키오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-030",
+        "place-031",
+        "place-047",
+        "place-048",
+        "place-049",
+        "place-050",
+        "place-051",
+        "place-063",
+        "place-078"
+      ]
+    },
+    {
+      "id": "item-090",
+      "category": "위스키 시음",
+      "ko": "위스키 시음 세트",
+      "ja": "ウイスキーの飲み比べセット",
+      "kana": "ウイスキーののみくらべセット",
+      "reading": "우이스키이노 노미쿠라베셋토",
+      "counter": "set",
+      "unit_ko": "세트",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "세트 판매 여부 확인",
+      "flow": "주문",
+      "example_ko": "위스키 시음 세트 1세트 주세요",
+      "example_ja": "ウイスキーの飲み比べセットを一セットください。",
+      "example_kana": "ウイスキーののみくらべセットをいちセットください。",
+      "example_reading": "우이스키이노 노미쿠라베셋토오 이치셋토 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-030",
+        "place-031",
+        "place-047",
+        "place-048",
+        "place-049",
+        "place-050",
+        "place-051",
+        "place-063",
+        "place-078"
+      ]
+    },
+    {
+      "id": "item-091",
+      "category": "위스키 시음",
+      "ko": "스트레이트 위스키",
+      "ja": "ストレートのウイスキー",
+      "kana": "ストレートのウイスキー",
+      "reading": "스토레에토노 우이스키이",
+      "counter": "cup",
+      "unit_ko": "잔",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "스트레이트 위스키 1잔 주세요",
+      "example_ja": "ストレートのウイスキーを一杯ください。",
+      "example_kana": "ストレートのウイスキーをいっぱいください。",
+      "example_reading": "스토레에토노 우이스키이오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-030",
+        "place-031",
+        "place-047",
+        "place-048",
+        "place-049",
+        "place-050",
+        "place-051",
+        "place-063",
+        "place-078"
+      ]
+    },
+    {
+      "id": "item-092",
+      "category": "위스키 시음",
+      "ko": "온더록스 위스키",
+      "ja": "ロックのウイスキー",
+      "kana": "ロックのウイスキー",
+      "reading": "롯쿠노 우이스키이",
+      "counter": "cup",
+      "unit_ko": "잔",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "주문",
+      "example_ko": "온더록스 위스키 1잔 주세요",
+      "example_ja": "ロックのウイスキーを一杯ください。",
+      "example_kana": "ロックのウイスキーをいっぱいください。",
+      "example_reading": "롯쿠노 우이스키이오 잇파이 쿠다사이",
+      "availability_ja": "",
+      "related_place_ids": [
+        "place-030",
+        "place-031",
+        "place-047",
+        "place-048",
+        "place-049",
+        "place-050",
+        "place-051",
+        "place-063",
+        "place-078"
+      ]
+    },
+    {
+      "id": "item-093",
+      "category": "위스키 병 구매",
+      "ko": "야마자키",
+      "ja": "山崎",
+      "kana": "やまざき",
+      "reading": "야마자키",
+      "counter": "bottle",
+      "unit_ko": "병",
+      "scope": "재고 질문용 후보",
+      "source_ids": [
+        "map"
+      ],
+      "note": "취급·재고 미확인",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "야마자키 1병 주세요",
+      "example_ja": "山崎を一本ください。",
+      "example_kana": "やまざきをいっぽんください。",
+      "example_reading": "야마자키오 잇폰 쿠다사이",
+      "availability_ja": "山崎はありますか？",
+      "related_place_ids": [
+        "place-030",
+        "place-031",
+        "place-047",
+        "place-048",
+        "place-049",
+        "place-050",
+        "place-051",
+        "place-063",
+        "place-078"
+      ]
+    },
+    {
+      "id": "item-094",
+      "category": "위스키 병 구매",
+      "ko": "야마자키 12년",
+      "ja": "山崎12年",
+      "kana": "やまざきじゅうにねん",
+      "reading": "야마자키주우니넨",
+      "counter": "bottle",
+      "unit_ko": "병",
+      "scope": "재고 질문용 후보",
+      "source_ids": [
+        "map"
+      ],
+      "note": "취급·재고 미확인",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "야마자키 12년 1병 주세요",
+      "example_ja": "山崎12年を一本ください。",
+      "example_kana": "やまざきじゅうにねんをいっぽんください。",
+      "example_reading": "야마자키주우니넨오 잇폰 쿠다사이",
+      "availability_ja": "山崎12年はありますか？",
+      "related_place_ids": [
+        "place-030",
+        "place-031",
+        "place-047",
+        "place-048",
+        "place-049",
+        "place-050",
+        "place-051",
+        "place-063",
+        "place-078"
+      ]
+    },
+    {
+      "id": "item-095",
+      "category": "위스키 병 구매",
+      "ko": "하쿠슈",
+      "ja": "白州",
+      "kana": "はくしゅう",
+      "reading": "하쿠슈우",
+      "counter": "bottle",
+      "unit_ko": "병",
+      "scope": "재고 질문용 후보",
+      "source_ids": [
+        "map"
+      ],
+      "note": "취급·재고 미확인",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "하쿠슈 1병 주세요",
+      "example_ja": "白州を一本ください。",
+      "example_kana": "はくしゅうをいっぽんください。",
+      "example_reading": "하쿠슈우오 잇폰 쿠다사이",
+      "availability_ja": "白州はありますか？",
+      "related_place_ids": [
+        "place-030",
+        "place-031",
+        "place-047",
+        "place-048",
+        "place-049",
+        "place-050",
+        "place-051",
+        "place-063",
+        "place-078"
+      ]
+    },
+    {
+      "id": "item-096",
+      "category": "위스키 병 구매",
+      "ko": "하쿠슈 12년",
+      "ja": "白州12年",
+      "kana": "はくしゅうじゅうにねん",
+      "reading": "하쿠슈우주우니넨",
+      "counter": "bottle",
+      "unit_ko": "병",
+      "scope": "재고 질문용 후보",
+      "source_ids": [
+        "map"
+      ],
+      "note": "취급·재고 미확인",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "하쿠슈 12년 1병 주세요",
+      "example_ja": "白州12年を一本ください。",
+      "example_kana": "はくしゅうじゅうにねんをいっぽんください。",
+      "example_reading": "하쿠슈우주우니넨오 잇폰 쿠다사이",
+      "availability_ja": "白州12年はありますか？",
+      "related_place_ids": [
+        "place-030",
+        "place-031",
+        "place-047",
+        "place-048",
+        "place-049",
+        "place-050",
+        "place-051",
+        "place-063",
+        "place-078"
+      ]
+    },
+    {
+      "id": "item-097",
+      "category": "위스키 병 구매",
+      "ko": "히비키 재패니즈 하모니",
+      "ja": "響 JAPANESE HARMONY",
+      "kana": "ひびきジャパニーズハーモニー",
+      "reading": "히비키자파니이즈하아모니이",
+      "counter": "bottle",
+      "unit_ko": "병",
+      "scope": "재고 질문용 후보",
+      "source_ids": [
+        "map"
+      ],
+      "note": "취급·재고 미확인",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "히비키 재패니즈 하모니 1병 주세요",
+      "example_ja": "響 JAPANESE HARMONYを一本ください。",
+      "example_kana": "ひびきジャパニーズハーモニーをいっぽんください。",
+      "example_reading": "히비키자파니이즈하아모니이오 잇폰 쿠다사이",
+      "availability_ja": "響 JAPANESE HARMONYはありますか？",
+      "related_place_ids": [
+        "place-030",
+        "place-031",
+        "place-047",
+        "place-048",
+        "place-049",
+        "place-050",
+        "place-051",
+        "place-063",
+        "place-078"
+      ]
+    },
+    {
+      "id": "item-098",
+      "category": "위스키 병 구매",
+      "ko": "치타",
+      "ja": "知多",
+      "kana": "ちた",
+      "reading": "치타",
+      "counter": "bottle",
+      "unit_ko": "병",
+      "scope": "재고 질문용 후보",
+      "source_ids": [
+        "map"
+      ],
+      "note": "취급·재고 미확인",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "치타 1병 주세요",
+      "example_ja": "知多を一本ください。",
+      "example_kana": "ちたをいっぽんください。",
+      "example_reading": "치타오 잇폰 쿠다사이",
+      "availability_ja": "知多はありますか？",
+      "related_place_ids": [
+        "place-030",
+        "place-031",
+        "place-047",
+        "place-048",
+        "place-049",
+        "place-050",
+        "place-051",
+        "place-063",
+        "place-078"
+      ]
+    },
+    {
+      "id": "item-099",
+      "category": "몽벨·아웃도어",
+      "ko": "레인 재킷",
+      "ja": "レインジャケット",
+      "kana": "レインジャケット",
+      "reading": "레인자켓토",
+      "counter": "garment",
+      "unit_ko": "벌",
+      "scope": "공식 상품군 확인",
+      "source_ids": [
+        "montbell-rain"
+      ],
+      "note": "방문 지점 재고는 별도 확인",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "레인 재킷 1벌 주세요",
+      "example_ja": "レインジャケットを一着ください。",
+      "example_kana": "レインジャケットをいっちゃくください。",
+      "example_reading": "레인자켓토오 잇차쿠 쿠다사이",
+      "availability_ja": "レインジャケットはありますか？",
+      "related_place_ids": [
+        "place-027",
+        "place-028",
+        "place-029"
+      ]
+    },
+    {
+      "id": "item-100",
+      "category": "몽벨·아웃도어",
+      "ko": "30리터 배낭",
+      "ja": "30リットルのバックパック",
+      "kana": "さんじゅうリットルのバックパック",
+      "reading": "산주우릿토루노 밧쿠팟쿠",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "공식 상품군 확인",
+      "source_ids": [
+        "montbell-pack"
+      ],
+      "note": "방문 지점 재고는 별도 확인",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "30리터 배낭 1개 주세요",
+      "example_ja": "30リットルのバックパックを一つください。",
+      "example_kana": "さんじゅうリットルのバックパックをひとつください。",
+      "example_reading": "산주우릿토루노 밧쿠팟쿠오 히토츠 쿠다사이",
+      "availability_ja": "30リットルのバックパックはありますか？",
+      "related_place_ids": [
+        "place-027",
+        "place-028",
+        "place-029"
+      ]
+    },
+    {
+      "id": "item-101",
+      "category": "몽벨·아웃도어",
+      "ko": "바람막이",
+      "ja": "ウインドブレーカー",
+      "kana": "ウインドブレーカー",
+      "reading": "우인도부레에카아",
+      "counter": "garment",
+      "unit_ko": "벌",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "바람막이 1벌 주세요",
+      "example_ja": "ウインドブレーカーを一着ください。",
+      "example_kana": "ウインドブレーカーをいっちゃくください。",
+      "example_reading": "우인도부레에카아오 잇차쿠 쿠다사이",
+      "availability_ja": "ウインドブレーカーはありますか？",
+      "related_place_ids": [
+        "place-027",
+        "place-028",
+        "place-029"
+      ]
+    },
+    {
+      "id": "item-102",
+      "category": "몽벨·아웃도어",
+      "ko": "다운 재킷",
+      "ja": "ダウンジャケット",
+      "kana": "ダウンジャケット",
+      "reading": "다운자켓토",
+      "counter": "garment",
+      "unit_ko": "벌",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "다운 재킷 1벌 주세요",
+      "example_ja": "ダウンジャケットを一着ください。",
+      "example_kana": "ダウンジャケットをいっちゃくください。",
+      "example_reading": "다운자켓토오 잇차쿠 쿠다사이",
+      "availability_ja": "ダウンジャケットはありますか？",
+      "related_place_ids": [
+        "place-027",
+        "place-028",
+        "place-029"
+      ]
+    },
+    {
+      "id": "item-103",
+      "category": "몽벨·아웃도어",
+      "ko": "트레킹화",
+      "ja": "トレッキングシューズ",
+      "kana": "トレッキングシューズ",
+      "reading": "토렛킹구슈우즈",
+      "counter": "pair",
+      "unit_ko": "켤레",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "트레킹화 1켤레 주세요",
+      "example_ja": "トレッキングシューズを一足ください。",
+      "example_kana": "トレッキングシューズをいっそくください。",
+      "example_reading": "토렛킹구슈우즈오 잇소쿠 쿠다사이",
+      "availability_ja": "トレッキングシューズはありますか？",
+      "related_place_ids": [
+        "place-027",
+        "place-028",
+        "place-029"
+      ]
+    },
+    {
+      "id": "item-104",
+      "category": "몽벨·아웃도어",
+      "ko": "등산 양말",
+      "ja": "トレッキング用の靴下",
+      "kana": "トレッキングようのくつした",
+      "reading": "토렛킹구요오노 쿠츠시타",
+      "counter": "pair",
+      "unit_ko": "켤레",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "등산 양말 1켤레 주세요",
+      "example_ja": "トレッキング用の靴下を一足ください。",
+      "example_kana": "トレッキングようのくつしたをいっそくください。",
+      "example_reading": "토렛킹구요오노 쿠츠시타오 잇소쿠 쿠다사이",
+      "availability_ja": "トレッキング用の靴下はありますか？",
+      "related_place_ids": [
+        "place-027",
+        "place-028",
+        "place-029"
+      ]
+    },
+    {
+      "id": "item-105",
+      "category": "몽벨·아웃도어",
+      "ko": "등산 모자",
+      "ja": "登山用の帽子",
+      "kana": "とざんようのぼうし",
+      "reading": "토잔요오노 보오시",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "등산 모자 1개 주세요",
+      "example_ja": "登山用の帽子を一つください。",
+      "example_kana": "とざんようのぼうしをひとつください。",
+      "example_reading": "토잔요오노 보오시오 히토츠 쿠다사이",
+      "availability_ja": "登山用の帽子はありますか？",
+      "related_place_ids": [
+        "place-027",
+        "place-028",
+        "place-029"
+      ]
+    },
+    {
+      "id": "item-106",
+      "category": "의류·아울렛",
+      "ko": "티셔츠",
+      "ja": "Tシャツ",
+      "kana": "ティーシャツ",
+      "reading": "티이샤츠",
+      "counter": "garment",
+      "unit_ko": "벌",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "티셔츠 1벌 주세요",
+      "example_ja": "Tシャツを一着ください。",
+      "example_kana": "ティーシャツをいっちゃくください。",
+      "example_reading": "티이샤츠오 잇차쿠 쿠다사이",
+      "availability_ja": "Tシャツはありますか？",
+      "related_place_ids": [
+        "place-022",
+        "place-052",
+        "place-053",
+        "place-067",
+        "place-068",
+        "place-074"
+      ]
+    },
+    {
+      "id": "item-107",
+      "category": "의류·아울렛",
+      "ko": "카디건",
+      "ja": "カーディガン",
+      "kana": "カーディガン",
+      "reading": "카아디간",
+      "counter": "garment",
+      "unit_ko": "벌",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "카디건 1벌 주세요",
+      "example_ja": "カーディガンを一着ください。",
+      "example_kana": "カーディガンをいっちゃくください。",
+      "example_reading": "카아디간오 잇차쿠 쿠다사이",
+      "availability_ja": "カーディガンはありますか？",
+      "related_place_ids": [
+        "place-022",
+        "place-052",
+        "place-053",
+        "place-067",
+        "place-068",
+        "place-074"
+      ]
+    },
+    {
+      "id": "item-108",
+      "category": "의류·아울렛",
+      "ko": "셔츠",
+      "ja": "シャツ",
+      "kana": "シャツ",
+      "reading": "샤츠",
+      "counter": "garment",
+      "unit_ko": "벌",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "셔츠 1벌 주세요",
+      "example_ja": "シャツを一着ください。",
+      "example_kana": "シャツをいっちゃくください。",
+      "example_reading": "샤츠오 잇차쿠 쿠다사이",
+      "availability_ja": "シャツはありますか？",
+      "related_place_ids": [
+        "place-022",
+        "place-052",
+        "place-053",
+        "place-067",
+        "place-068",
+        "place-074"
+      ]
+    },
+    {
+      "id": "item-109",
+      "category": "의류·아울렛",
+      "ko": "운동화",
+      "ja": "スニーカー",
+      "kana": "スニーカー",
+      "reading": "스니이카아",
+      "counter": "pair",
+      "unit_ko": "켤레",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "운동화 1켤레 주세요",
+      "example_ja": "スニーカーを一足ください。",
+      "example_kana": "スニーカーをいっそくください。",
+      "example_reading": "스니이카아오 잇소쿠 쿠다사이",
+      "availability_ja": "スニーカーはありますか？",
+      "related_place_ids": [
+        "place-022",
+        "place-052",
+        "place-053",
+        "place-067",
+        "place-068",
+        "place-074"
+      ]
+    },
+    {
+      "id": "item-110",
+      "category": "의류·아울렛",
+      "ko": "토트백",
+      "ja": "トートバッグ",
+      "kana": "トートバッグ",
+      "reading": "토오토밧구",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "토트백 1개 주세요",
+      "example_ja": "トートバッグを一つください。",
+      "example_kana": "トートバッグをひとつください。",
+      "example_reading": "토오토밧구오 히토츠 쿠다사이",
+      "availability_ja": "トートバッグはありますか？",
+      "related_place_ids": [
+        "place-022",
+        "place-052",
+        "place-053",
+        "place-067",
+        "place-068",
+        "place-074"
+      ]
+    },
+    {
+      "id": "item-111",
+      "category": "티파니·주얼리",
+      "ko": "목걸이",
+      "ja": "ネックレス",
+      "kana": "ネックレス",
+      "reading": "넷쿠레스",
+      "counter": "item",
+      "unit_ko": "점",
+      "scope": "공식 상품군 확인",
+      "source_ids": [
+        "tiffany"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "목걸이 1점 주세요",
+      "example_ja": "ネックレスを一点ください。",
+      "example_kana": "ネックレスをいってんください。",
+      "example_reading": "넷쿠레스오 잇텐 쿠다사이",
+      "availability_ja": "ネックレスはありますか？",
+      "related_place_ids": [
+        "place-023",
+        "place-024",
+        "place-025",
+        "place-026"
+      ]
+    },
+    {
+      "id": "item-112",
+      "category": "티파니·주얼리",
+      "ko": "팔찌",
+      "ja": "ブレスレット",
+      "kana": "ブレスレット",
+      "reading": "부레스렛토",
+      "counter": "item",
+      "unit_ko": "점",
+      "scope": "공식 상품군 확인",
+      "source_ids": [
+        "tiffany"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "팔찌 1점 주세요",
+      "example_ja": "ブレスレットを一点ください。",
+      "example_kana": "ブレスレットをいってんください。",
+      "example_reading": "부레스렛토오 잇텐 쿠다사이",
+      "availability_ja": "ブレスレットはありますか？",
+      "related_place_ids": [
+        "place-023",
+        "place-024",
+        "place-025",
+        "place-026"
+      ]
+    },
+    {
+      "id": "item-113",
+      "category": "티파니·주얼리",
+      "ko": "반지",
+      "ja": "リング",
+      "kana": "リング",
+      "reading": "링구",
+      "counter": "item",
+      "unit_ko": "점",
+      "scope": "공식 상품군 확인",
+      "source_ids": [
+        "tiffany"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "반지 1점 주세요",
+      "example_ja": "リングを一点ください。",
+      "example_kana": "リングをいってんください。",
+      "example_reading": "링구오 잇텐 쿠다사이",
+      "availability_ja": "リングはありますか？",
+      "related_place_ids": [
+        "place-023",
+        "place-024",
+        "place-025",
+        "place-026"
+      ]
+    },
+    {
+      "id": "item-114",
+      "category": "티파니·주얼리",
+      "ko": "귀걸이",
+      "ja": "ピアス",
+      "kana": "ピアス",
+      "reading": "피아스",
+      "counter": "item",
+      "unit_ko": "점",
+      "scope": "공식 상품군 확인",
+      "source_ids": [
+        "tiffany"
+      ],
+      "note": "한 쌍 판매 여부 확인",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "귀걸이 1점 주세요",
+      "example_ja": "ピアスを一点ください。",
+      "example_kana": "ピアスをいってんください。",
+      "example_reading": "피아스오 잇텐 쿠다사이",
+      "availability_ja": "ピアスはありますか？",
+      "related_place_ids": [
+        "place-023",
+        "place-024",
+        "place-025",
+        "place-026"
+      ]
+    },
+    {
+      "id": "item-115",
+      "category": "티파니·주얼리",
+      "ko": "펜던트",
+      "ja": "ペンダント",
+      "kana": "ペンダント",
+      "reading": "펜단토",
+      "counter": "item",
+      "unit_ko": "점",
+      "scope": "공식 상품군 확인",
+      "source_ids": [
+        "tiffany"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "펜던트 1점 주세요",
+      "example_ja": "ペンダントを一点ください。",
+      "example_kana": "ペンダントをいってんください。",
+      "example_reading": "펜단토오 잇텐 쿠다사이",
+      "availability_ja": "ペンダントはありますか？",
+      "related_place_ids": [
+        "place-023",
+        "place-024",
+        "place-025",
+        "place-026"
+      ]
+    },
+    {
+      "id": "item-116",
+      "category": "캐릭터·닌텐도",
+      "ko": "캐릭터 인형",
+      "ja": "ぬいぐるみ",
+      "kana": "ぬいぐるみ",
+      "reading": "누이구루미",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "캐릭터별 재고 확인",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "캐릭터 인형 1개 주세요",
+      "example_ja": "ぬいぐるみを一つください。",
+      "example_kana": "ぬいぐるみをひとつください。",
+      "example_reading": "누이구루미오 히토츠 쿠다사이",
+      "availability_ja": "ぬいぐるみはありますか？",
+      "related_place_ids": [
+        "place-054",
+        "place-055",
+        "place-082"
+      ]
+    },
+    {
+      "id": "item-117",
+      "category": "캐릭터·닌텐도",
+      "ko": "키링",
+      "ja": "キーホルダー",
+      "kana": "キーホルダー",
+      "reading": "키이호루다아",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "키링 1개 주세요",
+      "example_ja": "キーホルダーを一つください。",
+      "example_kana": "キーホルダーをひとつください。",
+      "example_reading": "키이호루다아오 히토츠 쿠다사이",
+      "availability_ja": "キーホルダーはありますか？",
+      "related_place_ids": [
+        "place-054",
+        "place-055",
+        "place-082"
+      ]
+    },
+    {
+      "id": "item-118",
+      "category": "캐릭터·닌텐도",
+      "ko": "마리오 굿즈",
+      "ja": "マリオのグッズ",
+      "kana": "マリオのグッズ",
+      "reading": "마리오노 굿즈",
+      "counter": "item",
+      "unit_ko": "점",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "브랜드·지점별 취급 확인",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "마리오 굿즈 1점 주세요",
+      "example_ja": "マリオのグッズを一点ください。",
+      "example_kana": "マリオのグッズをいってんください。",
+      "example_reading": "마리오노 굿즈오 잇텐 쿠다사이",
+      "availability_ja": "マリオのグッズはありますか？",
+      "related_place_ids": [
+        "place-054",
+        "place-055",
+        "place-082"
+      ]
+    },
+    {
+      "id": "item-119",
+      "category": "캐릭터·닌텐도",
+      "ko": "커비 인형",
+      "ja": "カービィのぬいぐるみ",
+      "kana": "カービィのぬいぐるみ",
+      "reading": "카아비이노 누이구루미",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "브랜드·지점별 취급 확인",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "커비 인형 1개 주세요",
+      "example_ja": "カービィのぬいぐるみを一つください。",
+      "example_kana": "カービィのぬいぐるみをひとつください。",
+      "example_reading": "카아비이노 누이구루미오 히토츠 쿠다사이",
+      "availability_ja": "カービィのぬいぐるみはありますか？",
+      "related_place_ids": [
+        "place-054",
+        "place-055",
+        "place-082"
+      ]
+    },
+    {
+      "id": "item-120",
+      "category": "캐릭터·닌텐도",
+      "ko": "머그컵",
+      "ja": "マグカップ",
+      "kana": "マグカップ",
+      "reading": "마구캇푸",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "머그컵 1개 주세요",
+      "example_ja": "マグカップを一つください。",
+      "example_kana": "マグカップをひとつください。",
+      "example_reading": "마구캇푸오 히토츠 쿠다사이",
+      "availability_ja": "マグカップはありますか？",
+      "related_place_ids": [
+        "place-054",
+        "place-055",
+        "place-082"
+      ]
+    },
+    {
+      "id": "item-121",
+      "category": "캐릭터·닌텐도",
+      "ko": "미술관·박물관 한정 굿즈",
+      "ja": "ミュージアム限定グッズ",
+      "kana": "ミュージアムげんていグッズ",
+      "reading": "뮤우지아무겐테에굿즈",
+      "counter": "item",
+      "unit_ko": "점",
+      "scope": "공식 상품군 확인",
+      "source_ids": [
+        "nintendo"
+      ],
+      "note": "닌텐도 뮤지엄 숍의 한정 상품군",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "미술관·박물관 한정 굿즈 1점 주세요",
+      "example_ja": "ミュージアム限定グッズを一点ください。",
+      "example_kana": "ミュージアムげんていグッズをいってんください。",
+      "example_reading": "뮤우지아무겐테에굿즈오 잇텐 쿠다사이",
+      "availability_ja": "ミュージアム限定グッズはありますか？",
+      "related_place_ids": [
+        "place-054",
+        "place-055",
+        "place-082"
+      ]
+    },
+    {
+      "id": "item-122",
+      "category": "선물·과자",
+      "ko": "말차 과자",
+      "ja": "抹茶のお菓子",
+      "kana": "まっちゃのおかし",
+      "reading": "맛차노 오카시",
+      "counter": "bag",
+      "unit_ko": "봉지",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "말차 과자 1봉지 주세요",
+      "example_ja": "抹茶のお菓子を一袋ください。",
+      "example_kana": "まっちゃのおかしをひとふくろください。",
+      "example_reading": "맛차노 오카시오 히토후쿠로 쿠다사이",
+      "availability_ja": "抹茶のお菓子はありますか？",
+      "related_place_ids": []
+    },
+    {
+      "id": "item-123",
+      "category": "선물·과자",
+      "ko": "쿠키",
+      "ja": "クッキー",
+      "kana": "クッキー",
+      "reading": "쿳키이",
+      "counter": "bag",
+      "unit_ko": "봉지",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "쿠키 1봉지 주세요",
+      "example_ja": "クッキーを一袋ください。",
+      "example_kana": "クッキーをひとふくろください。",
+      "example_reading": "쿳키이오 히토후쿠로 쿠다사이",
+      "availability_ja": "クッキーはありますか？",
+      "related_place_ids": []
+    },
+    {
+      "id": "item-124",
+      "category": "선물·과자",
+      "ko": "초콜릿",
+      "ja": "チョコレート",
+      "kana": "チョコレート",
+      "reading": "초코레에토",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "초콜릿 1개 주세요",
+      "example_ja": "チョコレートを一つください。",
+      "example_kana": "チョコレートをひとつください。",
+      "example_reading": "초코레에토오 히토츠 쿠다사이",
+      "availability_ja": "チョコレートはありますか？",
+      "related_place_ids": []
+    },
+    {
+      "id": "item-125",
+      "category": "선물·과자",
+      "ko": "야츠하시",
+      "ja": "八つ橋",
+      "kana": "やつはし",
+      "reading": "야츠하시",
+      "counter": "piece",
+      "unit_ko": "개",
+      "scope": "업종 대표 예시",
+      "source_ids": [
+        "map"
+      ],
+      "note": "교토 선물 후보. 특정 지점 취급 미확인",
+      "flow": "재고 확인 후 구매",
+      "example_ko": "야츠하시 1개 주세요",
+      "example_ja": "八つ橋を一つください。",
+      "example_kana": "やつはしをひとつください。",
+      "example_reading": "야츠하시오 히토츠 쿠다사이",
+      "availability_ja": "八つ橋はありますか？",
+      "related_place_ids": []
+    }
+  ],
+  "questions": [
+    {
+      "id": "question-001",
+      "category": "식당 공통",
+      "ko": "3명이에요",
+      "ja": "3人です。",
+      "kana": "さんにんです。",
+      "reading": "산닌데스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-002",
+      "category": "식당 공통",
+      "ko": "예약 없이 들어갈 수 있나요?",
+      "ja": "予約なしでも入れますか？",
+      "kana": "よやくなしでもはいれますか？",
+      "reading": "요야쿠나시데모 하이레마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-003",
+      "category": "식당 공통",
+      "ko": "얼마나 기다려야 하나요?",
+      "ja": "どのくらい待ちますか？",
+      "kana": "どのくらいまちますか？",
+      "reading": "도노쿠라이 마치마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-004",
+      "category": "식당 공통",
+      "ko": "대기 명단에 이름을 적으면 되나요?",
+      "ja": "名前を書いて待てばいいですか？",
+      "kana": "なまえをかいてまてばいいですか？",
+      "reading": "나마에오 카이테 마테바 이이데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-005",
+      "category": "식당 공통",
+      "ko": "추천 메뉴가 뭐예요?",
+      "ja": "おすすめは何ですか？",
+      "kana": "おすすめはなんですか？",
+      "reading": "오스스메와 난데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-006",
+      "category": "식당 공통",
+      "ko": "가장 인기 있는 메뉴가 뭐예요?",
+      "ja": "一番人気のメニューは何ですか？",
+      "kana": "いちばんにんきのメニューはなんですか？",
+      "reading": "이치반 닌키노 메뉴우와 난데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-007",
+      "category": "식당 공통",
+      "ko": "이 사진과 같은 것으로 주세요",
+      "ja": "この写真と同じものをください。",
+      "kana": "このしゃしんとおなじものをください。",
+      "reading": "코노 샤신토 오나지 모노오 쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-008",
+      "category": "식당 공통",
+      "ko": "한 명당 하나씩 주문해야 하나요?",
+      "ja": "一人一品ずつ注文が必要ですか？",
+      "kana": "ひとりいっぴんずつちゅうもんがひつようですか？",
+      "reading": "히토리 잇핀즈츠 추우몬가 히츠요오데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-009",
+      "category": "식당 공통",
+      "ko": "한국어 메뉴 있나요?",
+      "ja": "韓国語のメニューはありますか？",
+      "kana": "かんこくごのメニューはありますか？",
+      "reading": "칸코쿠고노 메뉴우와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-010",
+      "category": "식당 공통",
+      "ko": "물 주세요",
+      "ja": "お水をください。",
+      "kana": "おみずをください。",
+      "reading": "오미즈오 쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-011",
+      "category": "식당 공통",
+      "ko": "앞접시 3개 주세요",
+      "ja": "取り皿を3枚ください。",
+      "kana": "とりざらをさんまいください。",
+      "reading": "토리자라오 산마이 쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-012",
+      "category": "식당 공통",
+      "ko": "나눠 먹어도 되나요?",
+      "ja": "取り分けてもいいですか？",
+      "kana": "とりわけてもいいですか？",
+      "reading": "토리와케테모 이이데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-013",
+      "category": "식당 공통",
+      "ko": "여기에서 먹을게요",
+      "ja": "店内で食べます。",
+      "kana": "てんないでたべます。",
+      "reading": "텐나이데 타베마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-014",
+      "category": "식당 공통",
+      "ko": "포장해 주세요",
+      "ja": "持ち帰りでお願いします。",
+      "kana": "もちかえりでおねがいします。",
+      "reading": "모치카에리데 오네가이시마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-015",
+      "category": "식당 공통",
+      "ko": "이 메뉴는 매진인가요?",
+      "ja": "これは売り切れですか？",
+      "kana": "これはうりきれですか？",
+      "reading": "코레와 우리키레데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-016",
+      "category": "식당 공통",
+      "ko": "이 요리에 달걀이 들어가나요?",
+      "ja": "この料理に卵は入っていますか？",
+      "kana": "このりょうりにたまごははいっていますか？",
+      "reading": "코노 료오리니 타마고와 하잇테이마스카",
+      "note": "성분 질문이며 알레르기 안전을 보장하는 문장이 아님",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-017",
+      "category": "식당 공통",
+      "ko": "마지막 주문은 몇 시인가요?",
+      "ja": "ラストオーダーは何時ですか？",
+      "kana": "ラストオーダーはなんじですか？",
+      "reading": "라스토오오다아와 난지데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-018",
+      "category": "식당 공통",
+      "ko": "주문한 음식이 아직 안 나왔어요",
+      "ja": "注文した料理がまだ来ていません。",
+      "kana": "ちゅうもんしたりょうりがまだきていません。",
+      "reading": "추우몬시타 료오리가 마다 키테이마센",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-019",
+      "category": "식당 공통",
+      "ko": "계산해 주세요",
+      "ja": "お会計をお願いします。",
+      "kana": "おかいけいをおねがいします。",
+      "reading": "오카이케이오 오네가이시마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-020",
+      "category": "식당 공통",
+      "ko": "따로 계산할 수 있나요?",
+      "ja": "別々に会計できますか？",
+      "kana": "べつべつにかいけいできますか？",
+      "reading": "베츠베츠니 카이케이 데키마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-021",
+      "category": "식당 공통",
+      "ko": "카드로 결제할 수 있나요?",
+      "ja": "カードで払えますか？",
+      "kana": "カードではらえますか？",
+      "reading": "카아도데 하라에마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-022",
+      "category": "식당 공통",
+      "ko": "영수증 주세요",
+      "ja": "レシートをください。",
+      "kana": "レシートをください。",
+      "reading": "레시이토오 쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-023",
+      "category": "술·이자카야",
+      "ko": "생맥주 3잔 주세요",
+      "ja": "生ビールを3杯ください。",
+      "kana": "なまビールをさんばいください。",
+      "reading": "나마비이루오 산바이 쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-024",
+      "category": "술·이자카야",
+      "ko": "같은 것으로 한 잔 더 주세요",
+      "ja": "同じものをもう一杯ください。",
+      "kana": "おなじものをもういっぱいください。",
+      "reading": "오나지 모노오 모오 잇파이 쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-025",
+      "category": "술·이자카야",
+      "ko": "얼음 적게 해 주세요",
+      "ja": "氷を少なめにしてください。",
+      "kana": "こおりをすくなめにしてください。",
+      "reading": "코오리오 스쿠나메니 시테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-026",
+      "category": "술·이자카야",
+      "ko": "탄산수 더 주세요",
+      "ja": "炭酸水をもう少しください。",
+      "kana": "たんさんすいをもうすこしください。",
+      "reading": "탄산스이오 모오 스코시 쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-027",
+      "category": "술·이자카야",
+      "ko": "오늘 추천 일본주가 있나요?",
+      "ja": "今日のおすすめの日本酒はありますか？",
+      "kana": "きょうのおすすめのにほんしゅはありますか？",
+      "reading": "쿄오노 오스스메노 니혼슈와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-028",
+      "category": "술·이자카야",
+      "ko": "기본 안주 요금이 있나요?",
+      "ja": "お通し代はかかりますか？",
+      "kana": "おとおしだいはかかりますか？",
+      "reading": "오토오시다이와 카카리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-029",
+      "category": "술·이자카야",
+      "ko": "음료 무제한 메뉴가 있나요?",
+      "ja": "飲み放題はありますか？",
+      "kana": "のみほうだいはありますか？",
+      "reading": "노미호오다이와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-030",
+      "category": "야키니쿠·와규",
+      "ko": "갈비와 하라미를 1인분씩 주세요",
+      "ja": "カルビとハラミを一人前ずつください。",
+      "kana": "カルビとハラミをいちにんまえずつください。",
+      "reading": "카루비토 하라미오 이치닌마에즈츠 쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-031",
+      "category": "야키니쿠·와규",
+      "ko": "이것은 어느 부위인가요?",
+      "ja": "これはどこの部位ですか？",
+      "kana": "これはどこのぶいですか？",
+      "reading": "코레와 도코노 부이데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-032",
+      "category": "야키니쿠·와규",
+      "ko": "소금 양념으로 주세요",
+      "ja": "塩でお願いします。",
+      "kana": "しおでおねがいします。",
+      "reading": "시오데 오네가이시마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-033",
+      "category": "야키니쿠·와규",
+      "ko": "소스 양념으로 주세요",
+      "ja": "タレでお願いします。",
+      "kana": "タレでおねがいします。",
+      "reading": "타레데 오네가이시마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-034",
+      "category": "야키니쿠·와규",
+      "ko": "직원이 구워 주시나요?",
+      "ja": "お店の方が焼いてくれますか？",
+      "kana": "おみせのかたがやいてくれますか？",
+      "reading": "오미세노 카타가 야이테쿠레마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-035",
+      "category": "야키니쿠·와규",
+      "ko": "불판을 바꿔 주세요",
+      "ja": "網を替えてください。",
+      "kana": "あみをかえてください。",
+      "reading": "아미오 카에테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-036",
+      "category": "야키니쿠·와규",
+      "ko": "잘 익혀 주세요",
+      "ja": "よく焼いてください。",
+      "kana": "よくやいてください。",
+      "reading": "요쿠 야이테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-037",
+      "category": "장어·정식",
+      "ko": "우나동과 우나주는 어떻게 다른가요?",
+      "ja": "うな丼とうな重はどう違いますか？",
+      "kana": "うなどんとうなじゅうはどうちがいますか？",
+      "reading": "우나동토 우나주우와 도오 치가이마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-038",
+      "category": "장어·정식",
+      "ko": "히츠마부시는 어떻게 먹나요?",
+      "ja": "ひつまぶしはどうやって食べますか？",
+      "kana": "ひつまぶしはどうやってたべますか？",
+      "reading": "히츠마부시와 도오얏테 타베마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-039",
+      "category": "장어·정식",
+      "ko": "밥을 적게 주세요",
+      "ja": "ご飯を少なめにしてください。",
+      "kana": "ごはんをすくなめにしてください。",
+      "reading": "고한오 스쿠나메니 시테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-040",
+      "category": "장어·정식",
+      "ko": "밥을 추가할 수 있나요?",
+      "ja": "ご飯のおかわりはできますか？",
+      "kana": "ごはんのおかわりはできますか？",
+      "reading": "고한노 오카와리와 데키마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-041",
+      "category": "장어·정식",
+      "ko": "이것은 정식인가요, 단품인가요?",
+      "ja": "これは定食ですか、単品ですか？",
+      "kana": "これはていしょくですか、たんぴんですか？",
+      "reading": "코레와 테에쇼쿠데스카 탄핀데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-042",
+      "category": "오코노미야키·쿠시카츠",
+      "ko": "야마이모야키 하나 주세요",
+      "ja": "山芋焼を一つください。",
+      "kana": "やまいもやきをひとつください。",
+      "reading": "야마이모야키오 히토츠 쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-043",
+      "category": "오코노미야키·쿠시카츠",
+      "ko": "직접 구워 먹는 건가요?",
+      "ja": "自分で焼くんですか？",
+      "kana": "じぶんでやくんですか？",
+      "reading": "지분데 야쿤데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-044",
+      "category": "오코노미야키·쿠시카츠",
+      "ko": "마요네즈는 빼 주세요",
+      "ja": "マヨネーズ抜きでお願いします。",
+      "kana": "マヨネーズぬきでおねがいします。",
+      "reading": "마요네에즈누키데 오네가이시마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-045",
+      "category": "오코노미야키·쿠시카츠",
+      "ko": "꼬치튀김 5개를 추천해서 골라 주세요",
+      "ja": "串カツをおすすめで5本選んでください。",
+      "kana": "くしカツをおすすめでごほんえらんでください。",
+      "reading": "쿠시카츠오 오스스메데 고혼 에란데쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-046",
+      "category": "오코노미야키·쿠시카츠",
+      "ko": "소스는 어떻게 사용하나요?",
+      "ja": "ソースはどう使えばいいですか？",
+      "kana": "ソースはどうつかえばいいですか？",
+      "reading": "소오스와 도오 츠카에바 이이데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-047",
+      "category": "오코노미야키·쿠시카츠",
+      "ko": "이 꼬치는 어떤 재료인가요?",
+      "ja": "この串は何の食材ですか？",
+      "kana": "このくしはなんのしょくざいですか？",
+      "reading": "코노 쿠시와 난노 쇼쿠자이데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-048",
+      "category": "카레·돈카츠·규카츠",
+      "ko": "덜 맵게 해 주세요",
+      "ja": "辛さを控えめにしてください。",
+      "kana": "からさをひかえめにしてください。",
+      "reading": "카라사오 히카에메니 시테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-049",
+      "category": "카레·돈카츠·규카츠",
+      "ko": "두 종류의 카레를 같이 먹을 수 있나요?",
+      "ja": "2種類のカレーをあいがけにできますか？",
+      "kana": "にしゅるいのカレーをあいがけにできますか？",
+      "reading": "니슈루이노 카레에오 아이가케니 데키마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-050",
+      "category": "카레·돈카츠·규카츠",
+      "ko": "등심과 안심 중 어느 쪽이 부드러운가요?",
+      "ja": "ロースとヒレはどちらが柔らかいですか？",
+      "kana": "ロースとヒレはどちらがやわらかいですか？",
+      "reading": "로오스토 히레와 도치라가 야와라카이데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-051",
+      "category": "카레·돈카츠·규카츠",
+      "ko": "돌판에 더 구워 먹으면 되나요?",
+      "ja": "石盤でもう少し焼いて食べればいいですか？",
+      "kana": "せきばんでもうすこしやいてたべればいいですか？",
+      "reading": "세키반데 모오 스코시 야이테 타베레바 이이데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-052",
+      "category": "카레·돈카츠·규카츠",
+      "ko": "소스는 따로 주세요",
+      "ja": "ソースは別にしてください。",
+      "kana": "ソースはべつにしてください。",
+      "reading": "소오스와 베츠니 시테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-053",
+      "category": "소바·우동·라멘",
+      "ko": "따뜻한 것과 차가운 것 중 고를 수 있나요?",
+      "ja": "温かいものと冷たいものを選べますか？",
+      "kana": "あたたかいものとつめたいものをえらべますか？",
+      "reading": "아타타카이 모노토 츠메타이 모노오 에라베마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-054",
+      "category": "소바·우동·라멘",
+      "ko": "면을 적게 해 주세요",
+      "ja": "麺を少なめにしてください。",
+      "kana": "めんをすくなめにしてください。",
+      "reading": "멘오 스쿠나메니 시테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-055",
+      "category": "소바·우동·라멘",
+      "ko": "면 곱빼기로 할 수 있나요?",
+      "ja": "麺を大盛りにできますか？",
+      "kana": "めんをおおもりにできますか？",
+      "reading": "멘오 오오모리니 데키마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-056",
+      "category": "소바·우동·라멘",
+      "ko": "추가 면을 주문할 수 있나요?",
+      "ja": "替え玉はありますか？",
+      "kana": "かえだまはありますか？",
+      "reading": "카에다마와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-057",
+      "category": "소바·우동·라멘",
+      "ko": "츠케멘 국물을 묽게 하는 육수를 주세요",
+      "ja": "スープ割りをお願いします。",
+      "kana": "スープわりをおねがいします。",
+      "reading": "스우푸와리오 오네가이시마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-058",
+      "category": "소바·우동·라멘",
+      "ko": "달걀 하나 추가해 주세요",
+      "ja": "味玉を一つ追加してください。",
+      "kana": "あじたまをひとつついかしてください。",
+      "reading": "아지타마오 히토츠 츠이카시테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-059",
+      "category": "소바·우동·라멘",
+      "ko": "식권을 먼저 사야 하나요?",
+      "ja": "先に食券を買いますか？",
+      "kana": "さきにしょっけんをかいますか？",
+      "reading": "사키니 쇼켄오 카이마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-060",
+      "category": "소바·우동·라멘",
+      "ko": "이 국물은 무엇으로 만들었나요?",
+      "ja": "このスープは何のだしですか？",
+      "kana": "このスープはなんのだしですか？",
+      "reading": "코노 스우푸와 난노 다시데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-061",
+      "category": "스시·오마카세",
+      "ko": "오마카세는 한 사람에 얼마인가요?",
+      "ja": "おまかせは一人いくらですか？",
+      "kana": "おまかせはひとりいくらですか？",
+      "reading": "오마카세와 히토리 이쿠라데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-062",
+      "category": "스시·오마카세",
+      "ko": "와사비는 빼 주세요",
+      "ja": "わさび抜きでお願いします。",
+      "kana": "わさびぬきでおねがいします。",
+      "reading": "와사비누키데 오네가이시마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-063",
+      "category": "스시·오마카세",
+      "ko": "와사비는 따로 주세요",
+      "ja": "わさびは別にしてください。",
+      "kana": "わさびはべつにしてください。",
+      "reading": "와사비와 베츠니 시테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-064",
+      "category": "스시·오마카세",
+      "ko": "참치 초밥 2개 주세요",
+      "ja": "まぐろのにぎりを2貫ください。",
+      "kana": "まぐろのにぎりをにかんください。",
+      "reading": "마구로노 니기리오 니칸 쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-065",
+      "category": "스시·오마카세",
+      "ko": "익힌 재료로 만든 초밥이 있나요?",
+      "ja": "火の通ったネタのお寿司はありますか？",
+      "kana": "ひのとおったネタのおすしはありますか？",
+      "reading": "히노 토옷타 네타노 오스시와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-066",
+      "category": "스시·오마카세",
+      "ko": "코스는 얼마나 걸리나요?",
+      "ja": "コースはどのくらい時間がかかりますか？",
+      "kana": "コースはどのくらいじかんがかかりますか？",
+      "reading": "코오스와 도노쿠라이 지칸가 카카리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-067",
+      "category": "교자·타코야키",
+      "ko": "생강 교자 2인분 주세요",
+      "ja": "生姜ぎょうざを二人前ください。",
+      "kana": "しょうがぎょうざをににんまえください。",
+      "reading": "쇼오가교오자오 니닌마에 쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-068",
+      "category": "교자·타코야키",
+      "ko": "마늘이 들어가지 않은 교자가 있나요?",
+      "ja": "にんにくを使っていない餃子はありますか？",
+      "kana": "にんにくをつかっていないぎょうざはありますか？",
+      "reading": "닌니쿠오 츠캇테이나이 교오자와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-069",
+      "category": "교자·타코야키",
+      "ko": "타코야키 8개입 하나 주세요",
+      "ja": "たこ焼きの8個入りを一つください。",
+      "kana": "たこやきのはっこいりをひとつください。",
+      "reading": "타코야키노 핫코이리오 히토츠 쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-070",
+      "category": "교자·타코야키",
+      "ko": "소스 맛과 소금 맛을 반씩 할 수 있나요?",
+      "ja": "ソース味と塩味を半分ずつにできますか？",
+      "kana": "ソースあじとしおあじをはんぶんずつにできますか？",
+      "reading": "소오스아지토 시오아지오 한분즈츠니 데키마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-071",
+      "category": "교자·타코야키",
+      "ko": "마요네즈 없이 주세요",
+      "ja": "マヨネーズなしでお願いします。",
+      "kana": "マヨネーズなしでおねがいします。",
+      "reading": "마요네에즈나시데 오네가이시마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-072",
+      "category": "교자·타코야키",
+      "ko": "포장은 몇 인분부터 가능한가요?",
+      "ja": "持ち帰りは何人前からできますか？",
+      "kana": "もちかえりはなんにんまえからできますか？",
+      "reading": "모치카에리와 난닌마에카라 데키마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-073",
+      "category": "카페·디저트",
+      "ko": "신맛이 적은 커피를 추천해 주세요",
+      "ja": "酸味が少ないコーヒーをおすすめしてください。",
+      "kana": "さんみがすくないコーヒーをおすすめしてください。",
+      "reading": "산미가 스쿠나이 코오히이오 오스스메시테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-074",
+      "category": "카페·디저트",
+      "ko": "이것을 아이스로 할 수 있나요?",
+      "ja": "これはアイスにできますか？",
+      "kana": "これはアイスにできますか？",
+      "reading": "코레와 아이스니 데키마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-075",
+      "category": "카페·디저트",
+      "ko": "설탕 없이 주세요",
+      "ja": "砂糖なしでお願いします。",
+      "kana": "さとうなしでおねがいします。",
+      "reading": "사토오나시데 오네가이시마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-076",
+      "category": "카페·디저트",
+      "ko": "원두 200그램 주세요",
+      "ja": "コーヒー豆を200グラムください。",
+      "kana": "コーヒーまめをにひゃくグラムください。",
+      "reading": "코오히이마메오 니햐쿠구라무 쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-077",
+      "category": "카페·디저트",
+      "ko": "드립용으로 갈아 주세요",
+      "ja": "ドリップ用に挽いてください。",
+      "kana": "ドリップようにひいてください。",
+      "reading": "도릿푸요오니 히이테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-078",
+      "category": "카페·디저트",
+      "ko": "타르트는 통째로 파나요, 조각으로 파나요?",
+      "ja": "タルトはホールですか、カットですか？",
+      "kana": "タルトはホールですか、カットですか？",
+      "reading": "타루토와 호오루데스카 캇토데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-079",
+      "category": "카페·디저트",
+      "ko": "몇 시간까지 들고 다닐 수 있나요?",
+      "ja": "持ち歩きは何時間まで大丈夫ですか？",
+      "kana": "もちあるきはなんじかんまでだいじょうぶですか？",
+      "reading": "모치아루키와 난지칸마데 다이조오부데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-080",
+      "category": "카페·디저트",
+      "ko": "아이스팩을 넣어 주세요",
+      "ja": "保冷剤を入れてください。",
+      "kana": "ほれいざいをいれてください。",
+      "reading": "호레에자이오 이레테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-081",
+      "category": "카페·디저트",
+      "ko": "유통기한은 언제까지인가요?",
+      "ja": "賞味期限はいつまでですか？",
+      "kana": "しょうみきげんはいつまでですか？",
+      "reading": "쇼오미키겐와 이츠마데데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-082",
+      "category": "위스키·주류·견학",
+      "ko": "야마자키 12년 한 병 있나요?",
+      "ja": "山崎12年のボトルはありますか？",
+      "kana": "やまざきじゅうにねんのボトルはありますか？",
+      "reading": "야마자키주우니넨노 보토루와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-083",
+      "category": "위스키·주류·견학",
+      "ko": "하쿠슈 12년 한 병 있나요?",
+      "ja": "白州12年のボトルはありますか？",
+      "kana": "はくしゅうじゅうにねんのボトルはありますか？",
+      "reading": "하쿠슈우주우니넨노 보토루와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-084",
+      "category": "위스키·주류·견학",
+      "ko": "한 사람당 몇 병까지 살 수 있나요?",
+      "ja": "一人何本まで買えますか？",
+      "kana": "ひとりなんぼんまでかえますか？",
+      "reading": "히토리 난본마데 카에마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-085",
+      "category": "위스키·주류·견학",
+      "ko": "미개봉 제품인가요?",
+      "ja": "未開封の商品ですか？",
+      "kana": "みかいふうのしょうひんですか？",
+      "reading": "미카이후우노 쇼오힌데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-086",
+      "category": "위스키·주류·견학",
+      "ko": "상자도 포함인가요?",
+      "ja": "箱は付いていますか？",
+      "kana": "はこはついていますか？",
+      "reading": "하코와 츠이테이마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-087",
+      "category": "위스키·주류·견학",
+      "ko": "면세 가능한가요?",
+      "ja": "免税できますか？",
+      "kana": "めんぜいできますか？",
+      "reading": "멘제에 데키마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-088",
+      "category": "위스키·주류·견학",
+      "ko": "깨지지 않게 포장해 주세요",
+      "ja": "割れないように梱包してください。",
+      "kana": "われないようにこんぽうしてください。",
+      "reading": "와레나이요오니 콘포오시테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-089",
+      "category": "위스키·주류·견학",
+      "ko": "스트레이트로 한 잔 주세요",
+      "ja": "ストレートで一杯お願いします。",
+      "kana": "ストレートでいっぱいおねがいします。",
+      "reading": "스토레에토데 잇파이 오네가이시마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-090",
+      "category": "위스키·주류·견학",
+      "ko": "물은 따로 주세요",
+      "ja": "お水は別にください。",
+      "kana": "おみずはべつにください。",
+      "reading": "오미즈와 베츠니 쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-091",
+      "category": "위스키·주류·견학",
+      "ko": "오늘 마실 수 있는 위스키를 보여 주세요",
+      "ja": "今日飲めるウイスキーを見せてください。",
+      "kana": "きょうのめるウイスキーをみせてください。",
+      "reading": "쿄오 노메루 우이스키이오 미세테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-092",
+      "category": "위스키·주류·견학",
+      "ko": "예약 확인 화면이에요",
+      "ja": "これが予約確認の画面です。",
+      "kana": "これがよやくかくにんのがめんです。",
+      "reading": "코레가 요야쿠카쿠닌노 가멘데스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-093",
+      "category": "위스키·주류·견학",
+      "ko": "접수는 어디인가요?",
+      "ja": "受付はどこですか？",
+      "kana": "うけつけはどこですか？",
+      "reading": "우케츠케와 도코데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-094",
+      "category": "위스키·주류·견학",
+      "ko": "투어는 어디에서 시작하나요?",
+      "ja": "ツアーはどこから始まりますか？",
+      "kana": "ツアーはどこからはじまりますか？",
+      "reading": "츠아아와 도코카라 하지마리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-095",
+      "category": "위스키·주류·견학",
+      "ko": "사진을 찍어도 되나요?",
+      "ja": "写真を撮ってもいいですか？",
+      "kana": "しゃしんをとってもいいですか？",
+      "reading": "샤신오 톳테모 이이데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-096",
+      "category": "쇼핑 공통",
+      "ko": "이것은 얼마예요?",
+      "ja": "これはいくらですか？",
+      "kana": "これはいくらですか？",
+      "reading": "코레와 이쿠라데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-097",
+      "category": "쇼핑 공통",
+      "ko": "세금 포함 가격인가요?",
+      "ja": "税込みの値段ですか？",
+      "kana": "ぜいこみのねだんですか？",
+      "reading": "제에코미노 네단데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-098",
+      "category": "쇼핑 공통",
+      "ko": "이 사진의 상품이 있나요?",
+      "ja": "この写真の商品はありますか？",
+      "kana": "このしゃしんのしょうひんはありますか？",
+      "reading": "코노 샤신노 쇼오힌와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-099",
+      "category": "쇼핑 공통",
+      "ko": "새 상품으로 보여 주세요",
+      "ja": "新しいものを見せてください。",
+      "kana": "あたらしいものをみせてください。",
+      "reading": "아타라시이 모노오 미세테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-100",
+      "category": "쇼핑 공통",
+      "ko": "다른 지점에 재고가 있나요?",
+      "ja": "他の店舗に在庫はありますか？",
+      "kana": "ほかのてんぽにざいこはありますか？",
+      "reading": "호카노 텐포니 자이코와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-101",
+      "category": "쇼핑 공통",
+      "ko": "선물용으로 포장해 주세요",
+      "ja": "プレゼント用に包んでください。",
+      "kana": "プレゼントようにつつんでください。",
+      "reading": "푸레젠토요오니 츠츤데쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-102",
+      "category": "쇼핑 공통",
+      "ko": "각각 따로 포장해 주세요",
+      "ja": "一つずつ別々に包んでください。",
+      "kana": "ひとつずつべつべつにつつんでください。",
+      "reading": "히토츠즈츠 베츠베츠니 츠츤데쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-103",
+      "category": "쇼핑 공통",
+      "ko": "봉투는 괜찮아요",
+      "ja": "袋は大丈夫です。",
+      "kana": "ふくろはだいじょうぶです。",
+      "reading": "후쿠로와 다이조오부데스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-104",
+      "category": "쇼핑 공통",
+      "ko": "이것으로 할게요",
+      "ja": "これにします。",
+      "kana": "これにします。",
+      "reading": "코레니 시마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-105",
+      "category": "쇼핑 공통",
+      "ko": "조금 더 둘러볼게요",
+      "ja": "もう少し見て回ります。",
+      "kana": "もうすこしみてまわります。",
+      "reading": "모오 스코시 미테마와리마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-106",
+      "category": "몽벨·아웃도어",
+      "ko": "남성용인가요, 여성용인가요?",
+      "ja": "メンズですか、レディースですか？",
+      "kana": "メンズですか、レディースですか？",
+      "reading": "멘즈데스카 레디이스데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-107",
+      "category": "몽벨·아웃도어",
+      "ko": "등산용 방수 재킷을 찾고 있어요",
+      "ja": "登山用の防水ジャケットを探しています。",
+      "kana": "とざんようのぼうすいジャケットをさがしています。",
+      "reading": "토잔요오노 보오스이자켓토오 사가시테이마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-108",
+      "category": "몽벨·아웃도어",
+      "ko": "가벼운 제품을 추천해 주세요",
+      "ja": "軽いものをおすすめしてください。",
+      "kana": "かるいものをおすすめしてください。",
+      "reading": "카루이 모노오 오스스메시테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-109",
+      "category": "몽벨·아웃도어",
+      "ko": "배낭을 메어 봐도 되나요?",
+      "ja": "バックパックを背負ってみてもいいですか？",
+      "kana": "バックパックをせおってみてもいいですか？",
+      "reading": "밧쿠팟쿠오 세옷테미테모 이이데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-110",
+      "category": "몽벨·아웃도어",
+      "ko": "이 신발 270 사이즈 있나요?",
+      "ja": "この靴の27センチはありますか？",
+      "kana": "このくつのにじゅうななセンチはありますか？",
+      "reading": "코노 쿠츠노 니주우나나센치와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-111",
+      "category": "몽벨·아웃도어",
+      "ko": "신어봐도 되나요?",
+      "ja": "履いてみてもいいですか？",
+      "kana": "はいてみてもいいですか？",
+      "reading": "하이테미테모 이이데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-112",
+      "category": "몽벨·아웃도어",
+      "ko": "다른 폭의 신발도 있나요?",
+      "ja": "幅違いの靴はありますか？",
+      "kana": "はばちがいのくつはありますか？",
+      "reading": "하바치가이노 쿠츠와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-113",
+      "category": "의류·아울렛",
+      "ko": "이것의 M 사이즈 있나요?",
+      "ja": "これのMサイズはありますか？",
+      "kana": "これのエムサイズはありますか？",
+      "reading": "코레노 에무사이즈와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-114",
+      "category": "의류·아울렛",
+      "ko": "더 큰 사이즈 있나요?",
+      "ja": "もっと大きいサイズはありますか？",
+      "kana": "もっとおおきいサイズはありますか？",
+      "reading": "못토 오오키이 사이즈와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-115",
+      "category": "의류·아울렛",
+      "ko": "더 작은 사이즈 있나요?",
+      "ja": "もっと小さいサイズはありますか？",
+      "kana": "もっとちいさいサイズはありますか？",
+      "reading": "못토 치이사이 사이즈와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-116",
+      "category": "의류·아울렛",
+      "ko": "검정색 있나요?",
+      "ja": "黒はありますか？",
+      "kana": "くろはありますか？",
+      "reading": "쿠로와 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-117",
+      "category": "의류·아울렛",
+      "ko": "입어봐도 되나요?",
+      "ja": "試着してもいいですか？",
+      "kana": "しちゃくしてもいいですか？",
+      "reading": "시차쿠 시테모 이이데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-118",
+      "category": "의류·아울렛",
+      "ko": "피팅룸은 어디인가요?",
+      "ja": "試着室はどこですか？",
+      "kana": "しちゃくしつはどこですか？",
+      "reading": "시차쿠시츠와 도코데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-119",
+      "category": "의류·아울렛",
+      "ko": "할인 대상인가요?",
+      "ja": "これは割引の対象ですか？",
+      "kana": "これはわりびきのたいしょうですか？",
+      "reading": "코레와 와리비키노 타이쇼오데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-120",
+      "category": "티파니·주얼리",
+      "ko": "이 목걸이를 보여 주세요",
+      "ja": "このネックレスを見せてください。",
+      "kana": "このネックレスをみせてください。",
+      "reading": "코노 넷쿠레스오 미세테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-121",
+      "category": "티파니·주얼리",
+      "ko": "착용해 봐도 되나요?",
+      "ja": "着けてみてもいいですか？",
+      "kana": "つけてみてもいいですか？",
+      "reading": "츠케테미테모 이이데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-122",
+      "category": "티파니·주얼리",
+      "ko": "이것은 실버인가요?",
+      "ja": "これはシルバーですか？",
+      "kana": "これはシルバーですか？",
+      "reading": "코레와 시루바아데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-123",
+      "category": "티파니·주얼리",
+      "ko": "체인 길이를 조절할 수 있나요?",
+      "ja": "チェーンの長さは調整できますか？",
+      "kana": "チェーンのながさはちょうせいできますか？",
+      "reading": "체엔노 나가사와 초오세에 데키마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-124",
+      "category": "티파니·주얼리",
+      "ko": "반지 사이즈를 재 주실 수 있나요?",
+      "ja": "指輪のサイズを測っていただけますか？",
+      "kana": "ゆびわのサイズをはかっていただけますか？",
+      "reading": "유비와노 사이즈오 하캇테이타다케마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-125",
+      "category": "티파니·주얼리",
+      "ko": "귀걸이는 한 쌍인가요?",
+      "ja": "ピアスは両耳分ですか？",
+      "kana": "ピアスはりょうみみぶんですか？",
+      "reading": "피아스와 료오미미분데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-126",
+      "category": "티파니·주얼리",
+      "ko": "한국에서도 수리를 받을 수 있나요?",
+      "ja": "韓国でも修理を受けられますか？",
+      "kana": "かんこくでもしゅうりをうけられますか？",
+      "reading": "칸코쿠데모 슈우리오 우케라레마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-127",
+      "category": "캐릭터·닌텐도",
+      "ko": "커비 상품은 어디에 있나요?",
+      "ja": "カービィのグッズはどこにありますか？",
+      "kana": "カービィのグッズはどこにありますか？",
+      "reading": "카아비이노 굿즈와 도코니 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-128",
+      "category": "캐릭터·닌텐도",
+      "ko": "이곳에서만 파는 상품인가요?",
+      "ja": "ここでしか買えない商品ですか？",
+      "kana": "ここでしかかえないしょうひんですか？",
+      "reading": "코코데시카 카에나이 쇼오힌데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-129",
+      "category": "캐릭터·닌텐도",
+      "ko": "한 사람당 몇 개까지 살 수 있나요?",
+      "ja": "一人何個まで買えますか？",
+      "kana": "ひとりなんこまでかえますか？",
+      "reading": "히토리 난코마데 카에마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-130",
+      "category": "캐릭터·닌텐도",
+      "ko": "이 상품은 랜덤으로 들어 있나요?",
+      "ja": "中身はランダムですか？",
+      "kana": "なかみはランダムですか？",
+      "reading": "나카미와 란다무데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-131",
+      "category": "캐릭터·닌텐도",
+      "ko": "원하는 캐릭터를 고를 수 있나요?",
+      "ja": "好きなキャラクターを選べますか？",
+      "kana": "すきなキャラクターをえらべますか？",
+      "reading": "스키나 캬라쿠타아오 에라베마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-132",
+      "category": "캐릭터·닌텐도",
+      "ko": "이 상품은 재입고 예정이 있나요?",
+      "ja": "この商品は再入荷の予定がありますか？",
+      "kana": "このしょうひんはさいにゅうかのよていがありますか？",
+      "reading": "코노 쇼오힌와 사이뉴우카노 요테에가 아리마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-133",
+      "category": "관광·입장",
+      "ko": "성인 3명이에요",
+      "ja": "大人3人です。",
+      "kana": "おとなさんにんです。",
+      "reading": "오토나 산닌데스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-134",
+      "category": "관광·입장",
+      "ko": "입장권은 어디에서 사나요?",
+      "ja": "入場券はどこで買えますか？",
+      "kana": "にゅうじょうけんはどこでかえますか？",
+      "reading": "뉴우조오켄와 도코데 카에마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-135",
+      "category": "관광·입장",
+      "ko": "예약 확인 화면이에요",
+      "ja": "これが予約確認の画面です。",
+      "kana": "これがよやくかくにんのがめんです。",
+      "reading": "코레가 요야쿠카쿠닌노 가멘데스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-136",
+      "category": "관광·입장",
+      "ko": "다시 입장할 수 있나요?",
+      "ja": "再入場はできますか？",
+      "kana": "さいにゅうじょうはできますか？",
+      "reading": "사이뉴우조오와 데키마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-137",
+      "category": "관광·입장",
+      "ko": "마지막 입장은 몇 시인가요?",
+      "ja": "最終入場は何時ですか？",
+      "kana": "さいしゅうにゅうじょうはなんじですか？",
+      "reading": "사이슈우뉴우조오와 난지데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-138",
+      "category": "관광·입장",
+      "ko": "기도하고 싶어요. 어떻게 하면 되나요?",
+      "ja": "お参りしたいのですが、どうすればいいですか？",
+      "kana": "おまいりしたいのですが、どうすればいいですか？",
+      "reading": "오마이리시타이노데스가 도오스레바 이이데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-139",
+      "category": "관광·입장",
+      "ko": "사진을 찍어도 되나요?",
+      "ja": "写真を撮ってもいいですか？",
+      "kana": "しゃしんをとってもいいですか？",
+      "reading": "샤신오 톳테모 이이데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-140",
+      "category": "숙소·이동",
+      "ko": "체크인하고 싶어요",
+      "ja": "チェックインをお願いします。",
+      "kana": "チェックインをおねがいします。",
+      "reading": "체크인오 오네가이시마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-141",
+      "category": "숙소·이동",
+      "ko": "짐을 맡길 수 있나요?",
+      "ja": "荷物を預けられますか？",
+      "kana": "にもつをあずけられますか？",
+      "reading": "니모츠오 아즈케라레마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-142",
+      "category": "숙소·이동",
+      "ko": "체크아웃은 몇 시인가요?",
+      "ja": "チェックアウトは何時ですか？",
+      "kana": "チェックアウトはなんじですか？",
+      "reading": "체크아우토와 난지데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-143",
+      "category": "숙소·이동",
+      "ko": "난바역은 어디인가요?",
+      "ja": "なんば駅はどこですか？",
+      "kana": "なんばえきはどこですか？",
+      "reading": "난바에키와 도코데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-144",
+      "category": "숙소·이동",
+      "ko": "이 열차는 교토역에 가나요?",
+      "ja": "この電車は京都駅に行きますか？",
+      "kana": "このでんしゃはきょうとえきにいきますか？",
+      "reading": "코노 덴샤와 쿄오토에키니 이키마스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-145",
+      "category": "숙소·이동",
+      "ko": "야마자키역에서 내리면 되나요?",
+      "ja": "山崎駅で降りればいいですか？",
+      "kana": "やまざきえきでおりればいいですか？",
+      "reading": "야마자키에키데 오리레바 이이데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-146",
+      "category": "숙소·이동",
+      "ko": "간사이공항으로 가고 싶어요",
+      "ja": "関西空港に行きたいです。",
+      "kana": "かんさいくうこうにいきたいです。",
+      "reading": "칸사이쿠우코오니 이키타이데스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-147",
+      "category": "대화 도움",
+      "ko": "일본어를 잘 못해요",
+      "ja": "日本語があまり話せません。",
+      "kana": "にほんごがあまりはなせません。",
+      "reading": "니혼고가 아마리 하나세마센",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-148",
+      "category": "대화 도움",
+      "ko": "천천히 말씀해 주세요",
+      "ja": "ゆっくり話してください。",
+      "kana": "ゆっくりはなしてください。",
+      "reading": "윳쿠리 하나시테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-149",
+      "category": "대화 도움",
+      "ko": "여기에 적어 주세요",
+      "ja": "ここに書いてください。",
+      "kana": "ここにかいてください。",
+      "reading": "코코니 카이테쿠다사이",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-150",
+      "category": "대화 도움",
+      "ko": "화장실은 어디인가요?",
+      "ja": "トイレはどこですか？",
+      "kana": "トイレはどこですか？",
+      "reading": "토이레와 도코데스카",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    },
+    {
+      "id": "question-151",
+      "category": "대화 도움",
+      "ko": "감사합니다",
+      "ja": "ありがとうございます。",
+      "kana": "ありがとうございます。",
+      "reading": "아리가토오고자이마스",
+      "note": "",
+      "source": "직접 작성한 여행 회화"
+    }
+  ],
+  "units": {
+    "cup": {
+      "ko": "잔",
+      "ja": "杯",
+      "one": "一杯",
+      "kana": "いっぱい",
+      "reading": "잇파이"
+    },
+    "bowl": {
+      "ko": "그릇",
+      "ja": "杯",
+      "one": "一杯",
+      "kana": "いっぱい",
+      "reading": "잇파이"
+    },
+    "serving": {
+      "ko": "인분",
+      "ja": "人前",
+      "one": "一人前",
+      "kana": "いちにんまえ",
+      "reading": "이치닌마에"
+    },
+    "dish": {
+      "ko": "접시",
+      "ja": "皿",
+      "one": "一皿",
+      "kana": "ひとさら",
+      "reading": "히토사라"
+    },
+    "stick": {
+      "ko": "꼬치",
+      "ja": "本",
+      "one": "一本",
+      "kana": "いっぽん",
+      "reading": "잇폰"
+    },
+    "bottle": {
+      "ko": "병",
+      "ja": "本",
+      "one": "一本",
+      "kana": "いっぽん",
+      "reading": "잇폰"
+    },
+    "piece": {
+      "ko": "개",
+      "ja": "つ",
+      "one": "一つ",
+      "kana": "ひとつ",
+      "reading": "히토츠"
+    },
+    "set": {
+      "ko": "세트",
+      "ja": "セット",
+      "one": "一セット",
+      "kana": "いちセット",
+      "reading": "이치셋토"
+    },
+    "garment": {
+      "ko": "벌",
+      "ja": "着",
+      "one": "一着",
+      "kana": "いっちゃく",
+      "reading": "잇차쿠"
+    },
+    "pair": {
+      "ko": "켤레",
+      "ja": "足",
+      "one": "一足",
+      "kana": "いっそく",
+      "reading": "잇소쿠"
+    },
+    "item": {
+      "ko": "점",
+      "ja": "点",
+      "one": "一点",
+      "kana": "いってん",
+      "reading": "잇텐"
+    },
+    "bag": {
+      "ko": "봉지",
+      "ja": "袋",
+      "one": "一袋",
+      "kana": "ひとふくろ",
+      "reading": "히토후쿠로"
+    },
+    "sushi_piece": {
+      "ko": "개",
+      "ja": "貫",
+      "one": "一貫",
+      "kana": "いっかん",
+      "reading": "잇칸"
+    }
+  },
+  "venue_notes": [
+    {
+      "place": "산토리 야마자키 증류소",
+      "note": "숍·테이스팅 라운지 이용도 예약이 필요하며 숍 위스키 재고는 보장되지 않는다.",
+      "source_id": "yamazaki"
+    },
+    {
+      "place": "산토리 야마자키 증류소",
+      "note": "테이스팅 라운지는 현금 결제 불가, 1인 주문 3잔까지로 안내한다. 방문 전 공식 안내를 다시 확인한다.",
+      "source_id": "yamazaki-lounge"
+    },
+    {
+      "place": "닌텐도 뮤지엄",
+      "note": "뮤지엄 숍은 티켓 소지자만 이용 가능하며 상품별 구매 수량 제한이 있다.",
+      "source_id": "nintendo"
+    }
+  ],
+  "integration": {
+    "required_counters": [
+      "cup",
+      "bowl",
+      "serving",
+      "dish",
+      "stick",
+      "bottle",
+      "piece",
+      "set",
+      "garment",
+      "pair",
+      "item",
+      "bag",
+      "sushi_piece"
+    ],
+    "cup_readings_1_to_10": [
+      "いっぱい",
+      "にはい",
+      "さんばい",
+      "よんはい",
+      "ごはい",
+      "ろっぱい",
+      "ななはい",
+      "はっぱい",
+      "きゅうはい",
+      "じゅっぱい"
+    ],
+    "bottle_stick_readings_1_to_10": [
+      "いっぽん",
+      "にほん",
+      "さんぼん",
+      "よんほん",
+      "ごほん",
+      "ろっぽん",
+      "ななほん",
+      "はっぽん",
+      "きゅうほん",
+      "じゅっぽん"
+    ],
+    "important": [
+      "Quantity.java에서 이 데이터의 13개 단위를 처리한다. 단위를 추가할 때 일본어 표기·발음·한글 단위를 함께 확장한다.",
+      "인분·접시·그릇·꼬치·병·벌·켤레·초밥 개수를 구분하고 식당의 실제 판매 단위를 우선한다.",
+      "브랜드 상품명은 질문 후보이며 목록에 상품이 있다고 재고가 있다고 표시하지 않는다.",
+      "야마자키 전용 화면: 예약·시음·재고·구매 수량·결제를 구분한다. 일반 이자카야의 잔 수를 라운지 규칙으로 재사용하지 않는다."
+    ]
+  }
+}

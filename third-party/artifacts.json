@@ -1,0 +1,67 @@
+{
+  "voicevox_core": "0.17.1",
+  "voicevox_onnxruntime": "1.23.2",
+  "jna": "5.18.1",
+  "sources": [
+    "https://github.com/VOICEVOX/voicevox_core/releases/tag/0.17.1",
+    "https://github.com/VOICEVOX/onnxruntime-builder/releases/tag/voicevox_onnxruntime-1.23.2",
+    "https://repo.maven.apache.org/maven2/net/java/dev/jna/jna/5.18.1/jna-5.18.1.aar"
+  ],
+  "files": [
+    {
+      "file": "app/src/main/jniLibs/arm64-v8a/libc++_shared.so",
+      "sha256": "d523468d62d9b603cb3354294d70d4b2feabf2c3f1e43b0c96c9aabf32813708",
+      "bytes": 1794776
+    },
+    {
+      "file": "app/src/main/jniLibs/arm64-v8a/libjnidispatch.so",
+      "sha256": "abc26e994517bcaa3309acdb0a27373864086c7569c89d3087b8626fada9ef06",
+      "bytes": 176520
+    },
+    {
+      "file": "app/src/main/jniLibs/arm64-v8a/libvoicevox_core.so",
+      "sha256": "7f300796c03943c536fd370803d08a1364431c139aace38d13026751f70e57ca",
+      "bytes": 3339624
+    },
+    {
+      "file": "app/src/main/jniLibs/arm64-v8a/libvoicevox_onnxruntime.so",
+      "sha256": "b5380b9d310bbd1f46b20b1406d6a5a030ff5f36a45964481af8af5a54c4e4a5",
+      "bytes": 18709176
+    },
+    {
+      "file": "app/src/main/jniLibs/armeabi-v7a/libjnidispatch.so",
+      "sha256": "9652282ef31834281229370a354d56c1522fe36e93625169df99b3e346f76092",
+      "bytes": 126496
+    },
+    {
+      "file": "app/src/main/jniLibs/x86/libjnidispatch.so",
+      "sha256": "d10fcc75029621a88fa6020807e7ba82ff434a01ead396cf0e36c50e6c393118",
+      "bytes": 124380
+    },
+    {
+      "file": "app/src/main/jniLibs/x86_64/libc++_shared.so",
+      "sha256": "3d8817f3a50515665b9152c620dedfd8509f84b68307f5f7ef20a75d9ae08f69",
+      "bytes": 1617608
+    },
+    {
+      "file": "app/src/main/jniLibs/x86_64/libjnidispatch.so",
+      "sha256": "3809247e9b804a05ed8377b87d545cf5b5e97f960f75e725bc8497b40260e417",
+      "bytes": 126912
+    },
+    {
+      "file": "app/src/main/jniLibs/x86_64/libvoicevox_core.so",
+      "sha256": "e43dacbff47e8b5fff6d1a4ef452c6fdefb685934dc91f3180bbf07445c230f7",
+      "bytes": 3720224
+    },
+    {
+      "file": "app/src/main/jniLibs/x86_64/libvoicevox_onnxruntime.so",
+      "sha256": "398db8c38855e27b93cb9735597a83946ca38345c68ecc71db58b2b11f41bf1e",
+      "bytes": 20679072
+    },
+    {
+      "file": "app/libs/jna-5.18.1.jar",
+      "sha256": "3b5492e8705f68f42aafba29d5909326ca7e6e17fce1063cba72be70131a4710",
+      "bytes": 220845
+    }
+  ]
+}
