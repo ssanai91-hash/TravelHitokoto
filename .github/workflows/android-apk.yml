@@ -1,0 +1,62 @@
+name: Build Android APK
+run-name: Build TravelHitokoto 0.1.8 (${{ github.ref_name }})
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - fix/0.1.8-trip-ready
+
+permissions:
+  contents: read
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+
+      - name: Set up Java 17
+        uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install Android SDK 35
+        run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+
+      - name: Restore verified original resources and signing key
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 tools/restore_resources.py
+          test -s signing/travel-test.jks
+
+      - name: Compile, package and sign APK
+        run: python3 build_apk.py
+
+      - name: Record build and signature
+        env:
+          BUILD_COMMIT: ${{ github.sha }}
+          BUILD_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          mkdir -p build/deliverables
+          cp build/TravelHitokoto-0.1.8.apk build/deliverables/
+          "$ANDROID_SDK_ROOT/build-tools/35.0.0/apksigner" verify --verbose --print-certs build/TravelHitokoto-0.1.8.apk > build/deliverables/signature.txt
+          printf 'version=0.1.8\nversionCode=9\ncommit=%s\nrun=%s\n' "$BUILD_COMMIT" "$BUILD_RUN_URL" > build/deliverables/build-info.txt
+          cd build/deliverables
+          sha256sum TravelHitokoto-0.1.8.apk > SHA256SUMS.txt
+          cat build-info.txt SHA256SUMS.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload signed APK
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: TravelHitokoto-0.1.8
+          path: build/deliverables/
+          if-no-files-found: error
+          retention-days: 14
+          compression-level: 0
